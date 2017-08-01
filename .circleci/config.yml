@@ -9,5 +9,5 @@ jobs:
       - run:
           name: install macchanger
           command: |
-            apt-get install macchanger
+            sudo apt-get install macchanger
             sudo macchanger eth0 -r
