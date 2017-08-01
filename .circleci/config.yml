@@ -1,7 +1,9 @@
 version: 2
 jobs:
   build:
-    machine: true
+    machine:
+    	enabled: true
+    	image: circleci/classic:edge
     
     steps:
       - checkout
