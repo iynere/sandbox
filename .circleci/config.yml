@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     machine: true
-      working_directory: ~/master
-        
-      steps:
-        - checkout
+    working_directory: ~/master
+      
+    steps:
+      - checkout
