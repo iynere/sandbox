@@ -6,7 +6,7 @@ jobs:
       
     steps:
       - checkout
-      - run
+      - run:
           name: install macchanger
           command: |
             apt-get install macchanger
