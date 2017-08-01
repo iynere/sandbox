@@ -1,0 +1,10 @@
+version: 2
+jobs:
+  build:
+    machine: true
+      working_directory: ~/master
+      docker:
+        - image: circleci/node:latest
+        
+      steps:
+        - checkout
