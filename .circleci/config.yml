@@ -6,9 +6,9 @@ jobs:
     
     steps:
       - checkout
-      # - run:
-      #     name: mac address
-      #     command: |
-      #       sudo ifconfig eth0 down
-      #       sudo ifconfig eth0 hw ether 00:80:48:BA:d1:30
-      #       sudo ifconfig eth0 up
+      - run:
+          name: try to hit stripe
+          command: |
+            wget https://raw.githubusercontent.com/stripe/stripe-reachability/master/bin/test.sh
+            sudo chmod +x test.sh
+            bash test.sh
