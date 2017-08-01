@@ -2,12 +2,13 @@ version: 2
 jobs:
   build:
     machine: true
+      image: circleci/classic:edge
     working_directory: ~/master
-      
     steps:
       - checkout
       - run:
-          name: install macchanger
+          name: mac address
           command: |
-            sudo apt-get install macchanger
-            sudo macchanger eth0 -r
+            ifconfig eth0 down
+            ifconfig eth0 hw ether 00:80:48:BA:d1:30
+            ifconfig eth0 up
