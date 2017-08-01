@@ -3,7 +3,7 @@ jobs:
   build:
     machine: true
       image: circleci/classic:edge
-    working_directory: ~/master
+    
     steps:
       - checkout
       - run:
