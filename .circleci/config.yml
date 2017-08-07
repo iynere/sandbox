@@ -1,14 +1,8 @@
 version: 2
 jobs:
-  build:
-    machine:
-      image: circleci/classic:edge
-    
-    steps:
-      - checkout
-      - run:
-          name: try to hit stripe
-          command: |
-            wget https://raw.githubusercontent.com/stripe/stripe-reachability/master/bin/test.sh
-            sudo chmod +x test.sh
-            bash test.sh
+	build:
+		machine:
+			image: circleci/ruby:2.2-node
+		
+		steps:
+			- checkout
