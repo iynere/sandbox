@@ -1,8 +1,8 @@
 version: 2
 jobs:
-	build:
-		machine:
-			image: circleci/ruby:2.2-node
-		
-		steps:
-			- checkout
+  build:
+    machine:
+      image: circleci/ruby:2.2-node
+    
+    steps:
+      - checkout
