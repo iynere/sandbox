@@ -1,8 +1,8 @@
 version: 2
 jobs:
-  build:
-    docker:
-      - image: circleci/ruby:2.3-node-browsers
-    
-    steps:
-      - checkout
+	build:
+		docker:
+			- image: redis:2.8.6
+		
+		steps:
+			- checkout
