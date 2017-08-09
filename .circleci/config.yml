@@ -1,8 +1,16 @@
 version: 2
 jobs:
   build:
-    docker:
-      - image: redis:2.8.6
+    machine: true
     
     steps:
       - checkout
+      - setup_remote_docker
+      - run:
+          name: Setup custom Docker image
+          command: |
+            docker pull ruby
+            mkdir /abc
+            touch /abc/test
+            docker run -v /abc:/xyz ruby ls -la /xyz
+            abort
