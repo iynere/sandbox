@@ -12,4 +12,3 @@ jobs:
             sudo mkdir /abc
             sudo touch /abc/test
             sudo docker run -v /abc:/xyz ruby ls -la /xyz
-            abort
