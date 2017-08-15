@@ -1,14 +1,8 @@
 version: 2
 jobs:
   build:
-    machine: true
+    docker:
+      - image: circleci/golang:1.9-browsers
     
     steps:
       - checkout
-      - run:
-          name: Setup custom Docker image
-          command: |
-            docker pull ruby
-            sudo mkdir /abc
-            sudo touch /abc/test
-            sudo docker run -v /abc:/xyz ruby ls -la /xyz
