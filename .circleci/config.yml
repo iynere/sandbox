@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/postgres:9.4-ram
+      - image: circleci/node:6.11
     
     steps:
       - checkout
