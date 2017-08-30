@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: iynere/code-dot-org:trusty-etc
+      - image: iynere/code-dot-org:trusty
     
     steps:
       - checkout
