@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: iynere/code-dot-org:trusty
+      - image: circleci/ruby:2.3.4-node-browsers
     
     steps:
       - checkout
