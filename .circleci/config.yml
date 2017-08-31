@@ -2,23 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/ruby:2.3.4-node-browsers
+      - image: iynere/goldstar:ruby-node-browsers-v1
     
     steps:
       - checkout
-      
-      - run:
-          name: downgrade node version, move to dockerfile later
-          command: |
-            sudo rm -f /usr/local/bin/node /usr/local/bin/nodejs /usr/local/bin/npm /usr/local/bin/npx /usr/local/share/man/man1/node.1 /usr/local/share/systemtap/tapset/node.stp
-            sudo rm -rf /usr/local/lib/node_modules /usr/local/include/node /usr/local/share/doc/node
-            wget https://nodejs.org/download/release/v7.3.0/node-v7.3.0.tar.gz
-            tar xvf node-v7.3.0.tar.gz
-            rm node-v7.3.0.tar.gz
-            cd node-v7.3.0
-            ./configure
-            make -j4
-            make doc
-            sudo make install
-            cd ..
-            rm -r node-v7.3.0
