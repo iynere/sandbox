@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: iynere/goldstar:ruby-node-browsers-v1
+      - image: iynere/code-dot-org:trusty-v2
     
     steps:
       - checkout
