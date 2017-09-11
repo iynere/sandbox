@@ -7,7 +7,6 @@ jobs:
     steps:
       - checkout
 
-      - setup_remote_docker:
-          version: 17.06.0-ce
+      - setup_remote_docker
         
       - run: docker-compose
