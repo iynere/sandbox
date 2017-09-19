@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/ruby:2.2.7-node-browsers
+      - image: iynere/redis:2.8.4 # circleci/ruby:2.2.7-node-browsers
     
     steps:
       - checkout
