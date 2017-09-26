@@ -25,13 +25,13 @@ jobs:
     docker:
       - image: ubuntu:16.04
     
-    # unzip zip bzip2 gzip locales sudo ca-certificates
+    # zip bzip2 tar unzip gzip locales sudo
     steps:
       - run:
           name: deps
           command: |
             apt-get update && apt-get install -y \
-            tar
+            ca-certificates
       
       - attach_workspace:
           at: /root
