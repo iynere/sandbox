@@ -4,7 +4,16 @@ jobs:
     docker:
       - image: ubuntu:16.04
     
+    # mercurial xvfb \
+    # locales sudo openssh-client ca-certificates tar gzip parallel \
+    # net-tools netcat unzip zip bzip2
     steps:
+      - run:
+          name: deps
+          command: |
+            sudo apt-get update && sudo apt-get install -y \
+            git openssh-client
+      
       - checkout
       
       - persist_to_workspace:
