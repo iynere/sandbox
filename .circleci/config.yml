@@ -2,7 +2,29 @@ version: 2
 jobs:
   build:
     docker:
-      - image: iynere/redis:2.8.4 # circleci/ruby:2.2.7-node-browsers
+      - image: ubuntu:16.04
     
     steps:
       - checkout
+      
+      - persist_to_workspace:
+          root: /home/circleci
+          paths:
+            - project
+            
+  other:
+    docker:
+      - image: ubuntu:16.04
+      
+    steps:
+      - attach_workspace:
+          at: /root
+            
+workflows:
+  version: 2
+  build&other:
+    jobs:
+      - build
+      - other:
+          requires:
+            - build
