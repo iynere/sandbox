@@ -5,7 +5,7 @@ jobs:
       - image: ubuntu:16.04
     
     # mercurial xvfb \
-    # locales sudo openssh-client ca-certificates tar gzip parallel \
+    # locales sudo ca-certificates tar gzip parallel \
     # net-tools netcat unzip zip bzip2
     steps:
       - run:
@@ -17,7 +17,7 @@ jobs:
       - checkout
       
       - persist_to_workspace:
-          root: /root/project
+          root: /root
           paths:
             - project
             
