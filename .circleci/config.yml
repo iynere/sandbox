@@ -1,46 +1,10 @@
 version: 2
 jobs:
   build:
-    docker:
-      - image: ubuntu:16.04
+    machine: true
     
-    # mercurial xvfb \
-    # locales sudo ca-certificates tar gzip parallel \
-    # net-tools netcat unzip zip bzip2
     steps:
-      - run:
-          name: deps
-          command: |
-            apt-get update && apt-get install -y \
-            git openssh-client
       
       - checkout
       
-      - persist_to_workspace:
-          root: /root
-          paths:
-            - project
-            
-  other:
-    docker:
-      - image: ubuntu:16.04
-    
-    # zip bzip2 tar unzip gzip locales sudo
-    steps:
-      - run:
-          name: deps
-          command: |
-            apt-get update && apt-get install -y \
-            ca-certificates
-      
-      - attach_workspace:
-          at: /root
-            
-workflows:
-  version: 2
-  build&other:
-    jobs:
-      - build
-      - other:
-          requires:
-            - build
+      - run: cat $BASH_ENV
