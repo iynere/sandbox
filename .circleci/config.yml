@@ -7,4 +7,8 @@ jobs:
       
       - checkout
       
-      - run: cat $BASH_ENV
+      - run: $BASH_ENV
+      - run: $BASH_ENV
+      
+      # /tmp/.bash_env-59ced534c9e77c0001faeac5-0-build
+      # /tmp/.bash_env-59ced4c0c9e77c0001dc3724-0-build
