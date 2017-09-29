@@ -9,7 +9,9 @@ jobs:
       
       - run: $BASH_ENV
       
-      - run: $BASH_ENV
+      - run:
+          name: again
+          command: $BASH_ENV
           when: always
       
       # /tmp/.bash_env-59ced534c9e77c0001faeac5-0-build
