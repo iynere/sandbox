@@ -36,7 +36,7 @@ jobs:
     steps:
       - checkout
       
-      - run: ./generate.sh > Dockerfile
+      - run: sudo ./generate.sh > Dockerfile
       
       - run: docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
       
@@ -56,8 +56,7 @@ workflows:
   version: 2
   dockerfile_wizard:
     jobs:
-      - build_image:
-          context: org-global
+      - build_image
           
       - test_image:
           requires:
