@@ -1,17 +1,6 @@
-# workflows:
-#   version: 2
-#   dockerfile-wizard:
-#     jobs:
-#       - build-image:
-#           context: org-global
-          
-#       - test-image:
-#           requires:
-#             build-image
-
 version: 2
 jobs:
-  build:
+  build_image:
     machine: true
     environment:
       ORG_NAME: iynere
@@ -55,10 +44,21 @@ jobs:
       
       - run: docker push
       
-  # test-image:
-  #   docker:
-  #     - image: iynere/dockerfile-wizard-test:0.1
+  test_image:
+    docker:
+      - image: iynere/dockerfile-wizard-test:0.1
       
-  #   steps:
+    steps:
       
-  #     - checkout
+      - checkout
+      
+workflows:
+  version: 2
+  dockerfile-wizard:
+    jobs:
+      - build_image:
+          context: org-global
+          
+      - test_image:
+          requires:
+            build_image
