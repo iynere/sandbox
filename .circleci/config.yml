@@ -1,6 +1,6 @@
 version: 2
 jobs:
-  build_image:
+  build:
     machine: true
     shell: bash --login -eo pipefail
         
