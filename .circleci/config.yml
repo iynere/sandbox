@@ -61,4 +61,4 @@ workflows:
           
       - test_image:
           requires:
-            build_image
+            - build_image
