@@ -14,12 +14,12 @@ jobs:
       - run: |
           nvm i 6.11.3
           nvm alias default 6.11.3
-          
+      
+      - run: echo 'export PATH=/opt/circleci/.rvm/gems/ruby-2.3.1/bin:$PATH:' >> $BASH_ENV
+      
       - run: |
-          sudo su
-          rvm get stable --auto-dotfiles
           rvm install 2.3.4
-          rvm alias create default 2.3.4
+          echo 'export PATH=/opt/circleci/.rvm/gems/ruby-2.3.4/bin:/opt/circleci/.rvm/gems/ruby-2.3.4@global/bin:/opt/circleci/.rvm/rubies/ruby-2.3.4/bin:$PATH:' >> $BASH_ENV
           
       - run: |
           node --version
