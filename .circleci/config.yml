@@ -15,9 +15,11 @@ jobs:
       - run: |
           nvm i 6.11.3
           nvm alias default 6.11.3
-          rvm --default use 2.3.4
+          
+      - run: |
+          rvm install 2.3.4
+          rvm alias create default 2.3.4
           
       - run: |
           node --version
-          npm --version
           ruby --version
