@@ -8,8 +8,8 @@ jobs:
       - checkout
       
       - run: |
-          sudo apt-get update
-          sudo apt-get install -y httping jq python-dev qt5-default libqt5webkit5-dev
+          sudo apt update
+          sudo apt install -y httping jq python-dev qt5-default libqt5webkit5-dev
       
       - run: |
           nvm i 6.11.3
