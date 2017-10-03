@@ -16,7 +16,7 @@ jobs:
           nvm alias default 6.11.3
           
       - run: |
-          rvm get stable --auto-dotfiles
+          sudo rvm get stable --auto-dotfiles
           rvm install 2.3.4
           rvm alias create default 2.3.4
           
