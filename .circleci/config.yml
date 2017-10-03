@@ -8,6 +8,10 @@ jobs:
       - checkout
       
       - run: |
+          sudo apt-get update
+          sudo apt-get install -y httping jq python-dev qt5-default libqt5webkit5-dev
+      
+      - run: |
           nvm i 6.11.3
           nvm alias default 6.11.3
           rvm --default use 2.3.4
