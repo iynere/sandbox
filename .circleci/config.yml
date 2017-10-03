@@ -9,13 +9,14 @@ jobs:
       
       - run: |
           echo | sudo tee /etc/apt/sources.list.d/mysql.list
-          sed -i'bak' '17,18s/^/#/g' /etc/apt/sources.list
+          sudo sed -i'bak' '17,18s/^/#/g' /etc/apt/sources.list
       
       - run: |
           nvm i 6.11.3
           nvm alias default 6.11.3
           
       - run: |
+          rvm get stable --auto-dotfiles
           rvm install 2.3.4
           rvm alias create default 2.3.4
           
