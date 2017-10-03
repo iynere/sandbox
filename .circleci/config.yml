@@ -8,6 +8,7 @@ jobs:
       - checkout
       
       - run: |
+          nvm i 6.11.3
           nvm alias default 6.11.3
           rvm --default use 2.3.4
           
