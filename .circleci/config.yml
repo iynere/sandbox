@@ -6,3 +6,12 @@ jobs:
         
     steps:
       - checkout
+      
+      - run: |
+          nvm alias default 6.11.3
+          rvm --default use 2.3.4
+          
+      - run: |
+          node --version
+          npm --version
+          ruby --version
