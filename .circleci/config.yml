@@ -1,26 +1,89 @@
+workflows:
+  version: 2
+  test_machine_images:
+    jobs:
+      - default
+      - latest
+      - edge
+      - 03-01
+      - 07-01
+      - 08-01
+      - 09-01
+
 version: 2
 jobs:
-  build:
+  
+  default:
     machine: true
+    
+  steps:
+    - run: |
+          docker version
+          docker-compose version
+      - checkout
+    
+  latest:
+    machine:
+      image: circleci/classic:latest
     shell: bash --login -eo pipefail
         
     steps:
+      - run: |
+          docker version
+          docker-compose version
       - checkout
       
+  edge:
+    machine:
+      image: circleci/classic:edge
+    shell: bash --login -eo pipefail
+        
+    steps:
       - run: |
-          echo | sudo tee /etc/apt/sources.list.d/mysql.list
-          sudo sed -i'bak' '17,18s/^/#/g' /etc/apt/sources.list
+          docker version
+          docker-compose version
+      - checkout
       
+  03-01:
+    machine:
+      image: circleci/classic:201703-01
+    shell: bash --login -eo pipefail
+        
+    steps:
       - run: |
-          nvm i 6.11.3
-          nvm alias default 6.11.3
+          docker version
+          docker-compose version
+      - checkout
       
-      - run: echo 'export PATH=/opt/circleci/.rvm/gems/ruby-2.3.1/bin:$PATH:' >> $BASH_ENV
+  07-01:
+    machine:
+      image: circleci/classic:201707-01
+    shell: bash --login -eo pipefail
+        
+    steps:
+      - run: |
+          docker version
+          docker-compose version
+      - checkout
       
+  08-01:
+    machine:
+      image: circleci/classic:201708-01
+    shell: bash --login -eo pipefail
+        
+    steps:
       - run: |
-          rvm install 2.3.4
-          echo 'export PATH=/opt/circleci/.rvm/gems/ruby-2.3.4/bin:/opt/circleci/.rvm/gems/ruby-2.3.4@global/bin:/opt/circleci/.rvm/rubies/ruby-2.3.4/bin:$PATH:' >> $BASH_ENV
-          
+          docker version
+          docker-compose version
+      - checkout
+      
+  09-01:
+    machine:
+      image: circleci/classic:201709-01
+    shell: bash --login -eo pipefail
+        
+    steps:
       - run: |
-          node --version
-          ruby --version
+          docker version
+          docker-compose version
+      - checkout
