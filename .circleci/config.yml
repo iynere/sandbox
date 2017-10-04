@@ -1,7 +1,7 @@
 version: 2
 jobs:
   
-  default:
+  build:
     docker:
       - image: circleci/postgres:latest
     steps:
