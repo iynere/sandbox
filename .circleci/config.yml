@@ -1,76 +1,8 @@
-workflows:
-  version: 2
-  test_machine_images:
-    jobs:
-      - default
-      - latest
-      - edge
-      - 03-01
-      - 07-01
-      - 08-01
-      - 09-01
-
 version: 2
 jobs:
   
   default:
-    machine: true
+    docker:
+      - image: circleci/postgres:latest
     steps:
-      - run: |
-          docker version
-          docker-compose version
-      - checkout
-    
-  latest:
-    machine:
-      image: circleci/classic:latest
-    steps:
-      - run: |
-          docker version
-          docker-compose version
-      - checkout
-      
-  edge:
-    machine:
-      image: circleci/classic:edge   
-    steps:
-      - run: |
-          docker version
-          docker-compose version
-      - checkout
-      
-  03-01:
-    machine:
-      image: circleci/classic:201703-01 
-    steps:
-      - run: |
-          docker version
-          docker-compose version
-      - checkout
-      
-  07-01:
-    machine:
-      image: circleci/classic:201707-01
-    steps:
-      - run: |
-          docker version
-          docker-compose version
-      - checkout
-      
-  08-01:
-    machine:
-      image: circleci/classic:201708-01 
-    steps:
-      - run: |
-          docker version
-          docker-compose version
-      - checkout
-      
-  09-01:
-    machine:
-      image: circleci/classic:201709-01
-    steps:
-      - run: |
-          docker version
-          docker-compose version
       - checkout
