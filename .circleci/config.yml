@@ -16,27 +16,25 @@ jobs:
   default:
     machine: true
     
-  steps:
-    - run: |
-          docker version
-          docker-compose version
-      - checkout
+    steps:
+      - run: |
+            docker version
+            docker-compose version
+        - checkout
     
   latest:
     machine:
       image: circleci/classic:latest
-    shell: bash --login -eo pipefail
         
-    steps:
-      - run: |
-          docker version
-          docker-compose version
-      - checkout
+      steps:
+        - run: |
+            docker version
+            docker-compose version
+        - checkout
       
   edge:
     machine:
       image: circleci/classic:edge
-    shell: bash --login -eo pipefail
         
     steps:
       - run: |
@@ -47,7 +45,6 @@ jobs:
   03-01:
     machine:
       image: circleci/classic:201703-01
-    shell: bash --login -eo pipefail
         
     steps:
       - run: |
@@ -58,7 +55,6 @@ jobs:
   07-01:
     machine:
       image: circleci/classic:201707-01
-    shell: bash --login -eo pipefail
         
     steps:
       - run: |
@@ -69,7 +65,6 @@ jobs:
   08-01:
     machine:
       image: circleci/classic:201708-01
-    shell: bash --login -eo pipefail
         
     steps:
       - run: |
@@ -80,7 +75,6 @@ jobs:
   09-01:
     machine:
       image: circleci/classic:201709-01
-    shell: bash --login -eo pipefail
         
     steps:
       - run: |
