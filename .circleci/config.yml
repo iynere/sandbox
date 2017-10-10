@@ -6,3 +6,4 @@ jobs:
       - image: circleci/postgres:latest
     steps:
       - checkout
+      
