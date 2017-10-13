@@ -12,6 +12,15 @@ jobs:
       - run:
           name: test1
           command: |
+            if [[ "${CIRCLE_BRANCH}" =~ master ]]; then
+              echo "does this work?"
+            else
+              echo "nope"
+            fi
+      
+      - run:
+          name: test1
+          command: |
             if [[ "${CIRCLE_BRANCH}" =~ $BRANCH_REGEX ]]; then
               echo "does this work?"
             else
