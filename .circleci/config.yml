@@ -14,6 +14,8 @@ jobs:
           command: |
             if [[ "${CIRCLE_BRANCH}" =~ $BRANCH_REGEX ]]; then
               echo "does this work?"
+            else
+              echo "nope"
             fi
           environment:
             BRANCH_REGEX: '/mast*/'
@@ -23,5 +25,7 @@ jobs:
           command: |
             if [[ "${CIRCLE_BRANCH}" =~ '/mast*/' ]]; then
               echo "does this work?"
+            else
+              echo "nope"
             fi
       
