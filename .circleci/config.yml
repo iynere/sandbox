@@ -3,6 +3,6 @@ jobs:
   
   build:
     docker:
-      - image: circleci/golang
+      - image: circleci/android
     steps:
       - checkout
