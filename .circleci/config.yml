@@ -27,12 +27,12 @@ jobs:
               echo "nope"
             fi
           environment:
-            BRANCH_REGEX: '/mast*/'
+            BRANCH_REGEX: '[/mast*/]'
             
       - run:
           name: test2
           command: |
-            if [[ "${CIRCLE_BRANCH}" =~ '/mast*/' ]]; then
+            if [[ "${CIRCLE_BRANCH}" =~ [/mast*/] ]]; then
               echo "does this work?"
             else
               echo "nope"
