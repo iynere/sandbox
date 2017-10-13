@@ -3,6 +3,6 @@ jobs:
   
   build:
     docker:
-      - image: circleci/node:6.11.1
+      - image: redis:3.0.7-alpine
     steps:
       - checkout
