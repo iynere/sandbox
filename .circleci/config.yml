@@ -7,6 +7,8 @@ jobs:
       - checkout
       
       - run: docker info >/dev/null 2>&1 || service docker start
-      - run: redis-server
+      - run:
+          name: redis-server
+          command: redis-server
           background: true
       - run: service mongodb status || service mongodb start
