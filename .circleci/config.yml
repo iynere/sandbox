@@ -5,3 +5,8 @@ jobs:
     machine: true
     steps:
       - checkout
+      
+      - run: |
+          docker info >/dev/null 2>&1 || service docker start
+          redis-cli ping >/dev/null 2>&1 || service redis-server start
+          service mongodb status || service mongodb start
