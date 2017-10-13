@@ -3,38 +3,6 @@ jobs:
   
   build:
     docker:
-      - image: circleci/postgres:latest
+      - image: circleci/golang
     steps:
       - checkout
-      
-      - run: echo $CIRCLE_BRANCH
-      
-      - run:
-          name: test1
-          command: |
-            if [[ "${CIRCLE_BRANCH}" =~ master ]]; then
-              echo "does this work?"
-            else
-              echo "nope"
-            fi
-      
-      - run:
-          name: test1
-          command: |
-            if [[ "${CIRCLE_BRANCH}" =~ $BRANCH_REGEX ]]; then
-              echo "does this work?"
-            else
-              echo "nope"
-            fi
-          environment:
-            BRANCH_REGEX: '[/mast*/]'
-            
-      - run:
-          name: test2
-          command: |
-            if [[ "${CIRCLE_BRANCH}" =~ [/mast*/] ]]; then
-              echo "does this work?"
-            else
-              echo "nope"
-            fi
-      
