@@ -7,5 +7,6 @@ jobs:
       - checkout
       
       - run: docker info >/dev/null 2>&1 || service docker start
-      - run: redis-cli ping >/dev/null 2>&1 || service redis-server start
+      - run: redis-server
+          background: true
       - run: service mongodb status || service mongodb start
