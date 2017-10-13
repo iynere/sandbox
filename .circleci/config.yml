@@ -3,6 +3,6 @@ jobs:
   
   build:
     docker:
-      - image: circleci/android
+      - image: circleci/android:api-26-alpha
     steps:
       - checkout
