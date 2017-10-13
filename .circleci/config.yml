@@ -7,3 +7,19 @@ jobs:
     steps:
       - checkout
       
+      - run:
+          name: test1
+          command: |
+            if [[ "${CIRCLE_BRANCH}" =~ $BRANCH_REGEX ]]; then
+              echo "does this work?"
+            fi
+          environment:
+            BRANCH_REGEX: /mast*/
+            
+      - run:
+          name: test2
+          command: |
+            if [[ "${CIRCLE_BRANCH}" =~ /mast*/ ]]; then
+              echo "does this work?"
+            fi
+      
