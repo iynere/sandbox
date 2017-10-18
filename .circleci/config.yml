@@ -16,6 +16,8 @@ jobs:
   default:
     machine: true
     steps:
+      - run: sudo apt-get update
+      
       - run: |
           docker version
           docker-compose version
@@ -25,6 +27,8 @@ jobs:
     machine:
       image: circleci/classic:latest
     steps:
+      - run: sudo apt-get update
+      
       - run: |
           docker version
           docker-compose version
@@ -34,6 +38,8 @@ jobs:
     machine:
       image: circleci/classic:edge   
     steps:
+      - run: sudo apt-get update
+      
       - run: |
           docker version
           docker-compose version
@@ -43,6 +49,8 @@ jobs:
     machine:
       image: circleci/classic:201703-01 
     steps:
+      - run: sudo apt-get update
+      
       - run: |
           docker version
           docker-compose version
@@ -52,6 +60,8 @@ jobs:
     machine:
       image: circleci/classic:201707-01
     steps:
+      - run: sudo apt-get update
+      
       - run: |
           docker version
           docker-compose version
@@ -61,6 +71,8 @@ jobs:
     machine:
       image: circleci/classic:201708-01 
     steps:
+      - run: sudo apt-get update
+      
       - run: |
           docker version
           docker-compose version
@@ -70,6 +82,8 @@ jobs:
     machine:
       image: circleci/classic:201709-01
     steps:
+      - run: sudo apt-get update
+      
       - run: |
           docker version
           docker-compose version
