@@ -18,94 +18,102 @@ jobs:
     docker:
       - image: circleci/node:6.11.1
     steps:
-      - run: |
-          docker version
-          docker-compose version
       
       - checkout
       
       - setup_remote_docker
+      
+      - run: |
+          docker version
+          docker-compose version
     
   3-0:
     docker:
       - image: circleci/node:6.11.1
     steps:
-      - run: |
-          docker version
-          docker-compose version
       
       - checkout
       
       - setup_remote_docker
+      
+      - run: |
+          docker version
+          docker-compose version
       
   5-0:
     docker:
       - image: circleci/node:6.11.1
     steps:
-      - run: |
-          docker version
-          docker-compose version
       
       - checkout
       
       - setup_remote_docker
+      
+      - run: |
+          docker version
+          docker-compose version
       
   6-0:
     docker:
       - image: circleci/node:6.11.1
     steps:
-      - run: |
-          docker version
-          docker-compose version
       
       - checkout
       
       - setup_remote_docker
+      
+      - run: |
+          docker version
+          docker-compose version
       
   6-1:
     docker:
       - image: circleci/node:6.11.1
     steps:
-      - run: |
-          docker version
-          docker-compose version
       
       - checkout
       
       - setup_remote_docker
+      
+      - run: |
+          docker version
+          docker-compose version
       
   6-2:
     docker:
       - image: circleci/node:6.11.1
     steps:
-      - run: |
-          docker version
-          docker-compose version
       
       - checkout
       
       - setup_remote_docker
+      
+      - run: |
+          docker version
+          docker-compose version
       
   7-0:
     docker:
       - image: circleci/node:6.11.1
     steps:
-      - run: |
-          docker version
-          docker-compose version
       
       - checkout
       
       - setup_remote_docker
+      
+      - run: |
+          docker version
+          docker-compose version
       
   9-0:
     docker:
       - image: circleci/node:6.11.1
     steps:
-      - run: |
-          docker version
-          docker-compose version
       
       - checkout
       
       - setup_remote_docker
+      
+      - run: |
+          docker version
+          docker-compose version
