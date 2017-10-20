@@ -7,12 +7,12 @@ jobs:
       
       - restore_cache:
           keys:
-            - source-v1-{{ .Branch }}-{{ .Revision }}
+            - source-v2-{{ .Branch }}-{{ .Revision }}
             
       - checkout
       
       - save_cache:
-          key: source-v1-{{ .Branch }}-{{ .Revision }}
+          key: source-v2-{{ .Branch }}-{{ .Revision }}
           paths:
             - ".git"
       
