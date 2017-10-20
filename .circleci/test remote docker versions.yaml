@@ -16,96 +16,103 @@ jobs:
   
   default:
     docker:
-      image: circleci/node:6.11.1
+      - image: circleci/node:6.11.1
     steps:
-      - run: |
-          docker version
-          docker-compose version
       
       - checkout
       
       - setup_remote_docker
+      
+      - run: |
+          docker version
     
   3-0:
     docker:
-      image: circleci/node:6.11.1
+      - image: circleci/node:6.11.1
     steps:
-      - run: |
-          docker version
-          docker-compose version
       
       - checkout
       
-      - setup_remote_docker
+      - setup_remote_docker:
+          version: 17.03.0-ce
+      
+      - run: |
+          docker version
       
   5-0:
     docker:
-      image: circleci/node:6.11.1
+      - image: circleci/node:6.11.1
     steps:
-      - run: |
-          docker version
-          docker-compose version
       
       - checkout
       
-      - setup_remote_docker
+      - setup_remote_docker:
+          version: 17.05.0-ce
+      
+      - run: |
+          docker version
       
   6-0:
     docker:
-      image: circleci/node:6.11.1
+      - image: circleci/node:6.11.1
     steps:
-      - run: |
-          docker version
-          docker-compose version
       
       - checkout
       
-      - setup_remote_docker
+      - setup_remote_docker:
+          version: 17.06.0-ce
+      
+      - run: |
+          docker version
       
   6-1:
     docker:
-      image: circleci/node:6.11.1
+      - image: circleci/node:6.11.1
     steps:
-      - run: |
-          docker version
-          docker-compose version
       
       - checkout
       
-      - setup_remote_docker
+      - setup_remote_docker:
+          version: 17.06.1-ce
+      
+      - run: |
+          docker version
       
   6-2:
     docker:
-      image: circleci/node:6.11.1
+      - image: circleci/node:6.11.1
     steps:
-      - run: |
-          docker version
-          docker-compose version
       
       - checkout
       
-      - setup_remote_docker
+      - setup_remote_docker:
+          version: 17.06.2-ce
+      
+      - run: |
+          docker version
       
   7-0:
     docker:
-      image: circleci/node:6.11.1
+      - image: circleci/node:6.11.1
     steps:
-      - run: |
-          docker version
-          docker-compose version
       
       - checkout
       
-      - setup_remote_docker
+      - setup_remote_docker:
+          version: 17.07.0-ce
+      
+      - run: |
+          docker version
       
   9-0:
     docker:
-      image: circleci/node:6.11.1
+      - image: circleci/node:6.11.1
     steps:
-      - run: |
-          docker version
-          docker-compose version
       
       - checkout
       
-      - setup_remote_docker
+      - setup_remote_docker:
+          version: 17.09.0-ce
+      
+      - run: |
+          docker version
