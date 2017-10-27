@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     machine: true
-    paralellism: 2
+    parallelism: 2
     environment:
       <<: *image_config
         
