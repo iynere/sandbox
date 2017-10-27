@@ -1,3 +1,15 @@
+image_config: &image_config
+  ORG_NAME:
+  CONTAINER_NAME:
+  CONTAINER_VERSION:
+  LINUX_VERSION:
+  RUBY_VERSION:
+  NODE_VERSION:
+  PYTHON_VERSION:
+  JAVA:
+  MYSQL_CLIENT:
+  POSTGRES_CLIENT:
+
 version: 2
 jobs:
   build:
@@ -35,15 +47,3 @@ jobs:
 #       - test_image:
 #           requires:
 #             - build
-
-image_config: &image_config
-  ORG_NAME:
-  CONTAINER_NAME:
-  CONTAINER_VERSION:
-  LINUX_VERSION:
-  RUBY_VERSION:
-  NODE_VERSION:
-  PYTHON_VERSION:
-  JAVA:
-  MYSQL_CLIENT:
-  POSTGRES_CLIENT:
