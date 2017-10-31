@@ -1,49 +1,16 @@
-image_config: &image_config
-  ORG_NAME:
-  CONTAINER_NAME:
-  CONTAINER_VERSION:
-  LINUX_VERSION:
-  RUBY_VERSION:
-  NODE_VERSION:
-  PYTHON_VERSION:
-  JAVA:
-  MYSQL_CLIENT:
-  POSTGRES_CLIENT:
-
 version: 2
 jobs:
   build:
     parallelism: 2
-    machine: true
     environment:
-      <<: *image_config
+      - FOO: "bar"
+    docker:
+      - image: buildpack-deps:trusty
+        environment:
+          BAZ: "qux"
         
     steps:
       - checkout
       
-#       - run: bash generate.sh > Dockerfile
-      
-#       - run: docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
-      
-#       - run: docker build -t $ORG_NAME/$CONTAINER_NAME:$CONTAINER_VERSION .
-      
-#       - run: docker push $ORG_NAME/$CONTAINER_NAME:$CONTAINER_VERSION
-      
-#   test_image:
-#     docker:
-#       - image: $ORG_NAME/$CONTAINER_NAME:$CONTAINER_VERSION
-      
-#     steps:
-      
-#       - checkout
-      
-# workflows:
-#   version: 2
-#   dockerfile_wizard:
-#     jobs:
-#       - build:
-#           context: org-global
-          
-#       - test_image:
-#           requires:
-#             - build
+      - run: echo $FOO
+      - run: echo $BAZ
