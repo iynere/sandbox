@@ -7,7 +7,7 @@ jobs:
     docker:
       - image: circleci/ruby:2.3.5-node-browsers
         environment:
-          BAZ: "qux"
+          BAZ: "qux" 
         
     steps:
       - checkout
