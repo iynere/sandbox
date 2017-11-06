@@ -2,9 +2,14 @@ version: 2
 jobs:
   build:
     docker:
-      - image: iynere/jessie-phantom:3
+      - image: iynere/jessie-phantom:4
         
     steps:
       - checkout
+      
+      - run: # phantomjs
+          name: verify phantomjs
+          command: Xvfb :99 -screen 0 1280x1024x24
+          background: true
           
       - run: phantomjs --version
