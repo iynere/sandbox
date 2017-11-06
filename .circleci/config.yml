@@ -9,6 +9,8 @@ jobs:
     steps:
       - checkout
       
+      - run: apt-get -y install xvfb
+      
       - run:
           name: start xvfb
           command: Xvfb :99 -screen 0 1280x1024x24
