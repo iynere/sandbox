@@ -1,18 +1,19 @@
 version: 2
 jobs:
   build:
-    parallelism: 2
-    environment:
-      - FOO: "bar"
     docker:
-      - image: circleci/ruby:2.3.5-node-browsers
-        environment:
-          BAZ: "qux" 
+      - image: iynere/jessie-phantom:1
+    environment:
+      DISPLAY: :99
         
     steps:
       - checkout
       
-      - run: echo $FOO
-      - run: echo $BAZ
+      - run: phantomjs --version
       
-      - run: node --version
+      - run:
+          name: start xvfb
+          command: Xvfb :99 -screen 0 1280x1024x24
+          background: true
+          
+      - run: phantomjs --version
