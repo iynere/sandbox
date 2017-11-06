@@ -2,14 +2,10 @@ version: 2
 jobs:
   build:
     docker:
-      - image: iynere/jessie-phantom:1
-    environment:
-      DISPLAY: :99
+      - image: iynere/jessie-phantom:2
         
     steps:
       - checkout
-      
-      - run: apt-get -y install xvfb
       
       - run:
           name: start xvfb
