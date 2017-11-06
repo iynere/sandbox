@@ -1,6 +1,8 @@
 version: 2
 jobs:
   build:
+    environment:
+      DISPLAY: :99
     docker:
       - image: iynere/jessie-phantom:4
         
