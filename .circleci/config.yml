@@ -1,17 +1,24 @@
 version: 2
 jobs:
   build:
-    environment:
-      DISPLAY: :99
-    docker:
-      - image: iynere/jessie-phantom:4
-        
+    machine: true
     steps:
       - checkout
-      
-      - run: # phantomjs
-          name: verify phantomjs
-          command: Xvfb :99 -screen 0 1280x1024x24
-          background: true
-          
-      - run: phantomjs --version
+      - run: echo "hello world"
+
+workflows:
+  version: 2
+  build_and_test:
+    jobs:
+      - build
+  nightly:
+    
+    triggers:
+      - schedule:
+          cron: "1 * * * *"
+          filters:
+            branches:
+              only:
+                - scheduled
+    jobs:
+      - build
