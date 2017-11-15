@@ -3,13 +3,6 @@ jobs:
   build:
     docker:
       - image: circleci/android:api-27-alpha
-        environment:
-          FOO: http://127.0.0.1:9000
-      
-      - image: iynere/final:stretch
-        auth:
-          username: $DOCKER_USER
-          password: $DOCKER_PASS
       
     steps:
       
