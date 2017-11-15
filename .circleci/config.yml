@@ -15,3 +15,8 @@ jobs:
       
       - checkout
       
+      - run: echo "foo" > test
+      
+      - store_artifacts:
+          path: test
+          
