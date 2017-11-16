@@ -12,9 +12,7 @@ jobs:
       
       - store_artifacts:
           path: test
-      
-      - run: jq
           
       - run: |
-          curl -u $CIRCLE_TOKEN: --request GET https://circleci.com/api/v1.1/project/github/$CIRCLE_PROJECT_USERNAME/$CIRCLE_PROJECT_REPONAME/$CIRCLE_BUILD_NUM/artifacts
+          curl -u $CIRCLE_TOKEN: --request GET https://circleci.com/api/v1.1/project/github/$CIRCLE_PROJECT_USERNAME/$CIRCLE_PROJECT_REPONAME/$CIRCLE_BUILD_NUM/artifacts | jq '.[0].url?'
           
