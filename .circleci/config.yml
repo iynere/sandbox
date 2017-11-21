@@ -1,20 +1,86 @@
+workflows:
+  version: 2
+  test_maria:
+    jobs:
+      - 5-5-58
+      - 5-5-58-ram
+      - 10-0-33
+      - 10-0-33-ram
+      - 10-1-29
+      - 10-1-29-ram
+      - 10-2-10
+      - 10-2-10-ram
+      - 10-3-2
+      - 10-3-2-ram
+
 version: 2
 jobs:
-  build:
+  5-5-58:
     docker:
-      - image: circleci/android:api-23-alpha
-      
+      - image: iynere/maria-test:5.5.58
     steps:
-      
       - checkout
+      - run: mysql --version
       
-      - run: echo "foo" > test
+  5-5-58-ram:
+    docker:
+      - image: iynere/maria-test:5.5.58-ram
+    steps:
+      - checkout
+      - run: mysql --version
+       
+  10-0-33:
+    docker:
+      - image: iynere/maria-test:10-0-33
+    steps:
+      - checkout
+      - run: mysql --version
+    
+  10-0-33-ram:
+    docker:
+      - image: iynere/maria-test:10-0-33-ram
+    steps:
+      - checkout
+      - run: mysql --version
       
-      - store_artifacts:
-          path: test
-          
-      - run: echo $CIRCLE_TOKEN
-          
-      - run: |
-          curl -u $CIRCLE_TOKEN: --request GET https://circleci.com/api/v1.1/project/github/$CIRCLE_PROJECT_USERNAME/$CIRCLE_PROJECT_REPONAME/$CIRCLE_BUILD_NUM/artifacts | jq '.[0].url?'
-          
+  10-1-29:
+    docker:
+      - image: iynere/maria-test:10-1-29
+    steps:
+      - checkout
+      - run: mysql --version
+    
+  10-1-29-ram:
+    docker:
+      - image: iynere/maria-test:10-1-29-ram
+    steps:
+      - checkout
+      - run: mysql --version
+      
+  10-2-10:
+    docker:
+      - image: iynere/maria-test:10-2-10
+    steps:
+      - checkout
+      - run: mysql --version
+    
+  10-2-10-ram:
+    docker:
+      - image: iynere/maria-test:10-2-10-ram
+    steps:
+      - checkout
+      - run: mysql --version
+      
+  10-3-2:
+    docker:
+      - image: iynere/maria-test:10-3-2
+    steps:
+      - checkout
+      - run: mysql --version
+    
+  10-3-2-ram:
+    docker:
+      - image: iynere/maria-test:10-3-2-ram
+    steps:
+      - checkout
+      - run: mysql --version

@@ -1,76 +1,60 @@
+# 5.5.58-ram98 MB10 minutes ago
+
+# 10.3.2-ram136 MB11 minutes ago
+
+# 10.2.10-ram135 MB11 minutes ago
+
+# 10.1.29-ram135 MB11 minutes ago
+
+# 10.0.33-ram120 MB12 minutes ago
+
+# 5.5.5898 MB15 minutes ago
+
+# 10.3.2135 MB15 minutes ago
+
+# 10.2.10135 MB15 minutes ago
+
+# 10.1.29135 MB16 minutes ago
+
+# 10.0.33
+
 workflows:
   version: 2
-  test_machine_images:
+  test_maria:
     jobs:
-      - default
-      - latest
-      - edge
-      - 03-01
-      - 07-01
-      - 08-01
-      - 09-01
+      - 5-5-58
+      - 5-5-58-ram
+      - 10-0-33
+      - 10-0-33-ram
+      - 10-1-29
+      - 10-1-29-ram
+      - 10-2-10
+      - 10-2-10-ram
+      - 10-3-2
+      - 10-3-2-ram
 
 version: 2
 jobs:
-  
-  default:
-    machine: true
+  5-5-58:
+    docker:
+      - image: iynere/maria-test:5.5.58
     steps:
-      - run: |
-          docker version
-          docker-compose version
+      - checkout
+      
+  5-5-58-ram:
+    docker:
+      - image: iynere/maria-test:5.5.58-ram
+    steps:
+      - checkout
+       
+  10-0-33:
+    docker:
+      - image: iynere/maria-test:10-0-33
+    steps:
       - checkout
     
-  latest:
-    machine:
-      image: circleci/classic:latest
+  10-0-33-ram:
+    docker:
+      - image: iynere/maria-test:10-0-33-ram
     steps:
-      - run: |
-          docker version
-          docker-compose version
-      - checkout
-      
-  edge:
-    machine:
-      image: circleci/classic:edge   
-    steps:
-      - run: |
-          docker version
-          docker-compose version
-      - checkout
-      
-  03-01:
-    machine:
-      image: circleci/classic:201703-01 
-    steps:
-      - run: |
-          docker version
-          docker-compose version
-      - checkout
-      
-  07-01:
-    machine:
-      image: circleci/classic:201707-01
-    steps:
-      - run: |
-          docker version
-          docker-compose version
-      - checkout
-      
-  08-01:
-    machine:
-      image: circleci/classic:201708-01 
-    steps:
-      - run: |
-          docker version
-          docker-compose version
-      - checkout
-      
-  09-01:
-    machine:
-      image: circleci/classic:201709-01
-    steps:
-      - run: |
-          docker version
-          docker-compose version
       - checkout
