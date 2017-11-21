@@ -31,56 +31,56 @@ jobs:
        
   10-0-33:
     docker:
-      - image: iynere/maria-test:10-0-33
+      - image: iynere/maria-test:10.0.33
     steps:
       - checkout
       - run: mysql --version
     
   10-0-33-ram:
     docker:
-      - image: iynere/maria-test:10-0-33-ram
+      - image: iynere/maria-test:10.0.33-ram
     steps:
       - checkout
       - run: mysql --version
       
   10-1-29:
     docker:
-      - image: iynere/maria-test:10-1-29
+      - image: iynere/maria-test:10.1.29
     steps:
       - checkout
       - run: mysql --version
     
   10-1-29-ram:
     docker:
-      - image: iynere/maria-test:10-1-29-ram
+      - image: iynere/maria-test:10.1.29-ram
     steps:
       - checkout
       - run: mysql --version
       
   10-2-10:
     docker:
-      - image: iynere/maria-test:10-2-10
+      - image: iynere/maria-test:10.2.10
     steps:
       - checkout
       - run: mysql --version
     
   10-2-10-ram:
     docker:
-      - image: iynere/maria-test:10-2-10-ram
+      - image: iynere/maria-test:10.2.10-ram
     steps:
       - checkout
       - run: mysql --version
       
   10-3-2:
     docker:
-      - image: iynere/maria-test:10-3-2
+      - image: iynere/maria-test:10.3.2
     steps:
       - checkout
       - run: mysql --version
     
   10-3-2-ram:
     docker:
-      - image: iynere/maria-test:10-3-2-ram
+      - image: iynere/maria-test:10.3.2-ram
     steps:
       - checkout
       - run: mysql --version
