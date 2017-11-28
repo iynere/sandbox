@@ -1,86 +1,141 @@
 workflows:
   version: 2
-  test_maria:
+  test_remote_docker:
     jobs:
-      - 5-5-58
-      - 5-5-58-ram
-      - 10-0-33
-      - 10-0-33-ram
-      - 10-1-29
-      - 10-1-29-ram
-      - 10-2-10
-      - 10-2-10-ram
-      - 10-3-2
-      - 10-3-2-ram
+      - default
+      - 3-0
+      - 5-0
+      - 6-0
+      - 6-1
+      - 6-2
+      - 7-0
+      - 9-0
+      - 10-0
 
 version: 2
 jobs:
-  5-5-58:
+  
+  default:
     docker:
-      - image: iynere/maria-test:5.5.58
+      - image: circleci/node:6.11.1
     steps:
-      - checkout
-      - run: mysql --version
       
-  5-5-58-ram:
-    docker:
-      - image: iynere/maria-test:5.5.58-ram
-    steps:
       - checkout
-      - run: mysql --version
-       
-  10-0-33:
-    docker:
-      - image: iynere/maria-test:10.0.33
-    steps:
-      - checkout
-      - run: mysql --version
-    
-  10-0-33-ram:
-    docker:
-      - image: iynere/maria-test:10.0.33-ram
-    steps:
-      - checkout
-      - run: mysql --version
       
-  10-1-29:
-    docker:
-      - image: iynere/maria-test:10.1.29
-    steps:
-      - checkout
-      - run: mysql --version
-    
-  10-1-29-ram:
-    docker:
-      - image: iynere/maria-test:10.1.29-ram
-    steps:
-      - checkout
-      - run: mysql --version
+      - setup_remote_docker
       
-  10-2-10:
-    docker:
-      - image: iynere/maria-test:10.2.10
-    steps:
-      - checkout
-      - run: mysql --version
+      - run: |
+          docker version
+          docker-compose version
     
-  10-2-10-ram:
+  3-0:
     docker:
-      - image: iynere/maria-test:10.2.10-ram
+      - image: circleci/node:6.11.1
     steps:
-      - checkout
-      - run: mysql --version
       
-  10-3-2:
-    docker:
-      - image: iynere/maria-test:10.3.2
-    steps:
       - checkout
-      - run: mysql --version
-    
-  10-3-2-ram:
+      
+      - setup_remote_docker:
+          version: 17.03.0-ce
+      
+      - run: |
+          docker version
+          docker-compose version
+      
+  5-0:
     docker:
-      - image: iynere/maria-test:10.3.2-ram
+      - image: circleci/node:6.11.1
     steps:
+      
       - checkout
-      - run: mysql --version
+      
+      - setup_remote_docker:
+          version: 17.05.0-ce
+      
+      - run: |
+          docker version
+          docker-compose version
+      
+  6-0:
+    docker:
+      - image: circleci/node:6.11.1
+    steps:
+      
+      - checkout
+      
+      - setup_remote_docker:
+          version: 17.06.0-ce
+      
+      - run: |
+          docker version
+          docker-compose version
+      
+  6-1:
+    docker:
+      - image: circleci/node:6.11.1
+    steps:
+      
+      - checkout
+      
+      - setup_remote_docker:
+          version: 17.06.1-ce
+      
+      - run: |
+          docker version
+          docker-compose version
+      
+  6-2:
+    docker:
+      - image: circleci/node:6.11.1
+    steps:
+      
+      - checkout
+      
+      - setup_remote_docker:
+          version: 17.06.2-ce
+      
+      - run: |
+          docker version
+          docker-compose version
+      
+  7-0:
+    docker:
+      - image: circleci/node:6.11.1
+    steps:
+      
+      - checkout
+      
+      - setup_remote_docker:
+          version: 17.07.0-ce
+      
+      - run: |
+          docker version
+          docker-compose version
+      
+  9-0:
+    docker:
+      - image: circleci/node:6.11.1
+    steps:
+      
+      - checkout
+      
+      - setup_remote_docker:
+          version: 17.09.0-ce
+      
+      - run: |
+          docker version
+          docker-compose version
+          
+  10-0:
+    docker:
+      - image: circleci/node:6.11.1
+    steps:
+      
+      - checkout
+      
+      - setup_remote_docker:
+          version: 17.10.0-ce
+      
+      - run: |
+          docker version
+          docker-compose version
