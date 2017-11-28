@@ -1,86 +1,123 @@
 workflows:
   version: 2
-  test_maria:
+  test_machine_images:
     jobs:
-      - 5-5-58
-      - 5-5-58-ram
-      - 10-0-33
-      - 10-0-33-ram
-      - 10-1-29
-      - 10-1-29-ram
-      - 10-2-10
-      - 10-2-10-ram
-      - 10-3-2
-      - 10-3-2-ram
+      - default
+      - latest
+      - edge
+      - 03-01
+      - 07-01
+      - 08-01
+      - 09-01
+      - 10-01
+      - 10-02
 
 version: 2
 jobs:
-  5-5-58:
-    docker:
-      - image: iynere/maria-test:5.5.58
+  
+  default:
+    machine: true
     steps:
-      - checkout
-      - run: mysql --version
+      - run: sudo apt-get update
       
-  5-5-58-ram:
-    docker:
-      - image: iynere/maria-test:5.5.58-ram
-    steps:
-      - checkout
-      - run: mysql --version
-       
-  10-0-33:
-    docker:
-      - image: iynere/maria-test:10.0.33
-    steps:
-      - checkout
-      - run: mysql --version
-    
-  10-0-33-ram:
-    docker:
-      - image: iynere/maria-test:10.0.33-ram
-    steps:
-      - checkout
-      - run: mysql --version
+      - run: |
+          docker version
+          docker-compose version
       
-  10-1-29:
-    docker:
-      - image: iynere/maria-test:10.1.29
-    steps:
       - checkout
-      - run: mysql --version
     
-  10-1-29-ram:
-    docker:
-      - image: iynere/maria-test:10.1.29-ram
+  latest:
+    machine:
+      image: circleci/classic:latest
     steps:
-      - checkout
-      - run: mysql --version
+      - run: sudo apt-get update
       
-  10-2-10:
-    docker:
-      - image: iynere/maria-test:10.2.10
-    steps:
-      - checkout
-      - run: mysql --version
-    
-  10-2-10-ram:
-    docker:
-      - image: iynere/maria-test:10.2.10-ram
-    steps:
-      - checkout
-      - run: mysql --version
+      - run: |
+          docker version
+          docker-compose version
       
-  10-3-2:
-    docker:
-      - image: iynere/maria-test:10.3.2
-    steps:
       - checkout
-      - run: mysql --version
-    
-  10-3-2-ram:
-    docker:
-      - image: iynere/maria-test:10.3.2-ram
+      
+  edge:
+    machine:
+      image: circleci/classic:edge   
     steps:
+      - run: sudo apt-get update
+      
+      - run: |
+          docker version
+          docker-compose version
+      
       - checkout
-      - run: mysql --version
+      
+  03-01:
+    machine:
+      image: circleci/classic:201703-01 
+    steps:
+      - run: sudo apt-get update
+      
+      - run: |
+          docker version
+          docker-compose version
+      
+      - checkout
+      
+  07-01:
+    machine:
+      image: circleci/classic:201707-01
+    steps:
+      - run: sudo apt-get update
+      
+      - run: |
+          docker version
+          docker-compose version
+      
+      - checkout
+      
+  08-01:
+    machine:
+      image: circleci/classic:201708-01 
+    steps:
+      - run: sudo apt-get update
+      
+      - run: |
+          docker version
+          docker-compose version
+      
+      - checkout
+      
+  09-01:
+    machine:
+      image: circleci/classic:201709-01
+    steps:
+      - run: sudo apt-get update
+      
+      - run: |
+          docker version
+          docker-compose version
+      
+      - checkout
+      
+  10-01:
+    machine:
+      image: circleci/classic:201710-01
+    steps:
+      - run: sudo apt-get update
+      
+      - run: |
+          docker version
+          docker-compose version
+      
+      - checkout
+      
+  10-02:
+    machine:
+      image: circleci/classic:201710-02
+    steps:
+      - run: sudo apt-get update
+      
+      - run: |
+          docker version
+          docker-compose version
+      
+      - checkout
