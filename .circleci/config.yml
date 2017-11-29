@@ -1,21 +1,7 @@
-workflows:
-  version: 2
-  machine_remote:
-    jobs:
-      - machine
-      - remote
-
 version: 2
 jobs:
-  
-  machine:
-    machine: true
-    steps:
-      - checkout
-      
-  remote:
+  build:
     docker:
-      - image: circleci/node:boron
+      - image: circleci/node
     steps:
       - checkout
-      - setup_remote_docker
