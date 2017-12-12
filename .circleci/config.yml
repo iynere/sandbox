@@ -12,5 +12,4 @@ jobs:
           touch test/foo
           touch test/bar
           cp -rf ~/project/test/* circleci-dockerfiles
-          cd circleci-dockerfiles && ls
           cd circleci-dockerfiles && git checkout -b test && git add . && git commit -m 'testing' && git push origin test
