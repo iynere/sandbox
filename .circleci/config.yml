@@ -6,3 +6,5 @@ jobs:
       - image: circleci/node
     steps:
       - checkout
+
+      - run: git clone git@github.com:CircleCI-Public/circleci-dockerfiles.git
