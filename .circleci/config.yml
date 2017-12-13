@@ -17,6 +17,7 @@ jobs:
           touch test/bar
           cp -rf ~/project/test/* circleci-dockerfiles
           cd circleci-dockerfiles
+          git config --global url."ssh://git@github.com".insteadOf "https://github.com" || true
           git checkout -b test
           git add .
           git commit -m 'testing'
