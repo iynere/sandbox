@@ -18,6 +18,8 @@ jobs:
           cp -rf ~/project/test/* circleci-dockerfiles
           cd circleci-dockerfiles
           git config --global url."ssh://git@github.com".insteadOf "https://github.com" || true
+          git config --global user.email "$CIRCLE_USERNAME@users.noreply.github.com"
+          git config --global user.name "$CIRCLE_USERNAME"
           git checkout -b test
           git add .
           git commit -m 'testing'
