@@ -2,34 +2,6 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/node
+      - image: circleci/postgres:9.3
     steps:
       - checkout
-
-      - add_ssh_keys:
-          fingerprints:
-            - "af:0a:93:75:51:75:1f:16:90:d9:97:b1:7a:bb:f0:27"
-
-      - run:
-          name: git config
-          command: |
-            git config --global user.email "$CIRCLE_USERNAME@users.noreply.github.com"
-            git config --global user.name "$CIRCLE_USERNAME"
-
-      - run:
-          name: confirm git stuff
-          command: echo "$(git config -l --global | grep user)"
-
-      - run:
-          name: repo
-          command: |
-            git clone git@github.com:CircleCI-Public/circleci-dockerfiles.git
-            mkdir test
-            touch test/foo
-            touch test/bar
-            cp -rf ~/project/test/* circleci-dockerfiles
-            cd circleci-dockerfiles
-            git checkout -b test2
-            git add .
-            git commit -m 'testing'
-            git push origin test2
