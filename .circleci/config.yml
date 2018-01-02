@@ -14,7 +14,7 @@ jobs:
       - checkout
 
       - store_test_results:
-          path: tests.xml
+          path: tests
 
       - store_artifacts:
-          path: tests.xml
+          path: tests
