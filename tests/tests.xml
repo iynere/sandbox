@@ -1,3 +1,4 @@
+<?xml version='1.0' encoding='UTF-8' ?>
 <testsuites name="make test">
   <testsuite id="1"
              time="0"
@@ -13,19 +14,20 @@
               time="0">
     <failure type="TAPTestFailed"
              message="not ok 2 should fail"><![CDATA[1..2
-  ok 1 linux version
-  not ok 2 should fail
-  # (in test file test.bats, line 8)
-  #   `lsb_release -a | grep "trusty"' failed
-  # No LSB modules are available.
-  ]]></failure>
-  </testcase><system-out>
-  <![CDATA[1..2
-  ok 1 linux version
-  not ok 2 should fail
-  # (in test file test.bats, line 8)
-  #   `lsb_release -a | grep "trusty"' failed
-  # No LSB modules are available.
-  ]]>
-  </system-out><system-err />
-</testsuite>
+    ok 1 linux version
+    not ok 2 should fail
+    # (in test file test.bats, line 8)
+    #   `lsb_release -a | grep "trusty"' failed
+    # No LSB modules are available.
+    ]]></failure>
+    </testcase><system-out>
+    <![CDATA[1..2
+    ok 1 linux version
+    not ok 2 should fail
+    # (in test file test.bats, line 8)
+    #   `lsb_release -a | grep "trusty"' failed
+    # No LSB modules are available.
+    ]]>
+    </system-out><system-err />
+  </testsuite>
+</testsuites>
