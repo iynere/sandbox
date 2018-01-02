@@ -1,4 +1,3 @@
-<?xml version='1.0' encoding='UTF-8' ?>
 <testsuites name="make test">
   <testsuite id="1"
              time="0"
