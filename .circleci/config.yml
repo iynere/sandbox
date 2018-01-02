@@ -14,4 +14,4 @@ jobs:
       - checkout
 
       - store_test_results:
-          path: project/tests.xml
+          path: tests.xml
