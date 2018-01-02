@@ -12,3 +12,6 @@ jobs:
 
     steps:
       - checkout
+
+      - store_artifacts:
+          path: sandbox/tests.xml
