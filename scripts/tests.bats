@@ -18,13 +18,11 @@
   ruby --version | grep "$RUBY_VERSION_NUM"
 }
 @test "python version" {
-  skip "until i can figure out this weird python bug!!"
   if [ -e $PYTHON_VERSION_NUM ] ; then
     skip "python not installed"
   fi
 
-  result="$(python --version)"
-  [ "$result" == "Python $PYTHON_VERSION_NUM" ]
+  python --version | grep "$PYTHON_VERSION_NUM"
 }
 @test "java" {
   if [ $JAVA != "true" ] ; then
