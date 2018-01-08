@@ -32,7 +32,7 @@ jobs:
       - checkout
       - run: python --version
       - run: echo $PYTHON_VERSION_NUMBER
-      - run: python --version 2>&1 | grep $PYTHON_VERSION_NUMBER"
+      - run: python --version 2>&1 | grep $PYTHON_VERSION_NUMBER
       - run:
           name: bats to junit
           command: |
