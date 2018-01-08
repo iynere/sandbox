@@ -44,10 +44,18 @@ jobs:
           name: show regular bats output
           command: bats scripts/tests.bats
 
-      - run: |
-          bats scripts/tests.bats --tap | perl scripts/tap-to-junit.sh --puretap > results.xml && \
-          mkdir -p test_results/bats && \
-          mv results.xml test_results/bats
+      - run:
+          name: show bats tap output
+          command: bats scripts/tests.bats --tap
+
+      - run:
+          name: bats to junit
+          command: |
+            mkdir -p test_results/bats
+            bats scripts/tests.bats --tap | \
+            perl scripts/tap-to-junit.sh --puretap \
+            > results.xml
+            mv results.xml test_results/bats
 
       - store_test_results:
           path: test_results
