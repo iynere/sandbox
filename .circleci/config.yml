@@ -45,7 +45,7 @@ jobs:
           command: bats scripts/tests.bats
 
       - run: |
-          bats scripts/tests.bats | perl scripts/tap-to-junit.sh > results.xml && \
+          bats scripts/tests.bats --tap | perl scripts/tap-to-junit.sh --puretap > results.xml && \
           mkdir -p test_results/bats && \
           mv results.xml test_results/bats
 
