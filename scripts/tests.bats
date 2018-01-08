@@ -51,7 +51,7 @@
     skip "no browser tools installed"
   fi
 
-  Xvfb :99 > /dev/null && phantomjs --version
+  nohup Xvfb :99 > /dev/null 2>&1 & phantomjs --version
 }
 @test "firefox" {
   if [ $BROWSERS != "true" ] ; then
