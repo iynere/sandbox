@@ -31,8 +31,8 @@ jobs:
     steps:
       - checkout
       - run: python --version
-      - run: echo $PYTHON_VERSION_NUM
-      - run: bash -c "python --version | grep $PYTHON_VERSION_NUM"
+      - run: echo $PYTHON_VERSION_NUMBER
+      - run: bash -c "python --version | grep $PYTHON_VERSION_NUMBER"
       - run:
           name: bats to junit
           command: |
