@@ -7,6 +7,10 @@ jobs:
     steps:
       - checkout
 
+      - run:
+          name: show regular bats output
+          command: bats scripts/tests.bats
+
       - run: |
           bats scripts/tests.bats | perl scripts/tap-to-junit.sh > results.xml && \
           mkdir -p test_results/bats && \
