@@ -1,8 +1,41 @@
+image_config: &image_config
+
+  # make sure to set your Docker Hub username & password in CircleCI,
+  # either as project-specific environment variables
+  # or as resources in your organization's org-global Context
+
+  IMAGE_NAME: bats-tests
+
+  IMAGE_TAG: jessie
+
+  # NOTE: if you're modifying this config.yml file manually
+  # rather than using the included setup script,
+  # make sure you also add the values of your IMAGE_NAME & IMAGE_TAG variables
+  # to the `test_image` job (line 58)
+
+  LINUX_VERSION: DEBIAN_JESSIE
+
+  RUBY_VERSION_NUM: 2.4.2
+
+  NODE_VERSION_NUM: 8.0.0
+
+  PYTHON_VERSION_NUM: 2.7.13
+
+  JAVA: true
+
+  MYSQL_CLIENT: true
+
+  POSTGRES_CLIENT: true
+
+  BROWSERS: true
+
 version: 2
 jobs:
   build:
     docker:
       - image: iynere/bats-tests:jessie
+        environment:
+          <<: *image_config
 
     steps:
       - checkout
