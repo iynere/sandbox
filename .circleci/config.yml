@@ -10,7 +10,7 @@ image_config: &image_config
 
   NODE_VERSION_NUM: 8.0.0
 
-  PYTHON_VERSION_NUMBER: 2.7.13
+  PYTHON_VERSION_NUM: 2.7.13
 
   JAVA: true
 
@@ -30,9 +30,11 @@ jobs:
 
     steps:
       - checkout
-      - run: python --version
-      - run: echo $PYTHON_VERSION_NUMBER
-      - run: python --version 2>&1 | grep $PYTHON_VERSION_NUMBER
+
+      # - run: python --version
+      # - run: echo $PYTHON_VERSION_NUM
+      # - run: python --version 2>&1 | grep $PYTHON_VERSION_NUM
+
       - run:
           name: bats to junit
           command: |
