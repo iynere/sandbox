@@ -31,10 +31,10 @@ jobs:
     steps:
       - checkout
 
-      - run:
-          name: start Xvfb for phantomjs tests
-          command: Xvfb :99 -screen 0 1280x1024x24 && sleep 10
-          background: true
+      # - run:
+      #     name: start Xvfb for phantomjs test
+      #     command: Xvfb :99 -screen 0 1280x1024x24 && sleep 10
+      #     background: true
 
       - run:
           name: bats to junit
