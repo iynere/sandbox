@@ -1,23 +1,14 @@
 image_config: &image_config
 
-  # make sure to set your Docker Hub username & password in CircleCI,
-  # either as project-specific environment variables
-  # or as resources in your organization's org-global Context
-
   IMAGE_NAME: bats-tests
 
   IMAGE_TAG: jessie
 
-  # NOTE: if you're modifying this config.yml file manually
-  # rather than using the included setup script,
-  # make sure you also add the values of your IMAGE_NAME & IMAGE_TAG variables
-  # to the `test_image` job (line 58)
-
   LINUX_VERSION: DEBIAN_JESSIE
 
-  RUBY_VERSION_NUM: 2.4.1
+  RUBY_VERSION_NUM: 2.4.2
 
-  NODE_VERSION_NUM: 8.0.1
+  NODE_VERSION_NUM: 8.0.0
 
   PYTHON_VERSION_NUM: 2.7.13
 
@@ -40,18 +31,10 @@ jobs:
     steps:
       - checkout
 
-      # - run:
-      #     name: show regular bats output
-      #     command: bats scripts/tests.bats
-
-      # - run:
-      #     name: show bats tap output
-      #     command: bats scripts/tests.bats --tap
-      - run: mkdir -p test_results/bats
-
       - run:
           name: bats to junit
           command: |
+            mkdir -p test_results/bats
             bats scripts/tests.bats | \
             perl scripts/tap-to-junit.sh > \
             test_results/bats/results.xml
