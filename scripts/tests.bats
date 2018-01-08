@@ -47,7 +47,6 @@
   psql --version
 }
 @test "phantomjs" {
-  skip "until i can figure out how to successfully start xvfb in the background here"
   if [ $BROWSERS != "true" ] ; then
     skip "no browser tools installed"
   fi
