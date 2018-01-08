@@ -10,7 +10,7 @@ image_config: &image_config
 
   NODE_VERSION_NUM: 8.0.0
 
-  PYTHON_VERSION_NUM: 2.7.13
+  PYTHON_VERSION_NUMBER: 2.7.13
 
   JAVA: true
 
