@@ -40,13 +40,13 @@ jobs:
     steps:
       - checkout
 
-      - run:
-          name: show regular bats output
-          command: bats scripts/tests.bats
+      # - run:
+      #     name: show regular bats output
+      #     command: bats scripts/tests.bats
 
-      - run:
-          name: show bats tap output
-          command: bats scripts/tests.bats --tap
+      # - run:
+      #     name: show bats tap output
+      #     command: bats scripts/tests.bats --tap
 
       - run:
           name: bats to junit
