@@ -47,15 +47,14 @@ jobs:
       # - run:
       #     name: show bats tap output
       #     command: bats scripts/tests.bats --tap
+      - run: mkdir -p test_results/bats
 
       - run:
           name: bats to junit
           command: |
-            mkdir -p test_results/bats
-            bats scripts/tests.bats --tap | \
-            perl scripts/tap-to-junit.sh --puretap \
-            > results.xml
-            mv results.xml test_results/bats
+            bats scripts/tests.bats | \
+            perl scripts/tap-to-junit.sh > \
+            test_results/bats/results.xml
 
       - store_test_results:
           path: test_results
