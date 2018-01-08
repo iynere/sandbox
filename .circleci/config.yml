@@ -1,20 +1,19 @@
-experimental:
-  notify:
-    branches:
-      only:
-        - master
-
 version: 2
 jobs:
   build:
     docker:
-      - image: circleci/node
+      - image: iynere/bats-tests:jessie
 
     steps:
       - checkout
 
+      - run: |
+          bats scripts/tests.bats | perl scripts/tap-to-junit.sh > results.xml && \
+          mkdir -p test_results/bats && \
+          mv results.xml test_results/bats
+
       - store_test_results:
-          path: tests
+          path: test_results
 
       - store_artifacts:
-          path: tests
+          path: test_results
