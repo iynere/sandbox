@@ -9,20 +9,20 @@
   if [ -e $NODE_VERSION_NUM ] ; then
     skip "node not installed"
   fi
-  node --version | grep "$NODE_VERSION_NUM"
+  node --version | grep $NODE_VERSION_NUM
 }
 @test "ruby version" {
   if [ -e $RUBY_VERSION_NUM ] ; then
     skip "ruby not installed"
   fi
-  ruby --version | grep "$RUBY_VERSION_NUM"
+  ruby --version | grep $RUBY_VERSION_NUM
 }
 @test "python version" {
   if [ -e $PYTHON_VERSION_NUM ] ; then
     skip "python not installed"
   fi
 
-  python --version | grep "$PYTHON_VERSION_NUM"
+  run bash -c "python --version | grep $PYTHON_VERSION_NUM
 }
 @test "java" {
   if [ $JAVA != "true" ] ; then
