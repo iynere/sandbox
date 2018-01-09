@@ -1,51 +1,13 @@
-image_config: &image_config
-
-  IMAGE_NAME: bats-tests
-
-  IMAGE_TAG: jessie
-
-  LINUX_VERSION: DEBIAN_JESSIE
-
-  RUBY_VERSION_NUM: 2.4.2
-
-  NODE_VERSION_NUM: 8.0.0
-
-  PYTHON_VERSION_NUM: 2.7.13
-
-  JAVA: true
-
-  MYSQL_CLIENT: true
-
-  POSTGRES_CLIENT: true
-
-  BROWSERS: true
-
 version: 2
 jobs:
   build:
-    docker:
-      - image: iynere/bats-tests:jessie
-        environment:
-          <<: *image_config
+    machine: true
 
     steps:
       - checkout
 
-      - run:
-          name: start Xvfb for phantomjs test
-          command: Xvfb :99
-          background: true
-
-      - run:
-          name: bats to junit
-          command: |
-            mkdir -p test_results/bats
-            bats scripts/tests.bats | \
-            perl scripts/tap-to-junit.sh > \
-            test_results/bats/results.xml
-
       - store_test_results:
-          path: test_results
+          path: tests
 
       - store_artifacts:
-          path: test_results
+          path: tests
