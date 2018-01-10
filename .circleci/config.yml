@@ -1,13 +1,72 @@
 version: 2
 jobs:
   build:
-    machine: true
-
+    docker:
+      - image: circleci/node
+    environment:
+      TEST_RESULTS: /tmp/test-results
     steps:
       - checkout
-
-      - store_test_results:
-          path: tests
-
+      - setup_remote_docker:
+          docker_layer_caching: true
+      - run:
+          name: Create test eslint report folder
+          command: mkdir -p $TEST_RESULTS/eslint
+      - run:
+          name: Create .npmrc file
+          command: echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > .npmrc
+      # - run:
+      #     name: Build application
+      #     command: docker-compose  -f ./.circleci/docker-compose.ci.yml build
+      # - run:
+      #     name: Test dependency tree matches package.json
+      #     command: docker-compose -f ./.circleci/docker-compose.ci.yml run --no-deps outbound-sender sh -c 'npm ls > /dev/null'
+      # - run:
+      #     name: Run ESLint
+      #     command: |
+      #       docker-compose -f ./.circleci/docker-compose.ci.yml run --name outbound-sender-eslint --no-deps outbound-sender sh -c 'npm run --silent lint -- -f junit > eslint.xml'
+      #       docker cp outbound-sender-eslint:/app/eslint.xml $TEST_RESULTS/eslint/junit.xml
+      - run:
+          name: Create workspace directory
+          command: mkdir -p /tmp/workspace
+      # - run:
+      #     name: Tag docker image with latest tag
+      #     command: docker tag takescoop/outbound-sender:${CIRCLE_SHA1} takescoop/outbound-sender:latest
+      # - run:
+      #     name: Save docker image
+      #     command: docker save takescoop/outbound-sender:${CIRCLE_SHA1} takescoop/outbound-sender:latest > /tmp/workspace/image.tar
+      # - persist_to_workspace:
+      #     root: /tmp/workspace
+      #     paths:
+      #       - image.tar
+  test:
+    machine:
+      docker_layer_caching: true
+    environment:
+      TEST_RESULTS: /tmp/test-results
+    steps:
+      - checkout
+      - run: mkdir -p /tmp/workspace
+      # - attach_workspace:
+      #     at: /tmp/workspace
+      - run:
+          name: Create lab test reports folder
+          command: mkdir -p $TEST_RESULTS/lab
+      # - run:
+      #     name: Load docker image
+      #     command: docker load < /tmp/workspace/image.tar
+      # - run:
+      #     name: Run tests
+      #     command: |
+      #       docker-compose -f ./.circleci/docker-compose.ci.yml pull --ignore-pull-failures && docker-compose -f ./.circleci/docker-compose.ci.yml run --name outbound-sender-test outbound-sender sh -c "dockerize -wait tcp://db:5432 -wait tcp://sqs:9324 -timeout 30s && npm run --silent testCI"
+      #       docker cp outbound-sender-test:/app/lab.xml $TEST_RESULTS/lab/junit.xml
       - store_artifacts:
-          path: tests
+          path: $TEST_RESULTS
+workflows:
+  version: 2
+  test_and_deploy:
+    jobs:
+      - build
+      - test:
+          requires:
+            - build
