@@ -52,6 +52,7 @@ jobs:
       - run:
           name: Create lab test reports folder
           command: mkdir -p $TEST_RESULTS/lab
+      - run: docker images
       # - run:
       #     name: Load docker image
       #     command: docker load < /tmp/workspace/image.tar
