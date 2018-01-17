@@ -9,4 +9,6 @@ jobs:
 
       - run: sdkmanager "system-images;android-25;google_apis;armeabi-v7a" && echo "no" | avdmanager create avd -n device1 -k "system-images;android-25;google_apis;armeabi-v7a"
 
+      - run: sdkmanager --update
+
       - run: emulator -avd device1 -no-audio -no-window
