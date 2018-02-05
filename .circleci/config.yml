@@ -5,4 +5,4 @@ jobs:
       - image: circleci/ruby:2.3.4-node-browsers
     steps:
       - checkout
-      - docker login
+      - run: docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
