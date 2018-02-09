@@ -1,8 +1,31 @@
 version: 2
 jobs:
-  build:
-    docker:
-      - image: circleci/ruby:2.3.4-node-browsers
+
+  linux_job:
+    machine: true
     steps:
       - checkout
-      - setup_remote_docker
+
+      - persist_to_workspace:
+          root: workspace
+          paths:
+            - scripts
+
+  mac_job:
+    macos:
+      xcode: "9.0"
+
+    steps:
+      - checkout
+
+      - attach_workspace:
+          at: workspace
+
+workflows:
+  version: 2
+  mac_and_linux:
+    jobs:
+      - linux_job
+      - mac_job:
+          requires:
+            -  linux_job
