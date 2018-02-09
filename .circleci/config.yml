@@ -6,6 +6,8 @@ jobs:
     steps:
       - checkout
 
+      - run: touch scripts/$CIRCLE_NODE_INDEX
+
       - persist_to_workspace:
           root: /home/circleci/project
           paths:
