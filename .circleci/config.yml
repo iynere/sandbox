@@ -7,7 +7,7 @@ jobs:
       - checkout
 
       - persist_to_workspace:
-          root: workspace
+          root: /home/circleci/project
           paths:
             - scripts
 
