@@ -3,6 +3,7 @@ jobs:
 
   linux_job:
     machine: true
+    parallelism: 4
     steps:
       - checkout
 
@@ -22,6 +23,9 @@ jobs:
 
       - attach_workspace:
           at: workspace
+
+      - store_artifacts:
+          path: workspace/scripts
 
 workflows:
   version: 2
