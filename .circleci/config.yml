@@ -9,3 +9,4 @@ jobs:
 
       - run: sudo cat /proc/cpuinfo
       - run: sudo cat /proc/meminfo
+      - run: df -h
