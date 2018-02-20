@@ -1,14 +1,28 @@
 version: 2
 jobs:
-  build:
+  machine:
     machine: true
 
     steps:
-
       - checkout
 
       - run: sudo cat /proc/cpuinfo
       - run: sudo cat /proc/meminfo
       - run: df -h
 
-      - setup_remote_docker
+
+  remote-docker:
+    docker:
+      - image: circleci/ruby
+
+      steps:
+        - checkout
+
+        - setup_remote_docker
+
+workflows:
+  version: 2
+  machine-remote-docker:
+    jobs:
+      - machine
+      - remote-docker
