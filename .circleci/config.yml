@@ -1,14 +1,14 @@
 version: 2
 jobs:
   machine:
-    machine: true
+    machine:
+      docker_layer_caching: true
 
     steps:
       - checkout
 
-      - run: sudo cat /proc/cpuinfo
-      - run: sudo cat /proc/meminfo
-      - run: df -h
+      - run: docker build -t iynere/caching-test:direct .
+      - run: bash scripts/build.sh
 
 
   remote-docker:
@@ -18,7 +18,12 @@ jobs:
     steps:
       - checkout
 
-      - setup_remote_docker
+      - setup_remote_docker:
+          docker_layer_caching: true
+
+      - run: docker build -t iynere/caching-test:direct .
+      - run: bash scripts/build.sh
+
 
 workflows:
   version: 2
