@@ -1,31 +1,11 @@
 version: 2
 jobs:
-  build-and-test:
-    macos:
-      xcode: "9.2.0"
+  build:
+    machine: true
 
     steps:
 
-      # Get the code from the VCS provider.
       - checkout
 
-      # Download CocoaPods specs via HTTPS (faster than Git)
-      # and install CocoaPods.
-      - run:
-          name: Install CocoaPods
-          command: |
-            curl https://cocoapods-specs.circleci.com/fetch-cocoapods-repo-from-s3.sh | bash -s cf
-            pod install
-      # Run tests.
-      # - run:
-      #     name: Run tests
-      #     command: fastlane scan
-      #     environment:
-      #       SCAN_DEVICE: iPhone 6
-      #       SCAN_SCHEME: WebTests
-
-workflows:
-  version: 2
-  build:
-    jobs:
-      - build-and-test
+      - run: sudo cat proc/cpuinfo
+      - run: sudo cat proc/meminfo
