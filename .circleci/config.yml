@@ -15,10 +15,10 @@ jobs:
     docker:
       - image: circleci/ruby
 
-      steps:
-        - checkout
+    steps:
+      - checkout
 
-        - setup_remote_docker
+      - setup_remote_docker
 
 workflows:
   version: 2
