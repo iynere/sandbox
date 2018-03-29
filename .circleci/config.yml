@@ -1,32 +1,14 @@
 version: 2
 jobs:
-  machine:
-    machine:
-      docker_layer_caching: true
-
-    steps:
-      - checkout
-
-      - run: bash scripts/build.sh
-      - run: docker build -t iynere/caching-test:direct .
-
-  remote-docker:
+  build:
     docker:
-      - image: circleci/ruby
+      - image: circleci/node
 
     steps:
       - checkout
 
-      - setup_remote_docker:
-          docker_layer_caching: true
+      - store_test_results:
+          path: reports
 
-      - run: bash scripts/build.sh
-      - run: docker build -t iynere/caching-test:direct .
-
-
-workflows:
-  version: 2
-  machine-remote-docker:
-    jobs:
-      - machine
-      - remote-docker
+      - store_artifacts:
+          path: reports
