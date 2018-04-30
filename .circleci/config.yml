@@ -45,23 +45,7 @@ jobs:
           command: echo "circleci/deploy.sh chk-prd 300"
           no_output_timeout: 1h
 
-  deploy_to_heroku_stg:
-    docker:
-      - image: rainforestapp/heroku-deploy:latest
-    steps:
-      - checkout
-      - run:
-          name: Set up Heroku
-          command: echo ".circleci/setup_heroku.sh"
-      - add_ssh_keys:
-          fingerprints:
-            - "6e:35:79:af:3e:d6:7b:06:c0:81:06:c1:24:65:97:d7"
-      - run:
-          name: Deploy to staging
-          command: echo ".circleci/deploy.sh chk-stg 300"
-          no_output_timeout: 1h
-
-  # deploy_to_heroku_prd:
+  # deploy_to_heroku_stg:
   #   docker:
   #     - image: rainforestapp/heroku-deploy:latest
   #   steps:
@@ -73,9 +57,25 @@ jobs:
   #         fingerprints:
   #           - "6e:35:79:af:3e:d6:7b:06:c0:81:06:c1:24:65:97:d7"
   #     - run:
-  #         name: Deploy to production
-  #         command: circleci/deploy.sh chk-prd 300
+  #         name: Deploy to staging
+  #         command: .circleci/deploy.sh chk-stg 300
   #         no_output_timeout: 1h
+
+  deploy_to_heroku_prd:
+    docker:
+      - image: rainforestapp/heroku-deploy:latest
+    steps:
+      - checkout
+      - run:
+          name: Set up Heroku
+          command: echo ".circleci/setup_heroku.sh"
+      - add_ssh_keys:
+          fingerprints:
+            - "6e:35:79:af:3e:d6:7b:06:c0:81:06:c1:24:65:97:d7"
+      - run:
+          name: Deploy to production
+          command: echo "circleci/deploy.sh chk-prd 300"
+          no_output_timeout: 1h
 
 workflows:
   version: 2
@@ -87,15 +87,15 @@ workflows:
               only:
                 - develop
                 - master
-      - deploy_to_heroku_stg:
-          requires:
-            - build
-          filters:
-            branches:
-              only:
-                - develop
-      # - deploy_to_heroku_prd:
+      # - deploy_to_heroku_stg:
+      #     requires:
+      #       - build
       #     filters:
       #       branches:
       #         only:
-      #           - master
+      #           - develop
+      - deploy_to_heroku_prd:
+          filters:
+            branches:
+              only:
+                - master
