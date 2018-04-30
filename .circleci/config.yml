@@ -88,8 +88,8 @@ workflows:
                 - develop
                 - master
       - deploy_to_heroku_stg:
-          requires:
-            - run_specs
+          # requires:
+          #   - run_specs
           filters:
             branches:
               only:
