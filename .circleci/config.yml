@@ -1,10 +1,11 @@
 version: 2
 jobs:
-  build_client:
+  build:
+    working_directory: ~/project
     docker:
       - image: crystallang/crystal:0.24.2
-      environment:
-        KEMAL_ENV: production
+        environment:
+          KEMAL_ENV: production
     steps:
       - checkout
       # - run:
@@ -65,7 +66,7 @@ workflows:
   version: 2
   test_and_deploy:
     jobs:
-      - build_client:
+      - build:
           filters:
             branches:
               only:
