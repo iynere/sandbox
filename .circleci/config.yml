@@ -45,7 +45,7 @@ jobs:
           command: echo "circleci/deploy.sh chk-prd 300"
           no_output_timeout: 1h
 
-  deploy_to_heroku_stg:
+  feploy_to_heroku_stg:
     docker:
       - image: rainforestapp/heroku-deploy:latest
     steps:
@@ -87,7 +87,7 @@ workflows:
               only:
                 - develop
                 - master
-      - deploy_to_heroku_stg:
+      - feploy_to_heroku_stg:
           requires:
             - build
           filters:
