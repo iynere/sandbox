@@ -93,7 +93,7 @@ workflows:
           filters:
             branches:
               only:
-                - master
+                - develop
       - deploy_to_heroku_prd:
           filters:
             branches:
