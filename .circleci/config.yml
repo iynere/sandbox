@@ -1,14 +1,101 @@
 version: 2
 jobs:
-  build:
+  run_specs:
     docker:
-      - image: circleci/node
-
+      - image: crystallang/crystal:0.24.2
+        environment:
+          KEMAL_ENV: test
     steps:
       - checkout
+      # - run:
+      #     name: Install shards
+      #     command: |
+      #       shards
+      # - run:
+      #     name: Spec
+      #     command: |
+      #       crystal spec
 
-      - store_test_results:
-          path: reports
+  build_client:
+    docker:
+      - image: crystallang/crystal:0.24.2
+        environment:
+          KEMAL_ENV: production
+    steps:
+      - checkout
+      # - run:
+      #     name: Set up Heroku
+      #     command: crystal build --release src/client.cr -o /tmp/chk-client
+      # - store_artifacts:
+      #     path: /tmp/chk-client
 
-      - store_artifacts:
-          path: reports
+  deploy_to_vcontrol_stg:
+    docker:
+      - image: rainforestapp/heroku-deploy:latest
+    steps:
+      - checkout
+      # - run:
+      #     name: Set up Heroku
+      #     command: .circleci/deploy_vcontrol.sh staging
+      # - add_ssh_keys:
+      #     fingerprints:
+      #       - "6e:35:79:af:3e:d6:7b:06:c0:81:06:c1:24:65:97:d7"
+      # - run:
+      #     name: Deploy to production
+      #     command: circleci/deploy.sh chk-prd 300
+      #     no_output_timeout: 1h
+
+  deploy_to_heroku_stg:
+    docker:
+      - image: rainforestapp/heroku-deploy:latest
+    steps:
+      - checkout
+      # - run:
+      #     name: Set up Heroku
+      #     command: .circleci/setup_heroku.sh
+      # - add_ssh_keys:
+      #     fingerprints:
+      #       - "6e:35:79:af:3e:d6:7b:06:c0:81:06:c1:24:65:97:d7"
+      # - run:
+      #     name: Deploy to staging
+      #     command: .circleci/deploy.sh chk-stg 300
+      #     no_output_timeout: 1h
+
+  deploy_to_heroku_prd:
+    docker:
+      - image: rainforestapp/heroku-deploy:latest
+    steps:
+      - checkout
+      # - run:
+      #     name: Set up Heroku
+      #     command: .circleci/setup_heroku.sh
+      # - add_ssh_keys:
+      #     fingerprints:
+      #       - "6e:35:79:af:3e:d6:7b:06:c0:81:06:c1:24:65:97:d7"
+      # - run:
+      #     name: Deploy to production
+      #     command: circleci/deploy.sh chk-prd 300
+      #     no_output_timeout: 1h
+
+workflows:
+  version: 2
+  test_and_deploy:
+    jobs:
+      - build_client:
+          filters:
+            branches:
+              only:
+                - develop
+                - master
+      - deploy_to_heroku_stg:
+          requires:
+            - run_specs
+          filters:
+            branches:
+              only:
+                - develop
+      - deploy_to_heroku_prd:
+          filters:
+            branches:
+              only:
+                - master
