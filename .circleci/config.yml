@@ -90,10 +90,10 @@ workflows:
       - deploy_to_heroku_stg:
           requires:
             - build_client
-          # filters:
-          #   branches:
-          #     only:
-          #       - master
+          filters:
+            branches:
+              only:
+                - master
       - deploy_to_heroku_prd:
           filters:
             branches:
