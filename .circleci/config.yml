@@ -1,20 +1,20 @@
 version: 2
 jobs:
-  # build:
-  #   docker:
-  #     - image: crystallang/crystal:0.24.2
-  #       environment:
-  #         KEMAL_ENV: test
-  #   steps:
-  #     - checkout
-  #     - run:
-  #         name: Install shards
-  #         command: |
-  #           echo "shards"
-  #     - run:
-  #         name: Spec
-  #         command: |
-  #           echo "crystal spec"
+  run_specs:
+    docker:
+      - image: crystallang/crystal:0.24.2
+        environment:
+          KEMAL_ENV: test
+    steps:
+      - checkout
+      - run:
+          name: Install shards
+          command: |
+            echo "shards"
+      - run:
+          name: Spec
+          command: |
+            echo "crystal spec"
 
   build_client:
     docker:
