@@ -52,13 +52,13 @@ jobs:
       - checkout
       - run:
           name: Set up Heroku
-          command: .circleci/setup_heroku.sh
+          command: echo ".circleci/setup_heroku.sh"
       - add_ssh_keys:
           fingerprints:
             - "6e:35:79:af:3e:d6:7b:06:c0:81:06:c1:24:65:97:d7"
       - run:
           name: Deploy to staging
-          command: .circleci/deploy.sh chk-stg 300
+          command: echo ".circleci/deploy.sh chk-stg 300"
           no_output_timeout: 1h
 
   deploy_to_heroku_prd:
