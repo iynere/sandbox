@@ -89,7 +89,7 @@ workflows:
                 - master
       - deploy_to_heroku_stg:
           requires:
-            - build_client
+            - run_specs
           filters:
             branches:
               only:
