@@ -1,6 +1,6 @@
 version: 2
 jobs:
-  build:
+  run_specs:
     docker:
       - image: crystallang/crystal:0.24.2
         environment:
@@ -87,9 +87,9 @@ workflows:
               only:
                 - develop
                 - master
-      - deploy_to_heroku_stg #:
-          # requires:
-          #   - build
+      - deploy_to_heroku_stg:
+          requires:
+            - run_specs
           # filters:
           #   branches:
           #     only:
