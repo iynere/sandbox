@@ -1,101 +1,24 @@
+yaml_anchor_with_lists: &yaml_anchor_with_lists
+  steps:
+    - checkout
+    - run: echo "testing 1"
+    - run: echo "testing 2"
+
 version: 2
 jobs:
-  run_specs:
+  job_1:
     docker:
-      - image: crystallang/crystal:0.24.2
-        environment:
-          KEMAL_ENV: test
-    steps:
-      - checkout
-      - run:
-          name: Install shards
-          command: |
-            echo "shards"
-      - run:
-          name: Spec
-          command: |
-            echo "crystal spec"
+      - image: circleci/ruby:latest
+    <<: *yaml_anchor_with_lists
 
-  build_client:
+  job_2:
     docker:
-      - image: crystallang/crystal:0.24.2
-        environment:
-          KEMAL_ENV: production
-    steps:
-      - checkout
-      - run:
-          name: Set up Heroku
-          command: echo "crystal build --release src/client.cr -o /tmp/chk-client"
-      - store_artifacts:
-          path: /tmp/chk-client
-
-  deploy_to_vcontrol_stg:
-    docker:
-      - image: rainforestapp/heroku-deploy:latest
-    steps:
-      - checkout
-      - run:
-          name: Set up Heroku
-          command: echo ".circleci/deploy_vcontrol.sh staging"
-      - add_ssh_keys:
-          fingerprints:
-            - "6e:35:79:af:3e:d6:7b:06:c0:81:06:c1:24:65:97:d7"
-      - run:
-          name: Deploy to production
-          command: echo "circleci/deploy.sh chk-prd 300"
-          no_output_timeout: 1h
-
-  deploy_to_heroku_stg:
-    docker:
-      - image: rainforestapp/heroku-deploy:latest
-    steps:
-      - checkout
-      - run:
-          name: Set up Heroku
-          command: echo ".circleci/setup_heroku.sh"
-      - add_ssh_keys:
-          fingerprints:
-            - "6e:35:79:af:3e:d6:7b:06:c0:81:06:c1:24:65:97:d7"
-      - run:
-          name: Deploy to staging
-          command: echo ".circleci/deploy.sh chk-stg 300"
-          no_output_timeout: 1h
-
-  deploy_to_heroku_prd:
-    docker:
-      - image: rainforestapp/heroku-deploy:latest
-    steps:
-      - checkout
-      - run:
-          name: Set up Heroku
-          command: echo ".circleci/setup_heroku.sh"
-      - add_ssh_keys:
-          fingerprints:
-            - "6e:35:79:af:3e:d6:7b:06:c0:81:06:c1:24:65:97:d7"
-      - run:
-          name: Deploy to production
-          command: echo "circleci/deploy.sh chk-prd 300"
-          no_output_timeout: 1h
+      - image: circleci/node:latest
+    <<: *yaml_anchor_with_lists
 
 workflows:
   version: 2
-  test_and_deploy:
+  test_yaml_anchors_lists:
     jobs:
-      - build_client:
-          filters:
-            branches:
-              only:
-                - develop
-                - master
-      - deploy_to_heroku_stg:
-          # requires:
-          #   - run_specs
-          filters:
-            branches:
-              only:
-                - develop
-      - deploy_to_heroku_prd:
-          filters:
-            branches:
-              only:
-                - master
+      - job_1
+      - job_2
