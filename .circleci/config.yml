@@ -1,6 +1,5 @@
 yaml_anchor_with_lists: &yaml_anchor_with_lists
-  - run: echo "testing 1"
-  - run: echo "testing 2"
+  [{run: echo 'testing 1'}, {run: echo 'testing 2'}]
 
 version: 2
 jobs:
@@ -16,7 +15,7 @@ jobs:
     docker:
       - image: circleci/node:latest
     steps:
-      - checklout
+      - checkout
       <<: *yaml_anchor_with_lists
       - run: echo "testing 4"
 
