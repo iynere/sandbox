@@ -1,21 +1,23 @@
 yaml_anchor_with_lists: &yaml_anchor_with_lists
-  steps:
-    - checkout
-    - run: echo "testing 1"
-    - run: echo "testing 2"
+  - run: echo "testing 1"
+  - run: echo "testing 2"
 
 version: 2
 jobs:
   job_1:
     docker:
       - image: circleci/ruby:latest
-    <<: *yaml_anchor_with_lists
+    steps:
+      - checkout
+      <<: *yaml_anchor_with_lists
       - run: echo "testing 3"
 
   job_2:
     docker:
       - image: circleci/node:latest
-    <<: *yaml_anchor_with_lists
+    steps:
+      - checklout
+      <<: *yaml_anchor_with_lists
       - run: echo "testing 4"
 
 workflows:
