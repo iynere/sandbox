@@ -13,4 +13,3 @@ dependencies:
   pre:
     - sudo /opt/google-cloud-sdk/bin/gcloud --quiet components update
     - sudo /opt/google-cloud-sdk/bin/gcloud --quiet components update kubectl
-    - sudo apt-get update && sudo apt-get install curl
