@@ -1,0 +1,16 @@
+machine:
+  services:
+    - docker
+    - redis
+    - mongodb
+  environment:
+    CLOUDSDK_CORE_DISABLE_PROMPTS: 1
+    CLOUDSDK_PYTHON_SITEPACKAGES: 1
+    RESET_TOKEN_LIFETIME: 86400
+    LOG_LEVEL: verbose
+    IMAGE_PULL_POLICY: Always
+dependencies:
+  pre:
+    - sudo /opt/google-cloud-sdk/bin/gcloud --quiet components update
+    - sudo /opt/google-cloud-sdk/bin/gcloud --quiet components update kubectl
+    - sudo apt-get update && sudo apt-get install curl
