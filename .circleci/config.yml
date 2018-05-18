@@ -14,4 +14,4 @@ workflows:
       - build:
           filters:
             tags:
-              only: /^test/
+              only: test
