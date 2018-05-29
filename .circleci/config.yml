@@ -5,13 +5,6 @@ jobs:
       - image: circleci/ruby:latest
     steps:
       - checkout
-      - run: echo "hello"
-
-workflows:
-  version: 2
-  test_git_tags:
-    jobs:
-      - build:
-          filters:
-            tags:
-              only: test
+      - run: |
+          docker version
+          docker info
