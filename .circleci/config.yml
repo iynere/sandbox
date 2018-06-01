@@ -1,38 +1,10 @@
-multi-line_run_step: &multi-line_run_step
-  command: |
-    echo "testing 1"
-    echo "testing 2"
-    echo $FOO
-
 version: 2
 jobs:
-  job_1:
+  build:
     docker:
       - image: circleci/ruby:latest
     steps:
       - checkout
-      - run:
-          name: insert anchor here
-          <<: *multi-line_run_step
-      - run: echo "another step"
-    environment:
-      FOO: value1
-
-  job_2:
-    docker:
-      - image: circleci/node:latest
-    steps:
-      - checkout
-      - run:
-          name: insert anchor here
-          <<: *multi-line_run_step
-      - run: echo "another step"
-    environment:
-      FOO: value2
-
-workflows:
-  version: 2
-  test_yaml_anchors_lists:
-    jobs:
-      - job_1
-      - job_2
+      - run: |
+          docker version
+          docker build .
