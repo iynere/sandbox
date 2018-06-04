@@ -1,0 +1,3 @@
+checkout:
+  post:
+    - cat /etc/os-release
