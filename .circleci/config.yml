@@ -21,4 +21,8 @@ workflows:
             branches:
               only:
                 - master
-      - dependent_job
+                - staging
+                - production
+      - dependent_job:
+          requires:
+            - upstream_job
