@@ -24,5 +24,9 @@ workflows:
                 - staging
                 - production
       - dependent_job:
+          filters:
+            branches:
+              only:
+                - dependent-job-shouldn't-run-on-this-branch
           requires:
             - upstream_job
