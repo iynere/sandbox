@@ -1,8 +1,7 @@
 version: 2
 jobs:
   upstream_job:
-    docker:
-      - image: circleci/ruby:latest
+    machine: true
     steps:
       - checkout
       - run: echo "blah"
@@ -24,4 +23,4 @@ workflows:
                 - master
       - dependent_job:
           requires:
-            - deploy-gate
+            - upstream_job
