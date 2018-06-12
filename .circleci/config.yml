@@ -1,8 +1,27 @@
 version: 2
 jobs:
-  build:
+  upstream_job:
     docker:
       - image: circleci/ruby:latest
     steps:
       - checkout
       - run: echo "blah"
+
+  dependent_job:
+    machine: true
+    steps:
+      - checkout
+      - run: echo "this should also only run on master since its upstream job only runs on master"
+
+workflows:
+  version: 2
+  test:
+    jobs:
+      - upstream_job:
+          filters:
+            branches:
+              only:
+                - master
+      - dependent_job:
+          requires:
+            - deploy-gate
