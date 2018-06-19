@@ -5,7 +5,9 @@ USER root
 # remove Ruby 2.5.1
 RUN rm -rf /usr/local/bin/ruby
 
-RUN
+# try to fix openssl errors
+RUN apt-get -y purge openssl && \
+		apt-get -y install libssl1.0-dev
 
 # install Ruby 1.8
 RUN wget http://cache.ruby-lang.org/pub/ruby/1.8/ruby-1.8.7.tar.gz && \

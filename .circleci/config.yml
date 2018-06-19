@@ -1,14 +1,14 @@
 version: 2
 jobs:
   build:
-    # machine: true
-    docker:
-      - image: circleci/ruby:2.5.1-stretch
+    machine: true
+    # docker:
+    #   - image: circleci/ruby:2.5.1-stretch
     steps:
       - checkout
 
-      # - run: docker login -u $DOCKER_USER -p $DOCKER_PASS
+      - run: docker login -u $DOCKER_USER -p $DOCKER_PASS
 
-      # - run: docker build -t circleci/ruby:1.8-stretch ruby
+      - run: docker build -t circleci/ruby:1.8-stretch ruby
 
-      # - run: docker push circleci/ruby:1.8-stretch
+      - run: docker push circleci/ruby:1.8-stretch
