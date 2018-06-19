@@ -1,4 +1,4 @@
-FROM circleci/ruby:2.5.1-stretch
+FROM circleci/ruby:2.3.6-stretch
 
 USER root
 
