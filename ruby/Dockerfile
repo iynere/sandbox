@@ -5,6 +5,8 @@ USER root
 # remove Ruby 2.5.1
 RUN rm -rf /usr/local/bin/ruby
 
+RUN
+
 # install Ruby 1.8
 RUN wget http://cache.ruby-lang.org/pub/ruby/1.8/ruby-1.8.7.tar.gz && \
     tar -xzvf ruby-1.8.7.tar.gz && \
