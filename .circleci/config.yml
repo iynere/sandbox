@@ -8,7 +8,7 @@ jobs:
       - run:
           name: check if branch AND tag conditions are met
           command: |
-            if [[ ! ($CIRCLE_BRANCH == "test" && $CIRCLE_TAG == "test") ]]
+            if [[ ! ($CIRCLE_BRANCH == "test" && $CIRCLE_TAG == "test2") ]]
             then
               exit 1
             else
