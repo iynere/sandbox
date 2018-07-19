@@ -7,3 +7,17 @@ jobs:
       - checkout
       - run: circleci step halt
       - run: echo "this won't"
+  test:
+    machine: true
+    steps:
+      - checkout
+      - echo "will this?"
+
+workflows:
+  version: 2
+  build-test:
+    jobs:
+      - build
+      - test:
+          requires:
+            - build
