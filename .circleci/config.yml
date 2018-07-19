@@ -22,6 +22,7 @@ jobs:
       # - run:
       #     name: Run coverage
       #     command: yarn codecov
+      - run: circleci step halt
   publish:
     docker:
       - image: circleci/node:8
