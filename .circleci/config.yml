@@ -1,50 +1,9 @@
 version: 2
 jobs:
-  test:
+  build:
     docker:
       - image: circleci/node:8
     steps:
       - checkout
-      # - restore_cache:
-      #     key: deps-{{ checksum "yarn.lock" }}
-      # - run:
-      #     name: Install dependencies
-      #     command: make install
-      # - save_cache:
-      #     key: deps-{{ checksum "yarn.lock" }}
-      #     paths:
-      #       - node_modules
-      # - run:
-      #     name: Run tests
-      #     command: make test
-      # - store_artifacts:
-      #     path: coverage
-      # - run:
-      #     name: Run coverage
-      #     command: yarn codecov
       - run: circleci step halt
-  publish:
-    docker:
-      - image: circleci/node:8
-    steps:
-      - checkout
-      # - run:
-      #     name: Login to npm
-      #     command: npm config set "//registry.npmjs.org/:_authToken" $NPM_AUTH
-      - run:
-          name: Publish to npm
-          command: echo "blah"
-workflows:
-  version: 2
-  test_and_publish:
-    jobs:
-      - test:
-          filters:
-            branches:
-              only: master
-      - publish:
-          requires:
-            - test
-          filters:
-            branches:
-              only: master
+      - run: echo "this won't"
