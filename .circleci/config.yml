@@ -1,23 +1,54 @@
 version: 2
 jobs:
-  build:
+  a23:
     docker:
-      - image: circleci/node:8
+      - image: ccistaging/android:api-23-alpha
     steps:
       - checkout
-      - run: circleci step halt
-      - run: echo "this won't"
-  test:
-    machine: true
+      - run: printenv
+
+  a24:
+    docker:
+      - image: ccistaging/android:api-24-alpha
     steps:
       - checkout
-      - run: echo "will this?"
+      - run: printenv
+
+  a25:
+    docker:
+      - image: ccistaging/android:api-25-alpha
+    steps:
+      - checkout
+      - run: printenv
+
+  a26:
+    docker:
+      - image: ccistaging/android:api-26-alpha
+    steps:
+      - checkout
+      - run: printenv
+
+  a27:
+    docker:
+      - image: ccistaging/android:api-27-alpha
+    steps:
+      - checkout
+      - run: printenv
+
+  a28:
+    docker:
+      - image: ccistaging/android:api-28-alpha
+    steps:
+      - checkout
+      - run: printenv
 
 workflows:
   version: 2
-  build-test:
+  test-androids:
     jobs:
-      - build
-      - test:
-          requires:
-            - build
+      - a23
+      - a24
+      - a25
+      - a26
+      - a27
+      - a28
