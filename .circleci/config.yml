@@ -1,60 +1,9 @@
 version: 2
 jobs:
-  a23:
-    docker:
-      - image: ccistaging/android:api-23-alpha
+  build:
+    machine: true
     steps:
-      - checkout
-      - run: echo "$ANDROID_NDK_HOME"
-      - run: cd $ANDROID_NDK_HOME && ls
-
-  a24:
-    docker:
-      - image: ccistaging/android:api-24-alpha
-    steps:
-      - checkout
-      - run: echo "$ANDROID_NDK_HOME"
-      - run: cd $ANDROID_NDK_HOME && ls
-
-  a25:
-    docker:
-      - image: ccistaging/android:api-25-alpha
-    steps:
-      - checkout
-      - run: echo "$ANDROID_NDK_HOME"
-      - run: cd $ANDROID_NDK_HOME && ls
-
-  a26:
-    docker:
-      - image: ccistaging/android:api-26-alpha
-    steps:
-      - checkout
-      - run: echo "$ANDROID_NDK_HOME"
-      - run: cd $ANDROID_NDK_HOME && ls
-
-  a27:
-    docker:
-      - image: ccistaging/android:api-27-alpha
-    steps:
-      - checkout
-      - run: echo "$ANDROID_NDK_HOME"
-      - run: cd $ANDROID_NDK_HOME && ls
-
-  a28:
-    docker:
-      - image: ccistaging/android:api-28-alpha
-    steps:
-      - checkout
-      - run: echo "$ANDROID_NDK_HOME"
-      - run: cd $ANDROID_NDK_HOME && ls
-
-workflows:
-  version: 2
-  test-androids:
-    jobs:
-      - a23
-      - a24
-      - a25
-      - a26
-      - a27
-      - a28
+      - run: docker login -u $DOCKER_USER -p $DOCKER_PASS
+      - run: |
+          token=$(curl "https://auth.docker.io/token?service=registry.docker.io&scope=repository:circleci:pull" | jq -r '.token')
+          curl -s -H "Authorization: Basic username:password" "https://auth.docker.io/token?service=registry.docker.io&scope=repository:circleci:pull" | jq --raw-output .token
