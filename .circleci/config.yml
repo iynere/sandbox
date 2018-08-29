@@ -1,9 +1,20 @@
 version: 2
+defaults: &defaults
+    working_directory: /go/src/github.com/MediaMath/akamai-cloudlet
+    docker:
+      - image: circleci/golang:1.10.0
 jobs:
   build:
-    machine: true
+    <<: *defaults
     steps:
-      - run: docker login -u $DOCKER_USER -p $DOCKER_PASS
-      - run: |
-          token=$(curl "https://auth.docker.io/token?service=registry.docker.io&scope=repository:circleci:pull" | jq -r '.token')
-          curl -s -H "Authorization: Basic username:password" "https://auth.docker.io/token?service=registry.docker.io&scope=repository:circleci:pull" | jq --raw-output .token
+      - setup_remote_docker
+      - checkout
+      - run:
+          name: build
+          command: echo "stuff"
+workflows:
+  version: 2
+  release-pipeline:
+    jobs:
+      - build:
+          context: org-global
