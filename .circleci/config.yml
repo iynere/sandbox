@@ -32,11 +32,12 @@ jobs:
 
 workflows:
   version: 2
-  jobs:
-    - build
+  workflow:
+    jobs:
+      - build
 
-    - test:
-        contexts:
-          test
-        requires:
-          - build
+      - test:
+          contexts:
+            test
+          requires:
+            - build
