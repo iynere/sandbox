@@ -37,7 +37,6 @@ workflows:
       - build
 
       - test:
-          contexts:
-            test
+          context: test
           requires:
             - build
