@@ -9,12 +9,23 @@ jobs:
           command: echo "$TEST_ENV_VAR_PRECEDENCE"
 
       - run:
-          name: project env vars vs. config env vars
+          name: project env vars vs. config env vars 1
           command: echo "$TEST_ENV_VAR_PRECEDENCE"
           enviroment:
-            TEST_ENV_VAR_PRECEDENCE: config
+            TEST_ENV_VAR_PRECEDENCE: config run step
 
-  test:
+  test1:
+    machine: true
+    environment:
+      TEST_ENV_VAR_PRECEDENCE: config job-level
+    steps:
+      - checkout
+
+      - run:
+          name: project env vars vs. config env vars 2
+          command: echo "$TEST_ENV_VAR_PRECEDENCE"
+
+  test2:
     machine: true
     steps:
       - checkout
@@ -24,11 +35,21 @@ jobs:
           command: echo "$TEST_ENV_VAR_PRECEDENCE"
 
       - run:
-          name: project env vars vs. contexts env vars vs. config env vars
+          name: project env vars vs. contexts env vars vs. config env vars 1
           command: echo "$TEST_ENV_VAR_PRECEDENCE"
           enviroment:
             TEST_ENV_VAR_PRECEDENCE: config
 
+  test3:
+    machine: true
+    enviroment:
+      TEST_ENV_VAR_PRECEDENCE: config job-level
+    steps:
+      - checkout
+
+      - run:
+          name: project env vars vs. contexts env vars vs. config env vars 2
+          command: echo "$TEST_ENV_VAR_PRECEDENCE"
 
 workflows:
   version: 2
@@ -36,7 +57,16 @@ workflows:
     jobs:
       - build
 
-      - test:
-          context: test
+      - test1:
           requires:
             - build
+
+      - test2:
+          context: test
+          requires:
+            - test1
+
+      - test3:
+          context: test
+          requires:
+            - test2
