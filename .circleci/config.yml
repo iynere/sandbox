@@ -1,60 +1,42 @@
 version: 2
 jobs:
-  a23:
-    docker:
-      - image: ccistaging/android:api-23-alpha
+  build:
+    machine: true
     steps:
       - checkout
-      - run: echo "$ANDROID_NDK_HOME"
-      - run: cd $ANDROID_NDK_HOME && ls
+      - run:
+          name: this should come from project env vars
+          command: echo "$TEST_ENV_VAR_PRECEDENCE"
 
-  a24:
-    docker:
-      - image: ccistaging/android:api-24-alpha
-    steps:
-      - checkout
-      - run: echo "$ANDROID_NDK_HOME"
-      - run: cd $ANDROID_NDK_HOME && ls
+      - run:
+          name: project env vars vs. config env vars
+          command: echo "$TEST_ENV_VAR_PRECEDENCE"
+          enviroment:
+            TEST_ENV_VAR_PRECEDENCE: config
 
-  a25:
-    docker:
-      - image: ccistaging/android:api-25-alpha
+  test:
+    machine: true
     steps:
       - checkout
-      - run: echo "$ANDROID_NDK_HOME"
-      - run: cd $ANDROID_NDK_HOME && ls
 
-  a26:
-    docker:
-      - image: ccistaging/android:api-26-alpha
-    steps:
-      - checkout
-      - run: echo "$ANDROID_NDK_HOME"
-      - run: cd $ANDROID_NDK_HOME && ls
+      - run:
+          name: project env vars vs. contexts env vars
+          command: echo "$TEST_ENV_VAR_PRECEDENCE"
 
-  a27:
-    docker:
-      - image: ccistaging/android:api-27-alpha
-    steps:
-      - checkout
-      - run: echo "$ANDROID_NDK_HOME"
-      - run: cd $ANDROID_NDK_HOME && ls
+      - run:
+          name: project env vars vs. contexts env vars vs. config env vars
+          command: echo "$TEST_ENV_VAR_PRECEDENCE"
+          enviroment:
+            TEST_ENV_VAR_PRECEDENCE: config
 
-  a28:
-    docker:
-      - image: ccistaging/android:api-28-alpha
-    steps:
-      - checkout
-      - run: echo "$ANDROID_NDK_HOME"
-      - run: cd $ANDROID_NDK_HOME && ls
 
 workflows:
   version: 2
-  test-androids:
-    jobs:
-      - a23
-      - a24
-      - a25
-      - a26
-      - a27
-      - a28
+  jobs:
+    - build
+
+    - test:
+        contexts:
+          test
+        requires:
+          - build
