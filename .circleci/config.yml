@@ -2,9 +2,8 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/ruby:2.4
+      - image: quay.io/prometheus/prometheus
 
     steps:
 
       - checkout
-      - run: git --version
