@@ -28,6 +28,20 @@ jobs:
       - store_test_results:
           path: stylelint-results
 
+  everything-results:
+    machine: true
+    steps:
+      - checkout
+      - store_test_results:
+          path: all-test-results
+
+  everything-results-no-flow:
+    machine: true
+    steps:
+      - checkout
+      - store_test_results:
+          path: all-test-results-except-flow
+
 workflows:
   version: 2
   test-results:
@@ -36,3 +50,17 @@ workflows:
       - eslint-results
       - flow-results
       - stylelint-results
+
+      - everything-results:
+          requires:
+            - jest-results
+            - eslint-results
+            - flow-results
+            - stylelint-results
+
+      - everything-results-no-flow:
+          requires:
+            - jest-results
+            - eslint-results
+            - flow-results
+            - stylelint-results

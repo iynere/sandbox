@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<testsuites package="stylelint.rules">
+  <testsuite name="src/styles/fonts.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/styles/variables.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/styles/main.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/styles/shared/animations.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/styles/shared/fields.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/styles/shared/layout.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/styles/shared/text.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/admin/components/AdminDashboard/AdminDashboard.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/admin/components/Organizations/OrganizationAddAdmins.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/admin/components/Organizations/Organizations.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/admin/components/Profile/Profile.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/admin/components/Profile/ProfileAdvanced.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/admin/components/Profile/ProfileEdit.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/admin/components/Tokens/TokenCard.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/admin/components/Tokens/TokenEditDialog.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/admin/components/Tokens/Tokens.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/admin/components/TransactionList/TransactionDetails.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/admin/components/TransactionList/TransactionListItem.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/admin/components/Transactions/Transactions.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/admin/components/UserList/UserList.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/admin/components/UserList/UserListItem.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/core/components/ActivityBar/ActivityBar.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/core/components/ActivityFeed/ActivityFeed.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/core/components/ActivityFeed/ActivityFeedItem.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/core/components/Avatar/Avatar.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/core/components/AvatarUploader/AvatarUploadItem.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/core/components/AvatarUploader/AvatarUploader.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/core/components/Button/Button.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/core/components/Card/Card.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/core/components/CardList/CardList.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/core/components/ColonyGrid/ColonyGrid.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/core/components/ColonyGrid/ColonyGridItem.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/core/components/CopyableAddress/CopyableAddress.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/core/components/DatePicker/CaptionElement.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/core/components/DatePicker/DatePicker.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/core/components/DatePicker/NavbarElement.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/core/components/DecisionHub/DecisionOption.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/core/components/Dialog/Dialog.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/core/components/Dialog/DialogSection.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/core/components/DropdownMenu/DropdownMenu.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/core/components/ExternalLink/ExternalLink.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/core/components/FileUpload/FileUpload.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/core/components/FileUpload/UploadItem.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/core/components/Heading/Heading.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/core/components/Icon/Icon.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/core/components/MnemonicDnDSorter/MnemonicDnDSorter.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/core/components/MnemonicGenerator/MnemonicGenerator.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/core/components/Modal/Modal.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/core/components/NavLink/NavLink.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/core/components/Numeral/Numeral.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/core/components/OmniPicker/OmniPicker.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/core/components/OmniPicker/OmniPickerContent.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/core/components/OmniPicker/OmniPickerItemEmpty.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/core/components/PayoutsList/PayoutsList.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/core/components/Popover/PopoverWrapper.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/core/components/Popover/Tooltip.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/core/components/Preloaders/LogoLoader.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/core/components/Preloaders/SpinnerLoader.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/core/components/ProgressBar/ProgressBar.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/core/components/ProgressBar/StepBar.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/core/components/SingleUserPicker/ItemDefault.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/core/components/SingleUserPicker/SingleUserPicker.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/core/components/Table/Table.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/core/components/Tabs/Tab.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/core/components/Tabs/TabList.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/core/components/Tabs/TabPanel.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/core/components/Tabs/Tabs.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/core/components/Tabs/VerticalTabList.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/core/components/UserInfo/UserInfo.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/core/components/UserMention/UserMention.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/dashboard/components/AvatarDropdown/AvatarDropdown.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/dashboard/components/ColonyHome/ColonyHome.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/dashboard/components/CreateColonyWizard/StepColonyName.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/dashboard/components/CreateColonyWizard/StepCreateColony.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/dashboard/components/CreateColonyWizard/StepCreateToken.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/dashboard/components/CreateColonyWizard/StepSelectToken.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/dashboard/components/CreateColonyWizard/StepTokenChoice.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/dashboard/components/Dashboard/Dashboard.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/dashboard/components/Dashboard/TabMyTasks.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/dashboard/components/Inbox/Inbox.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/dashboard/components/Inbox/InboxItem.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/dashboard/components/Navigation/Navigation.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/dashboard/components/Task/Task.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/dashboard/components/TaskList/TaskListItem.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/pages/components/CenteredTemplate/CenteredTemplate.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/pages/components/LoadingTemplate/LoadingTemplate.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/pages/components/ProfileTemplate/ProfileTemplate.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/pages/components/VerticalNavigation/VerticalNavigation.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/pages/components/WizardTemplate/WizardTemplate.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/users/components/CreateWalletWizard/StepBackupPhrase.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/users/components/CreateWalletWizard/StepCreatePhrase.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/users/components/CreateWalletWizard/StepProveMnemonic.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/users/components/ProfileCreate/ProfileCreateForm.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/users/components/UserProfile/UserMeta.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/users/components/UserProfile/UserProfile.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/users/components/UserProfileEdit/Sidebar.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/users/components/UserProfileEdit/UserProfileEdit.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/core/components/DropdownMenu/DropdownMenuHeader/DropdownMenuHeader.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/core/components/DropdownMenu/DropdownMenuItem/DropdownMenuItem.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/core/components/DropdownMenu/DropdownMenuSection/DropdownMenuSection.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/core/components/DropdownMenu/DropdownMenuSeparator/DropdownMenuSeparator.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/core/components/Fields/Checkbox/Checkbox.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/core/components/Fields/FieldSet/FieldSet.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/core/components/Fields/FormStatus/FormStatus.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/core/components/Fields/Input/Input.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/core/components/Fields/Input/InputComponent.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/core/components/Fields/InputLabel/InputLabel.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/core/components/Fields/InputStatus/InputStatus.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/core/components/Fields/Radio/Radio.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/core/components/Fields/Select/Select.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/core/components/Fields/Select/SelectListBox.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/core/components/Fields/SelectOption/SelectOption.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/core/components/Fields/Textarea/Textarea.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/core/components/Table/TableHeader/TableHeader.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/dashboard/components/ColonyHome/ColonyMeta/ColonyMeta.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/users/components/ConnectWalletWizard/StepHardware/HardwareChoice.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/users/components/ConnectWalletWizard/StepHardware/StepHardware.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/users/components/ConnectWalletWizard/StepJSONUpload/StepJSONUpload.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/users/components/ConnectWalletWizard/StepMetaMask/StepMetaMask.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/users/components/ConnectWalletWizard/StepMnemonic/StepMnemonic.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+  <testsuite name="src/modules/users/components/ConnectWalletWizard/StepStart/StepStart.css" failures="0" errors="0" tests="1">
+    <testcase name="stylelint.passed"/>
+  </testsuite>
+</testsuites>
