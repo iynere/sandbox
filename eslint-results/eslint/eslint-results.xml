@@ -1,0 +1,1206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<testsuites>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/__mocks__/fileMock.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/__mocks__/fileMock.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/__mocks__/styleMock.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/__mocks__/styleMock.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/__tests__/patch-node-crypto.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/__tests__/patch-node-crypto.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/__tests__/setup.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/__tests__/setup.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/__tests__/shims.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/__tests__/shims.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/__tests__/utils.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/__tests__/utils.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/App.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/App.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/context/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/context/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/context/networkClient.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/context/networkClient.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/context/wallet.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/context/wallet.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/context/withContext.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/context/withContext.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/createPromiseListener.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/createPromiseListener.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/createReactContext.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/createReactContext.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/createReduxStore.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/createReduxStore.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/history.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/history.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/lib/__npmtemp/redux-promise-listener.es.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/lib/__npmtemp/redux-promise-listener.es.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/lib/blockies/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/lib/blockies/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/lib/database/commands.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/lib/database/commands.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/lib/database/DDB.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/lib/database/DDB.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/lib/database/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/lib/database/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/lib/database/KVStore.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/lib/database/KVStore.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="1" name="/home/circleci/colonyDapp/src/lib/database/PurserAccessController.js">
+<testcase time="0" name="org.eslint.no-console"><failure message="Unexpected console statement."><![CDATA[line 85, col 5, Warning - Unexpected console statement. (no-console)]]></failure></testcase>
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/lib/database/PurserIdentity.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/lib/database/PurserIdentity.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/lib/database/PurserIdentityProvider.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/lib/database/PurserIdentityProvider.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/lib/database/schemas.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/lib/database/schemas.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/lib/database/Store.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/lib/database/Store.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/lib/database/types/AccessController.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/lib/database/types/AccessController.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/lib/database/types/Identity.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/lib/database/types/Identity.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/lib/database/types/IdentityProvider.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/lib/database/types/IdentityProvider.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/lib/database/types/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/lib/database/types/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/lib/database/types/OrbitDBKVStore.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/lib/database/types/OrbitDBKVStore.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/lib/database/types/OrbitDBStore.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/lib/database/types/OrbitDBStore.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/lib/EthersWrappedWallet/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/lib/EthersWrappedWallet/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/lib/EthersWrappedWallet/types.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/lib/EthersWrappedWallet/types.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/lib/fileReader/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/lib/fileReader/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/lib/identicon/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/lib/identicon/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/lib/ipfsNode/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/lib/ipfsNode/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/lib/ipfsNode/IPFSNode.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/lib/ipfsNode/IPFSNode.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/lib/ipfsNode/types.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/lib/ipfsNode/types.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/admin/components/AdminDashboard/AdminDashboard.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/admin/components/AdminDashboard/AdminDashboard.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/admin/components/AdminDashboard/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/admin/components/AdminDashboard/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/admin/components/Organizations/__datamocks__/usersMocks.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/admin/components/Organizations/__datamocks__/usersMocks.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/admin/components/Organizations/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/admin/components/Organizations/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="1" name="/home/circleci/colonyDapp/src/modules/admin/components/Organizations/OrganizationAddAdmins.jsx">
+<testcase time="0" name="org.eslint.no-console"><failure message="Unexpected console statement."><![CDATA[line 60, col 23, Warning - Unexpected console statement. (no-console)]]></failure></testcase>
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="1" name="/home/circleci/colonyDapp/src/modules/admin/components/Organizations/Organizations.jsx">
+<testcase time="0" name="org.eslint.no-console"><failure message="Unexpected console statement."><![CDATA[line 67, col 25, Warning - Unexpected console statement. (no-console)]]></failure></testcase>
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/admin/components/Profile/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/admin/components/Profile/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/admin/components/Profile/Profile.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/admin/components/Profile/Profile.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="2" errors="2" name="/home/circleci/colonyDapp/src/modules/admin/components/Profile/ProfileAdvanced.jsx">
+<testcase time="0" name="org.eslint.no-console"><failure message="Unexpected console statement."><![CDATA[line 51, col 24, Warning - Unexpected console statement. (no-console)]]></failure></testcase>
+<testcase time="0" name="org.eslint.no-console"><failure message="Unexpected console statement."><![CDATA[line 67, col 22, Warning - Unexpected console statement. (no-console)]]></failure></testcase>
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="3" errors="3" name="/home/circleci/colonyDapp/src/modules/admin/components/Profile/ProfileEdit.jsx">
+<testcase time="0" name="org.eslint.no-console"><failure message="Unexpected console statement."><![CDATA[line 64, col 3, Warning - Unexpected console statement. (no-console)]]></failure></testcase>
+<testcase time="0" name="org.eslint.no-console"><failure message="Unexpected console statement."><![CDATA[line 68, col 3, Warning - Unexpected console statement. (no-console)]]></failure></testcase>
+<testcase time="0" name="org.eslint.no-console"><failure message="Unexpected console statement."><![CDATA[line 90, col 19, Warning - Unexpected console statement. (no-console)]]></failure></testcase>
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/admin/components/Tokens/__datamocks__/mockTokens.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/admin/components/Tokens/__datamocks__/mockTokens.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/admin/components/Tokens/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/admin/components/Tokens/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="1" name="/home/circleci/colonyDapp/src/modules/admin/components/Tokens/TokenCard.jsx">
+<testcase time="0" name="org.eslint.no-console"><failure message="Unexpected console statement."><![CDATA[line 98, col 16, Warning - Unexpected console statement. (no-console)]]></failure></testcase>
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="1" name="/home/circleci/colonyDapp/src/modules/admin/components/Tokens/TokenEditDialog.jsx">
+<testcase time="0" name="org.eslint.no-console"><failure message="Unexpected console statement."><![CDATA[line 84, col 5, Warning - Unexpected console statement. (no-console)]]></failure></testcase>
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/admin/components/Tokens/Tokens.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/admin/components/Tokens/Tokens.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/admin/components/Tokens/Tokens.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/admin/components/Tokens/Tokens.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/admin/components/TransactionList/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/admin/components/TransactionList/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/admin/components/TransactionList/TransactionDetails.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/admin/components/TransactionList/TransactionDetails.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/admin/components/TransactionList/TransactionList.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/admin/components/TransactionList/TransactionList.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/admin/components/TransactionList/TransactionListItem.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/admin/components/TransactionList/TransactionListItem.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/admin/components/Transactions/__datamocks__/transactionMocks.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/admin/components/Transactions/__datamocks__/transactionMocks.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/admin/components/Transactions/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/admin/components/Transactions/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="1" name="/home/circleci/colonyDapp/src/modules/admin/components/Transactions/Transactions.jsx">
+<testcase time="0" name="org.eslint.no-console"><failure message="Unexpected console statement."><![CDATA[line 73, col 3, Warning - Unexpected console statement. (no-console)]]></failure></testcase>
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/admin/components/UserList/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/admin/components/UserList/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/admin/components/UserList/UserList.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/admin/components/UserList/UserList.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/admin/components/UserList/UserListItem.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/admin/components/UserList/UserListItem.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/actionCreators/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/actionCreators/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/actionCreators/transactions.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/actionCreators/transactions.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/actionTypes/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/actionTypes/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/actionTypes/networkClient.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/actionTypes/networkClient.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/actionTypes/transactions.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/actionTypes/transactions.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/ActivityBar/ActivityBar.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/ActivityBar/ActivityBar.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/ActivityBar/ActivityBarExample.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/ActivityBar/ActivityBarExample.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/ActivityFeed/ActivityFeed.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/ActivityFeed/ActivityFeed.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/ActivityFeed/ActivityFeedItem.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/ActivityFeed/ActivityFeedItem.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/ActivityFeed/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/ActivityFeed/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/ActivityFeed/types.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/ActivityFeed/types.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/AsyncComponentLoader/AsyncComponentLoader.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/AsyncComponentLoader/AsyncComponentLoader.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/AsyncComponentLoader/AsyncComponentLoaderGenerator.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/AsyncComponentLoader/AsyncComponentLoaderGenerator.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/AsyncComponentLoader/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/AsyncComponentLoader/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Avatar/Avatar.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Avatar/Avatar.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Avatar/avatarCache.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Avatar/avatarCache.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Avatar/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Avatar/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/AvatarUploader/AvatarUploader.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/AvatarUploader/AvatarUploader.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/AvatarUploader/AvatarUploadItem.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/AvatarUploader/AvatarUploadItem.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/AvatarUploader/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/AvatarUploader/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Button/__tests__/Button.test.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Button/__tests__/Button.test.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Button/Button.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Button/Button.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Button/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Button/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Card/Card.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Card/Card.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Card/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Card/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/CardList/CardList.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/CardList/CardList.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/CardList/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/CardList/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/ColonyAvatar/ColonyAvatar.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/ColonyAvatar/ColonyAvatar.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/ColonyAvatar/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/ColonyAvatar/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/ColonyGrid/ColonyGrid.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/ColonyGrid/ColonyGrid.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/ColonyGrid/ColonyGridItem.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/ColonyGrid/ColonyGridItem.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/ColonyGrid/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/ColonyGrid/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/CopyableAddress/CopyableAddress.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/CopyableAddress/CopyableAddress.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/CopyableAddress/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/CopyableAddress/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/DatePicker/CaptionElement.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/DatePicker/CaptionElement.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/DatePicker/DatePicker.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/DatePicker/DatePicker.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/DatePicker/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/DatePicker/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/DatePicker/InputField.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/DatePicker/InputField.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/DatePicker/keyTypes.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/DatePicker/keyTypes.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/DatePicker/NavbarElement.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/DatePicker/NavbarElement.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/DecisionHub/__tests__/DecisionHub.test.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/DecisionHub/__tests__/DecisionHub.test.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/DecisionHub/DecisionHub.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/DecisionHub/DecisionHub.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/DecisionHub/DecisionOption.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/DecisionHub/DecisionOption.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/DecisionHub/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/DecisionHub/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Dialog/ConfirmDialog.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Dialog/ConfirmDialog.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Dialog/Dialog.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Dialog/Dialog.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Dialog/DialogProvider.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Dialog/DialogProvider.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Dialog/DialogSection.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Dialog/DialogSection.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Dialog/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Dialog/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Dialog/types.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Dialog/types.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Dialog/withDialog.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Dialog/withDialog.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/DropdownMenu/DropdownMenu.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/DropdownMenu/DropdownMenu.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/DropdownMenu/DropdownMenuHeader/DropdownMenuHeader.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/DropdownMenu/DropdownMenuHeader/DropdownMenuHeader.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/DropdownMenu/DropdownMenuHeader/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/DropdownMenu/DropdownMenuHeader/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/DropdownMenu/DropdownMenuItem/DropdownMenuItem.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/DropdownMenu/DropdownMenuItem/DropdownMenuItem.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/DropdownMenu/DropdownMenuItem/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/DropdownMenu/DropdownMenuItem/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/DropdownMenu/DropdownMenuSection/DropdownMenuSection.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/DropdownMenu/DropdownMenuSection/DropdownMenuSection.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/DropdownMenu/DropdownMenuSection/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/DropdownMenu/DropdownMenuSection/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/DropdownMenu/DropdownMenuSeparator/DropdownMenuSeparator.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/DropdownMenu/DropdownMenuSeparator/DropdownMenuSeparator.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/DropdownMenu/DropdownMenuSeparator/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/DropdownMenu/DropdownMenuSeparator/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/DropdownMenu/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/DropdownMenu/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/ErrorBoundry/ErrorBoundry.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/ErrorBoundry/ErrorBoundry.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/ErrorBoundry/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/ErrorBoundry/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/ExternalLink/ExternalLink.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/ExternalLink/ExternalLink.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/ExternalLink/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/ExternalLink/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Fields/asField.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Fields/asField.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Fields/asFieldArray.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Fields/asFieldArray.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Fields/Checkbox/Checkbox.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Fields/Checkbox/Checkbox.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Fields/Checkbox/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Fields/Checkbox/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Fields/FieldSet/FieldSet.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Fields/FieldSet/FieldSet.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Fields/FieldSet/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Fields/FieldSet/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Fields/Form/ActionForm.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Fields/Form/ActionForm.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Fields/Form/Form.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Fields/Form/Form.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Fields/Form/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Fields/Form/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Fields/FormStatus/FormStatus.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Fields/FormStatus/FormStatus.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Fields/FormStatus/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Fields/FormStatus/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Fields/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Fields/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Fields/Input/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Fields/Input/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Fields/Input/Input.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Fields/Input/Input.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Fields/Input/InputComponent.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Fields/Input/InputComponent.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Fields/Input/types.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Fields/Input/types.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Fields/InputLabel/__tests__/InputLabel.test.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Fields/InputLabel/__tests__/InputLabel.test.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Fields/InputLabel/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Fields/InputLabel/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Fields/InputLabel/InputLabel.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Fields/InputLabel/InputLabel.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Fields/InputStatus/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Fields/InputStatus/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Fields/InputStatus/InputStatus.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Fields/InputStatus/InputStatus.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Fields/Radio/__tests__/Radio.test.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Fields/Radio/__tests__/Radio.test.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Fields/Radio/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Fields/Radio/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Fields/Radio/Radio.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Fields/Radio/Radio.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Fields/Select/__tests__/Select.test.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Fields/Select/__tests__/Select.test.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Fields/Select/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Fields/Select/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Fields/Select/keyTypes.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Fields/Select/keyTypes.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Fields/Select/Select.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Fields/Select/Select.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Fields/Select/SelectListBox.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Fields/Select/SelectListBox.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Fields/Select/types.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Fields/Select/types.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Fields/SelectOption/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Fields/SelectOption/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Fields/SelectOption/SelectOption.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Fields/SelectOption/SelectOption.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Fields/Textarea/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Fields/Textarea/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Fields/Textarea/Textarea.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Fields/Textarea/Textarea.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/FileUpload/__tests__/FileUpload.test.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/FileUpload/__tests__/FileUpload.test.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/FileUpload/FileUpload.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/FileUpload/FileUpload.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/FileUpload/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/FileUpload/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/FileUpload/types.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/FileUpload/types.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/FileUpload/UploadItem.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/FileUpload/UploadItem.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Heading/__tests__/Heading.test.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Heading/__tests__/Heading.test.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Heading/Heading.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Heading/Heading.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Heading/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Heading/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Icon/__tests__/Icon.test.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Icon/__tests__/Icon.test.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Icon/Icon.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Icon/Icon.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Icon/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Icon/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Link/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Link/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Link/Link.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Link/Link.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/MaskedAddress/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/MaskedAddress/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/MaskedAddress/MaskedAddress.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/MaskedAddress/MaskedAddress.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/MnemonicDnDSorter/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/MnemonicDnDSorter/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/MnemonicDnDSorter/MnemonicDnDSorter.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/MnemonicDnDSorter/MnemonicDnDSorter.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/MnemonicGenerator/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/MnemonicGenerator/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/MnemonicGenerator/MnemonicGenerator.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/MnemonicGenerator/MnemonicGenerator.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Modal/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Modal/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Modal/Modal.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Modal/Modal.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/NavLink/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/NavLink/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/NavLink/NavLink.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/NavLink/NavLink.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Numeral/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Numeral/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Numeral/Numeral.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Numeral/Numeral.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/OmniPicker/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/OmniPicker/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/OmniPicker/keyTypes.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/OmniPicker/keyTypes.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/OmniPicker/OmniPicker.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/OmniPicker/OmniPicker.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/OmniPicker/OmniPickerContent.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/OmniPicker/OmniPickerContent.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/OmniPicker/OmniPickerItem.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/OmniPicker/OmniPickerItem.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/OmniPicker/OmniPickerItemEmpty.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/OmniPicker/OmniPickerItemEmpty.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/OmniPicker/types.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/OmniPicker/types.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/OmniPicker/withOmniPicker.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/OmniPicker/withOmniPicker.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/PayoutsList/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/PayoutsList/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/PayoutsList/PayoutsList.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/PayoutsList/PayoutsList.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Popover/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Popover/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Popover/Popover.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Popover/Popover.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Popover/PopoverWrapper.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Popover/PopoverWrapper.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Popover/Tooltip.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Popover/Tooltip.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Popover/types.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Popover/types.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Preloaders/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Preloaders/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Preloaders/LogoLoader.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Preloaders/LogoLoader.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Preloaders/SpinnerLoader.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Preloaders/SpinnerLoader.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/ProgressBar/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/ProgressBar/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/ProgressBar/ProgressBar.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/ProgressBar/ProgressBar.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/ProgressBar/StepBar.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/ProgressBar/StepBar.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/SingleUserPicker/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/SingleUserPicker/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/SingleUserPicker/ItemDefault.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/SingleUserPicker/ItemDefault.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/SingleUserPicker/SingleUserPicker.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/SingleUserPicker/SingleUserPicker.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/SingleUserPicker/types.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/SingleUserPicker/types.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Table/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Table/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Table/Table.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Table/Table.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Table/TableBody/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Table/TableBody/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Table/TableBody/TableBody.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Table/TableBody/TableBody.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Table/TableCell/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Table/TableCell/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Table/TableCell/TableCell.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Table/TableCell/TableCell.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Table/TableHeader/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Table/TableHeader/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Table/TableHeader/TableHeader.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Table/TableHeader/TableHeader.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Table/TableHeaderCell/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Table/TableHeaderCell/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Table/TableHeaderCell/TableHeaderCell.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Table/TableHeaderCell/TableHeaderCell.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Table/TableRow/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Table/TableRow/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Table/TableRow/TableRow.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Table/TableRow/TableRow.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Tabs/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Tabs/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Tabs/Tab.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Tabs/Tab.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Tabs/TabList.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Tabs/TabList.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Tabs/TabPanel.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Tabs/TabPanel.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Tabs/Tabs.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Tabs/Tabs.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Tabs/VerticalTabList.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Tabs/VerticalTabList.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/TimeRelative/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/TimeRelative/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/TimeRelative/TimeRelative.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/TimeRelative/TimeRelative.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/UserAvatar/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/UserAvatar/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/UserAvatar/UserAvatar.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/UserAvatar/UserAvatar.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/UserInfo/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/UserInfo/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/UserInfo/UserInfo.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/UserInfo/UserInfo.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/UserMention/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/UserMention/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/UserMention/UserMention.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/UserMention/UserMention.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Wizard/__tests__/withWizard.test.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Wizard/__tests__/withWizard.test.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Wizard/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Wizard/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Wizard/types.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Wizard/types.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/components/Wizard/withWizard.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/components/Wizard/withWizard.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/namespace.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/namespace.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/reducers/__tests__/transactions.test.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/reducers/__tests__/transactions.test.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/reducers/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/reducers/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/reducers/transactions.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/reducers/transactions.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/sagas/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/sagas/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/sagas/networkClient.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/sagas/networkClient.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/sagas/utils/methodSagaFactory.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/sagas/utils/methodSagaFactory.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/sagas/utils/sendMethodTransaction.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/sagas/utils/sendMethodTransaction.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/sagas/utils/sendTransaction.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/sagas/utils/sendTransaction.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/selectors/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/selectors/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/selectors/transactions.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/selectors/transactions.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/core/types.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/core/types.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/dashboard/actionCreators/colony.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/dashboard/actionCreators/colony.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/dashboard/actionCreators/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/dashboard/actionCreators/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/dashboard/actionTypes/colony.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/dashboard/actionTypes/colony.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/dashboard/actionTypes/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/dashboard/actionTypes/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/AvatarDropdown/__datamocks__/mockUser.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/AvatarDropdown/__datamocks__/mockUser.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/AvatarDropdown/AvatarDropdown.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/AvatarDropdown/AvatarDropdown.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/AvatarDropdown/AvatarDropdownPopover.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/AvatarDropdown/AvatarDropdownPopover.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/AvatarDropdown/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/AvatarDropdown/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/ColonyHome/__datamocks__/mockColonies.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/ColonyHome/__datamocks__/mockColonies.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/ColonyHome/__datamocks__/mockColony.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/ColonyHome/__datamocks__/mockColony.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/ColonyHome/__datamocks__/mockDomains.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/ColonyHome/__datamocks__/mockDomains.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/ColonyHome/__datamocks__/mockTasks.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/ColonyHome/__datamocks__/mockTasks.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/ColonyHome/ColonyHome.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/ColonyHome/ColonyHome.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/ColonyHome/ColonyMeta/ColonyMeta.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/ColonyHome/ColonyMeta/ColonyMeta.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/ColonyHome/ColonyMeta/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/ColonyHome/ColonyMeta/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/ColonyHome/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/ColonyHome/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/CreateColonyWizard/__tests__/CreateColonyWizard.test.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/CreateColonyWizard/__tests__/CreateColonyWizard.test.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/CreateColonyWizard/CreateColonyCardRow.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/CreateColonyWizard/CreateColonyCardRow.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/CreateColonyWizard/CreateColonyWizard.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/CreateColonyWizard/CreateColonyWizard.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/CreateColonyWizard/CreateColonyWizard.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/CreateColonyWizard/CreateColonyWizard.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/CreateColonyWizard/CreatingColony.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/CreateColonyWizard/CreatingColony.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/CreateColonyWizard/CreatingToken.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/CreateColonyWizard/CreatingToken.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/CreateColonyWizard/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/CreateColonyWizard/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/CreateColonyWizard/StepColonyName.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/CreateColonyWizard/StepColonyName.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/CreateColonyWizard/StepCreateColony.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/CreateColonyWizard/StepCreateColony.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/CreateColonyWizard/StepCreateToken.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/CreateColonyWizard/StepCreateToken.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/CreateColonyWizard/StepSelectToken.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/CreateColonyWizard/StepSelectToken.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/CreateColonyWizard/StepTokenChoice.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/CreateColonyWizard/StepTokenChoice.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/Dashboard/__datamocks__/mockColonies.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/Dashboard/__datamocks__/mockColonies.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/Dashboard/__datamocks__/mockTasks.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/Dashboard/__datamocks__/mockTasks.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/Dashboard/Dashboard.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/Dashboard/Dashboard.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/Dashboard/Dashboard.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/Dashboard/Dashboard.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/Dashboard/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/Dashboard/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/Dashboard/TabMyTasks.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/Dashboard/TabMyTasks.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/Inbox/__datamocks__/mockInbox.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/Inbox/__datamocks__/mockInbox.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/Inbox/Inbox.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/Inbox/Inbox.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/Inbox/InboxItem.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/Inbox/InboxItem.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/Inbox/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/Inbox/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/Inbox/messages.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/Inbox/messages.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/Inbox/types.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/Inbox/types.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/Navigation/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/Navigation/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/Navigation/Navigation.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/Navigation/Navigation.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/Task/__datamocks__/mockTask.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/Task/__datamocks__/mockTask.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/Task/__datamocks__/mockUser.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/Task/__datamocks__/mockUser.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/Task/__datamocks__/mockUsers.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/Task/__datamocks__/mockUsers.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/Task/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/Task/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="1" name="/home/circleci/colonyDapp/src/modules/dashboard/components/Task/Task.jsx">
+<testcase time="0" name="org.eslint.no-console"><failure message="Unexpected console statement."><![CDATA[line 111, col 19, Warning - Unexpected console statement. (no-console)]]></failure></testcase>
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/TaskList/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/TaskList/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/TaskList/TaskList.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/TaskList/TaskList.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/TaskList/TaskListItem.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/TaskList/TaskListItem.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/dashboard/namespace.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/dashboard/namespace.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/dashboard/sagas/colony.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/dashboard/sagas/colony.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/dashboard/sagas/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/dashboard/sagas/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/pages/components/CenteredTemplate/CenteredTemplate.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/pages/components/CenteredTemplate/CenteredTemplate.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/pages/components/CenteredTemplate/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/pages/components/CenteredTemplate/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/pages/components/LoadingTemplate/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/pages/components/LoadingTemplate/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/pages/components/LoadingTemplate/LoadingTemplate.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/pages/components/LoadingTemplate/LoadingTemplate.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/pages/components/ProfileTemplate/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/pages/components/ProfileTemplate/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/pages/components/ProfileTemplate/ProfileTemplate.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/pages/components/ProfileTemplate/ProfileTemplate.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/pages/components/VerticalNavigation/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/pages/components/VerticalNavigation/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/pages/components/VerticalNavigation/VerticalNavigation.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/pages/components/VerticalNavigation/VerticalNavigation.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/pages/components/WizardTemplate/__tests__/WizardTemplate.test.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/pages/components/WizardTemplate/__tests__/WizardTemplate.test.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/pages/components/WizardTemplate/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/pages/components/WizardTemplate/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/pages/components/WizardTemplate/WizardTemplate.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/pages/components/WizardTemplate/WizardTemplate.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/users/actionCreators/wallet.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/users/actionCreators/wallet.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/users/actionTypes/currentUserActionTypes.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/users/actionTypes/currentUserActionTypes.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/users/actionTypes/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/users/actionTypes/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/users/actionTypes/userProfileActionTypes.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/users/actionTypes/userProfileActionTypes.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/users/actionTypes/wallet.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/users/actionTypes/wallet.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/users/components/ConnectWalletWizard/ConnectWalletWizard.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/users/components/ConnectWalletWizard/ConnectWalletWizard.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/users/components/ConnectWalletWizard/ConnectWalletWizard.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/users/components/ConnectWalletWizard/ConnectWalletWizard.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/users/components/ConnectWalletWizard/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/users/components/ConnectWalletWizard/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/users/components/ConnectWalletWizard/StepHardware/HardwareChoice.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/users/components/ConnectWalletWizard/StepHardware/HardwareChoice.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/users/components/ConnectWalletWizard/StepHardware/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/users/components/ConnectWalletWizard/StepHardware/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/users/components/ConnectWalletWizard/StepHardware/StepHardware.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/users/components/ConnectWalletWizard/StepHardware/StepHardware.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/users/components/ConnectWalletWizard/StepJSONUpload/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/users/components/ConnectWalletWizard/StepJSONUpload/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/users/components/ConnectWalletWizard/StepJSONUpload/StepJSONUpload.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/users/components/ConnectWalletWizard/StepJSONUpload/StepJSONUpload.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/users/components/ConnectWalletWizard/StepMetaMask/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/users/components/ConnectWalletWizard/StepMetaMask/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/users/components/ConnectWalletWizard/StepMetaMask/StepMetaMask.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/users/components/ConnectWalletWizard/StepMetaMask/StepMetaMask.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/users/components/ConnectWalletWizard/StepMnemonic/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/users/components/ConnectWalletWizard/StepMnemonic/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/users/components/ConnectWalletWizard/StepMnemonic/StepMnemonic.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/users/components/ConnectWalletWizard/StepMnemonic/StepMnemonic.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/users/components/ConnectWalletWizard/StepStart/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/users/components/ConnectWalletWizard/StepStart/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/users/components/ConnectWalletWizard/StepStart/StepStart.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/users/components/ConnectWalletWizard/StepStart/StepStart.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/users/components/CreateWalletWizard/CreateWalletWizard.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/users/components/CreateWalletWizard/CreateWalletWizard.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/users/components/CreateWalletWizard/CreateWalletWizard.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/users/components/CreateWalletWizard/CreateWalletWizard.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/users/components/CreateWalletWizard/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/users/components/CreateWalletWizard/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/users/components/CreateWalletWizard/StepBackupPhrase.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/users/components/CreateWalletWizard/StepBackupPhrase.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/users/components/CreateWalletWizard/StepCreatePhrase.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/users/components/CreateWalletWizard/StepCreatePhrase.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/users/components/CreateWalletWizard/StepProfileCreate.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/users/components/CreateWalletWizard/StepProfileCreate.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/users/components/CreateWalletWizard/StepProveMnemonic.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/users/components/CreateWalletWizard/StepProveMnemonic.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/users/components/ProfileCreate/__tests__/ProfileCreate.test.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/users/components/ProfileCreate/__tests__/ProfileCreate.test.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/users/components/ProfileCreate/__tests__/ProfileCreateForm.test.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/users/components/ProfileCreate/__tests__/ProfileCreateForm.test.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/users/components/ProfileCreate/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/users/components/ProfileCreate/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/users/components/ProfileCreate/ProfileCreate.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/users/components/ProfileCreate/ProfileCreate.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/users/components/ProfileCreate/ProfileCreateForm.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/users/components/ProfileCreate/ProfileCreateForm.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/users/components/ProfileCreate/types.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/users/components/ProfileCreate/types.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/users/components/UserProfile/__datamocks__/mockActivities.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/users/components/UserProfile/__datamocks__/mockActivities.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/users/components/UserProfile/__datamocks__/mockColonies.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/users/components/UserProfile/__datamocks__/mockColonies.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/users/components/UserProfile/__datamocks__/mockUser.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/users/components/UserProfile/__datamocks__/mockUser.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/users/components/UserProfile/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/users/components/UserProfile/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/users/components/UserProfile/UserMeta.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/users/components/UserProfile/UserMeta.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/users/components/UserProfile/UserProfile.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/users/components/UserProfile/UserProfile.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/users/components/UserProfileEdit/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/users/components/UserProfileEdit/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/users/components/UserProfileEdit/Sidebar.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/users/components/UserProfileEdit/Sidebar.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/users/components/UserProfileEdit/UserProfileEdit.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/users/components/UserProfileEdit/UserProfileEdit.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/users/reducers/currentUserReducer.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/users/reducers/currentUserReducer.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/users/reducers/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/users/reducers/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/users/reducers/userProfilesReducer.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/users/reducers/userProfilesReducer.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/users/reducers/wallet.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/users/reducers/wallet.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/users/sagas/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/users/sagas/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/users/sagas/userSagas.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/users/sagas/userSagas.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/users/sagas/wallet.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/users/sagas/wallet.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/validations.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/modules/validations.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/routes/ConnectedOnlyRoute.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/routes/ConnectedOnlyRoute.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/routes/DisconnectedOnlyRoute.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/routes/DisconnectedOnlyRoute.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/routes/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/routes/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/routes/routeConstants.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/routes/routeConstants.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/routes/Routes.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/routes/Routes.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/styleguide/Wrapper.jsx">
+<testcase time="0" name="/home/circleci/colonyDapp/src/styleguide/Wrapper.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/types/colony.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/types/colony.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/types/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/types/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/types/token.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/types/token.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/types/transaction.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/types/transaction.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/types/user.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/types/user.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/utils/arrays/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/utils/arrays/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/utils/css/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/utils/css/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/utils/dynamicImport/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/utils/dynamicImport/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/utils/redux/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/utils/redux/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/utils/strings/index.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/utils/strings/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/utils/time.js">
+<testcase time="0" name="/home/circleci/colonyDapp/src/utils/time.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/integration-testing/DDB.test.js">
+<testcase time="0" name="/home/circleci/colonyDapp/integration-testing/DDB.test.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/integration-testing/IPFS.test.js">
+<testcase time="0" name="/home/circleci/colonyDapp/integration-testing/IPFS.test.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/integration-testing/OrbitDB.test.js">
+<testcase time="0" name="/home/circleci/colonyDapp/integration-testing/OrbitDB.test.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/integration-testing/utils/createIPFSNode.js">
+<testcase time="0" name="/home/circleci/colonyDapp/integration-testing/utils/createIPFSNode.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/integration-testing/utils/createOrbitNode.js">
+<testcase time="0" name="/home/circleci/colonyDapp/integration-testing/utils/createOrbitNode.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/integration-testing/utils/DDBTestFactory.js">
+<testcase time="0" name="/home/circleci/colonyDapp/integration-testing/utils/DDBTestFactory.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/integration-testing/utils/fetch-polyfill.js">
+<testcase time="0" name="/home/circleci/colonyDapp/integration-testing/utils/fetch-polyfill.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/integration-testing/utils/integration-testing-setup.js">
+<testcase time="0" name="/home/circleci/colonyDapp/integration-testing/utils/integration-testing-setup.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/integration-testing/utils/integration-testing-teardown.js">
+<testcase time="0" name="/home/circleci/colonyDapp/integration-testing/utils/integration-testing-teardown.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/integration-testing/utils/ipfs-hash-helpers.js">
+<testcase time="0" name="/home/circleci/colonyDapp/integration-testing/utils/ipfs-hash-helpers.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/integration-testing/utils/patch-node-crypto.js">
+<testcase time="0" name="/home/circleci/colonyDapp/integration-testing/utils/patch-node-crypto.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/integration-testing/utils/pinner.mock.js">
+<testcase time="0" name="/home/circleci/colonyDapp/integration-testing/utils/pinner.mock.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/integration-testing/utils/tools.js">
+<testcase time="0" name="/home/circleci/colonyDapp/integration-testing/utils/tools.js" />
+</testsuite>
+</testsuites>
