@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites id="flow">
+  <testsuite
+    package="org.flow"
+    tests="0"
+    time="0"
+    skipped="0"
+    errors="0"
+    id="flow-suite"
+    name="Flow type check"
+    >
+  </testsuite>
+</testsuites>
