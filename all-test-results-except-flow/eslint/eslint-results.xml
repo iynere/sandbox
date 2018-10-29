@@ -135,15 +135,6 @@
 <testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/admin/components/Profile/Profile.jsx">
 <testcase time="0" name="/home/circleci/colonyDapp/src/modules/admin/components/Profile/Profile.jsx" />
 </testsuite>
-<testsuite package="org.eslint" time="0" tests="2" errors="2" name="/home/circleci/colonyDapp/src/modules/admin/components/Profile/ProfileAdvanced.jsx">
-<testcase time="0" name="org.eslint.no-console"><failure message="Unexpected console statement."><![CDATA[line 51, col 24, Warning - Unexpected console statement. (no-console)]]></failure></testcase>
-<testcase time="0" name="org.eslint.no-console"><failure message="Unexpected console statement."><![CDATA[line 67, col 22, Warning - Unexpected console statement. (no-console)]]></failure></testcase>
-</testsuite>
-<testsuite package="org.eslint" time="0" tests="3" errors="3" name="/home/circleci/colonyDapp/src/modules/admin/components/Profile/ProfileEdit.jsx">
-<testcase time="0" name="org.eslint.no-console"><failure message="Unexpected console statement."><![CDATA[line 64, col 3, Warning - Unexpected console statement. (no-console)]]></failure></testcase>
-<testcase time="0" name="org.eslint.no-console"><failure message="Unexpected console statement."><![CDATA[line 68, col 3, Warning - Unexpected console statement. (no-console)]]></failure></testcase>
-<testcase time="0" name="org.eslint.no-console"><failure message="Unexpected console statement."><![CDATA[line 90, col 19, Warning - Unexpected console statement. (no-console)]]></failure></testcase>
-</testsuite>
 <testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/admin/components/Tokens/__datamocks__/mockTokens.js">
 <testcase time="0" name="/home/circleci/colonyDapp/src/modules/admin/components/Tokens/__datamocks__/mockTokens.js" />
 </testsuite>

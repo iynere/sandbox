@@ -42,12 +42,12 @@ jobs:
       - store_test_results:
           path: all-test-results-except-flow
 
-  all-results-no-eslint:
-    machine: true
-    steps:
-      - checkout
-      - store_test_results:
-          path: all-test-results-except-eslint
+  # all-results-no-eslint:
+  #   machine: true
+  #   steps:
+  #     - checkout
+  #     - store_test_results:
+  #         path: all-test-results-except-eslint
 
 workflows:
   version: 2
@@ -72,9 +72,9 @@ workflows:
             - flow-results
             - stylelint-results
 
-      - all-results-no-eslint:
-          requires:
-            - jest-results
-            - eslint-results
-            - flow-results
-            - stylelint-results
+      # - all-results-no-eslint:
+      #     requires:
+      #       - jest-results
+      #       - eslint-results
+      #       - flow-results
+      #       - stylelint-results
