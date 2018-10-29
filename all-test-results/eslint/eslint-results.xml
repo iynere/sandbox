@@ -66,9 +66,6 @@
 <testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/lib/database/KVStore.js">
 <testcase time="0" name="/home/circleci/colonyDapp/src/lib/database/KVStore.js" />
 </testsuite>
-<testsuite package="org.eslint" time="0" tests="1" errors="1" name="/home/circleci/colonyDapp/src/lib/database/PurserAccessController.js">
-<testcase time="0" name="org.eslint.no-console"><failure message="Unexpected console statement."><![CDATA[line 85, col 5, Warning - Unexpected console statement. (no-console)]]></failure></testcase>
-</testsuite>
 <testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/lib/database/PurserIdentity.js">
 <testcase time="0" name="/home/circleci/colonyDapp/src/lib/database/PurserIdentity.js" />
 </testsuite>
@@ -132,12 +129,6 @@
 <testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/admin/components/Organizations/index.js">
 <testcase time="0" name="/home/circleci/colonyDapp/src/modules/admin/components/Organizations/index.js" />
 </testsuite>
-<testsuite package="org.eslint" time="0" tests="1" errors="1" name="/home/circleci/colonyDapp/src/modules/admin/components/Organizations/OrganizationAddAdmins.jsx">
-<testcase time="0" name="org.eslint.no-console"><failure message="Unexpected console statement."><![CDATA[line 60, col 23, Warning - Unexpected console statement. (no-console)]]></failure></testcase>
-</testsuite>
-<testsuite package="org.eslint" time="0" tests="1" errors="1" name="/home/circleci/colonyDapp/src/modules/admin/components/Organizations/Organizations.jsx">
-<testcase time="0" name="org.eslint.no-console"><failure message="Unexpected console statement."><![CDATA[line 67, col 25, Warning - Unexpected console statement. (no-console)]]></failure></testcase>
-</testsuite>
 <testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/admin/components/Profile/index.js">
 <testcase time="0" name="/home/circleci/colonyDapp/src/modules/admin/components/Profile/index.js" />
 </testsuite>
@@ -158,12 +149,6 @@
 </testsuite>
 <testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/admin/components/Tokens/index.js">
 <testcase time="0" name="/home/circleci/colonyDapp/src/modules/admin/components/Tokens/index.js" />
-</testsuite>
-<testsuite package="org.eslint" time="0" tests="1" errors="1" name="/home/circleci/colonyDapp/src/modules/admin/components/Tokens/TokenCard.jsx">
-<testcase time="0" name="org.eslint.no-console"><failure message="Unexpected console statement."><![CDATA[line 98, col 16, Warning - Unexpected console statement. (no-console)]]></failure></testcase>
-</testsuite>
-<testsuite package="org.eslint" time="0" tests="1" errors="1" name="/home/circleci/colonyDapp/src/modules/admin/components/Tokens/TokenEditDialog.jsx">
-<testcase time="0" name="org.eslint.no-console"><failure message="Unexpected console statement."><![CDATA[line 84, col 5, Warning - Unexpected console statement. (no-console)]]></failure></testcase>
 </testsuite>
 <testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/admin/components/Tokens/Tokens.js">
 <testcase time="0" name="/home/circleci/colonyDapp/src/modules/admin/components/Tokens/Tokens.js" />
@@ -188,9 +173,6 @@
 </testsuite>
 <testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/admin/components/Transactions/index.js">
 <testcase time="0" name="/home/circleci/colonyDapp/src/modules/admin/components/Transactions/index.js" />
-</testsuite>
-<testsuite package="org.eslint" time="0" tests="1" errors="1" name="/home/circleci/colonyDapp/src/modules/admin/components/Transactions/Transactions.jsx">
-<testcase time="0" name="org.eslint.no-console"><failure message="Unexpected console statement."><![CDATA[line 73, col 3, Warning - Unexpected console statement. (no-console)]]></failure></testcase>
 </testsuite>
 <testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/admin/components/UserList/index.js">
 <testcase time="0" name="/home/circleci/colonyDapp/src/modules/admin/components/UserList/index.js" />
@@ -911,9 +893,6 @@
 </testsuite>
 <testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/Task/index.js">
 <testcase time="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/Task/index.js" />
-</testsuite>
-<testsuite package="org.eslint" time="0" tests="1" errors="1" name="/home/circleci/colonyDapp/src/modules/dashboard/components/Task/Task.jsx">
-<testcase time="0" name="org.eslint.no-console"><failure message="Unexpected console statement."><![CDATA[line 111, col 19, Warning - Unexpected console statement. (no-console)]]></failure></testcase>
 </testsuite>
 <testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/TaskList/index.js">
 <testcase time="0" name="/home/circleci/colonyDapp/src/modules/dashboard/components/TaskList/index.js" />
