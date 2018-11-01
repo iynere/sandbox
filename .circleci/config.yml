@@ -8,6 +8,7 @@ jobs:
       - run: echo "$ANDROID_NDK_HOME"
       - run: cd $ANDROID_NDK_HOME && ls
 
+
   a24:
     docker:
       - image: ccistaging/android:api-24-alpha
