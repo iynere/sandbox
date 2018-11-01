@@ -1,0 +1,16 @@
+<testsuites name="jest tests" tests="1" failures="1" time="0.817">
+  <testsuite name="Test stuff" errors="0" failures="1" skipped="0" timestamp="2018-10-25T10:58:13" time="0.396" tests="1">
+    <testcase classname="Test stuff We are testing" name="Test stuff We are testing" time="0.006">
+      <failure>Error: expect(received).toBeFalsy()
+
+Received: true
+    at Object.toBeFalsy (/home/circleci/build/__tests__/default.test.js:5:18)
+    at Object.asyncJestTest (/home/circleci/build/node_modules/jest-jasmine2/build/jasmine_async.js:108:37)
+    at resolve (/home/circleci/build/node_modules/jest-jasmine2/build/queue_runner.js:56:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/home/circleci/build/node_modules/jest-jasmine2/build/queue_runner.js:43:19)
+    at promise.then (/home/circleci/build/node_modules/jest-jasmine2/build/queue_runner.js:87:41)
+    at &lt;anonymous&gt;</failure>
+    </testcase>
+  </testsuite>
+</testsuites>
