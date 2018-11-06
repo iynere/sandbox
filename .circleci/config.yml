@@ -10,6 +10,9 @@ jobs:
       - checkout
 
       - aws-cli/install
+      - run: |
+          echo "$AWS_ACCESS_KEY_ID"
+          echo "$AWS_SECRET_ACCESS_KEY"
 
       - aws-cli/configure
 
