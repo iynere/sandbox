@@ -1,17 +1,17 @@
 version: 2.1
 
 orbs:
-  aws-cli-orb: iynere/aws-cli-orb@dev:master
+  aws-cli: iynere/aws-cli-orb@dev:master
 
 jobs:
   test-aws-cli:
-    executor: aws-cli-orb/default
+    executor: aws-cli/default
     steps:
       - checkout
 
-      - aws-cli-orb/install
+      - aws-cli/install
 
-      - aws-cli-orb/configure:
+      - aws-cli/configure:
           profile-name: testing
 
 workflows:
