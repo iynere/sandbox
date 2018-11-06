@@ -18,5 +18,5 @@ workflows:
   version: 2
   test-orbs:
     jobs:
-      test-aws-cli:
-        context: aws
+      - test-aws-cli:
+          context: aws
