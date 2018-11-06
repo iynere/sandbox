@@ -11,6 +11,7 @@ jobs:
       - aws-cli/install
       - aws-cli/configure:
           profile-name: testing
+      - run: echo "😮"
 
 workflows:
   version: 2
