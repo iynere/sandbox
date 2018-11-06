@@ -8,9 +8,7 @@ jobs:
     executor: aws-cli/default
     steps:
       - checkout
-
       - aws-cli/install
-
       - aws-cli/configure:
           profile-name: testing
 
