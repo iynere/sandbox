@@ -1,7 +1,7 @@
 version: 2.1
 
 orbs:
-  aws-cli: iynere/aws-cli-orb@dev:master
+  aws-cli: iynere/aws-cli-orb@dev:alpha
 
 jobs:
   test-aws-cli:
