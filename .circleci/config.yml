@@ -11,8 +11,7 @@ jobs:
 
       - aws-cli/install
 
-      - aws-cli/configure:
-          profile-name: r0se
+      - aws-cli/configure
 
 workflows:
   version: 2
