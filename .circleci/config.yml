@@ -4,9 +4,3 @@ jobs:
     machine: true
     steps:
       - checkout
-      - run: |
-          echo "Files changed: $(git log -1 --format="" --name-only)"
-
-          GIT_LOG=$(git log -1 --format="" --name-only)
-
-          echo "Files changed: " $GIT_LOG
