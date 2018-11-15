@@ -5,3 +5,5 @@ jobs:
     steps:
 
       - checkout
+
+      - run: bash find_last_original_job_commit.sh
