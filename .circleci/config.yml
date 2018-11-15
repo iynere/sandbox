@@ -6,4 +6,6 @@ jobs:
 
       - checkout
 
-      - run: bash find_last_original_job_commit.sh
+      - run: |
+          echo "original CIRCLE_COMPARE_URL:" $CIRCLE_COMPARE_URL
+          bash find_last_original_job_commit.sh
