@@ -17,4 +17,4 @@ LAST_PUSHED_COMMIT=$(curl https://circleci.com/api/v1.1/project/github/$CIRCLE_P
 
 echo "last pushed commit hash is:" $LAST_PUSHED_COMMIT
 echo "this job's commit hash is:" $CIRCLE_SHA1
-echo "recreated CIRCLE_COMPARE_URL:" https://github.com/$CIRCLE_PROJECT_USERNAME/$CIRCLE_PROJECT_REPONAME/compare/${LAST_PUSHED_COMMIT:0:12}...${CIRCLE_SHA1:0:12}
+echo "recreated CIRCLE_COMPARE_URL: https://github.com/$CIRCLE_PROJECT_USERNAME/$CIRCLE_PROJECT_REPONAME/compare/${LAST_PUSHED_COMMIT:0:12}...${CIRCLE_SHA1:0:12}"
