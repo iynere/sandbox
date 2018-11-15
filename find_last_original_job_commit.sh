@@ -15,4 +15,6 @@ done
 
 LAST_PUSHED_COMMIT=$(curl https://circleci.com/api/v1.1/project/github/$CIRCLE_PROJECT_USERNAME/$CIRCLE_PROJECT_REPONAME/$JOB_NUM | grep '"commit" : ' | sed -E 's/"commit" ://' | sed -E 's/[[:punct:]]//g')
 
-echo $LAST_PUSHED_COMMIT
+echo "last pushed commit hash is:" $LAST_PUSHED_COMMIT
+echo "this job's commit hash is:" $CIRCLE_SHA1
+echo "recreated CIRCLE_COMPARE_URL:"
