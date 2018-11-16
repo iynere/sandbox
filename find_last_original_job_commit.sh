@@ -9,13 +9,14 @@ do
     https://circleci.com/api/v1.1/project/github/$CIRCLE_PROJECT_USERNAME/$CIRCLE_PROJECT_REPONAME/$JOB_NUM \
     > JOB_OUTPUT
 
-
   if [[ $(grep '"retry_of" : null' JOB_OUTPUT) && \
-  	# ignore jobs that were SSH reruns of previous jobs
-  	! $(grep "\"workflow_id\" : \"$CIRCLE_WORKFLOW_ID\"" JOB_OUTPUT) && \
-  	# ignore jobs that are part of the same workflow
-  	! $(grep "\"commit\" : \"$CIRCLE_SHA1\"" JOB_OUTPUT) ]]; then
-  	# ignore jobs that share the same commit
+    # ignore jobs that were SSH reruns of previous jobs
+    ! $(grep "\"workflow_id\" : \"$CIRCLE_WORKFLOW_ID\"" JOB_OUTPUT) && \
+    # ignore jobs that are part of the same workflow
+    ! $(grep "\"commit\" : \"$CIRCLE_SHA1\"" JOB_OUTPUT) && \
+    # ignore jobs that share the same commit
+    $(grep "\"branch\" : \"$CIRCLE_BRANCH\"") ]]; then
+    # make sure we filter out results from other branches
 
     RETRY=false
   else
