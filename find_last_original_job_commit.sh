@@ -9,7 +9,7 @@ do
     https://circleci.com/api/v1.1/project/github/$CIRCLE_PROJECT_USERNAME/$CIRCLE_PROJECT_REPONAME/$JOB_NUM \
     > JOB_OUTPUT
 
-  if [[ $(grep '"retry_of" : null' JOB_OUTPUT) && $(grep "\"workflow_id\" : \"$CIRCLE_WORKFLOW_ID\"" JOB_OUTPUT)]]; then
+  if [[ $(grep '"retry_of" : null' JOB_OUTPUT) && $(grep "\"workflow_id\" : \"$CIRCLE_WORKFLOW_ID\"" JOB_OUTPUT) ]]; then
 
     RETRY=false
   else
