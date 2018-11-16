@@ -5,10 +5,8 @@ JOB_NUM=$CIRCLE_PREVIOUS_BUILD_NUM
 
 while [[ $(echo $RETRY) == true ]]
 do
-  if [[ $(curl --user $CIRCLE_TOKEN: https://circleci.com/api/v1.1/project/github/$CIRCLE_PROJECT_USERNAME/$CIRCLE_PROJECT_REPONAME/$JOB_NUM | grep '"retry_of" : null') ]]; then
-  	if ! [[ $(curl --user $CIRCLE_TOKEN: https://circleci.com/api/v1.1/project/github/$CIRCLE_PROJECT_USERNAME/$CIRCLE_PROJECT_REPONAME/$JOB_NUM | grep "$CIRCLE_WORKFLOW_ID") ]]; then
-      RETRY=false
-    fi
+  if [[ $(curl --user $CIRCLE_TOKEN: https://circleci.com/api/v1.1/project/github/$CIRCLE_PROJECT_USERNAME/$CIRCLE_PROJECT_REPONAME/$JOB_NUM | grep '"retry_of" : null') && $(curl --user $CIRCLE_TOKEN: https://circleci.com/api/v1.1/project/github/$CIRCLE_PROJECT_USERNAME/$CIRCLE_PROJECT_REPONAME/$JOB_NUM | grep "$CIRCLE_WORKFLOW_ID") == false ]]; then
+    RETRY=false
   else
     echo "$JOB_NUM was a retry of a previous job, or part of the current workflow"
     JOB_NUM=$(( $JOB_NUM - 1 ))
