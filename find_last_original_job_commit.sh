@@ -5,13 +5,11 @@ JOB_NUM=$CIRCLE_PREVIOUS_BUILD_NUM
 
 while [[ $(echo $RETRY) == true ]]
 do
-  JOB_OUTPUT=\
-    $(curl --user $CIRCLE_TOKEN: \
-    https://circleci.com/api/v1.1/project/github/$CIRCLE_PROJECT_USERNAME/$CIRCLE_PROJECT_REPONAME/$JOB_NUM)
+  curl --user $CIRCLE_TOKEN: \
+    https://circleci.com/api/v1.1/project/github/$CIRCLE_PROJECT_USERNAME/$CIRCLE_PROJECT_REPONAME/$JOB_NUM \
+    > JOB_OUTPUT
 
-  if [[ $(echo $JOB_OUTPUT | \
-    grep '"retry_of" : null') && $(echo $JOB_OUTPUT | \
-    grep -v '"workflow_id" : "${CIRCLE_WORKFLOW_ID}"')]]; then
+  if [[ $(grep '"retry_of" : null' JOB_OUTPUT) && $(grep "\"workflow_id\" : \"$CIRCLE_WORKFLOW_ID\"" JOB_OUTPUT)]]; then
 
     RETRY=false
   else
@@ -20,12 +18,13 @@ do
   fi
 done
 
+rm -f JOB_OUTPUT
+
 LAST_PUSHED_COMMIT=$(curl --user $CIRCLE_TOKEN: \
   https://circleci.com/api/v1.1/project/github/$CIRCLE_PROJECT_USERNAME/$CIRCLE_PROJECT_REPONAME/$JOB_NUM | \
   grep '"commit" : ' | sed -E 's/"commit" ://' | sed -E 's/[[:punct:]]//g' | sed -E 's/ //g')
 
-CIRCLE_COMPARE_URL=\
-  "https://github.com/$CIRCLE_PROJECT_USERNAME/$CIRCLE_PROJECT_REPONAME/compare/${LAST_PUSHED_COMMIT:0:12}...${CIRCLE_SHA1:0:12}"
+CIRCLE_COMPARE_URL="https://github.com/$CIRCLE_PROJECT_USERNAME/$CIRCLE_PROJECT_REPONAME/compare/${LAST_PUSHED_COMMIT:0:12}...${CIRCLE_SHA1:0:12}"
 
 echo "last pushed commit hash is:" $LAST_PUSHED_COMMIT
 
