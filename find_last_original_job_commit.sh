@@ -15,7 +15,7 @@ do
     # ignore jobs that are part of the same workflow
     ! $(grep "\"commit\" : \"$CIRCLE_SHA1\"" JOB_OUTPUT) && \
     # ignore jobs that share the same commit
-    $(grep "\"branch\" : \"$CIRCLE_BRANCH\"") ]]; then
+    $(grep "\"branch\" : \"$CIRCLE_BRANCH\"" JOB_OUTPUT) ]]; then
     # make sure we filter out results from other branches
 
     RETRY=false
