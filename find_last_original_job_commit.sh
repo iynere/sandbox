@@ -12,16 +12,14 @@ do
 
   if [[ $(grep '"retry_of" : null' JOB_OUTPUT) && \
   	# ignore jobs that were SSH reruns of previous jobs
-  	$(grep -v "\"workflow_id\" : \"$CIRCLE_WORKFLOW_ID\"" JOB_OUTPUT) && \
+  	! $(grep "\"workflow_id\" : \"$CIRCLE_WORKFLOW_ID\"" JOB_OUTPUT) && \
   	# ignore jobs that are part of the same workflow
-  	$(grep -v "\"commit\" : \"$CIRCLE_SHA1\"") ]]; then
+  	! $(grep "\"commit\" : \"$CIRCLE_SHA1\"" JOB_OUTPUT) ]]; then
   	# ignore jobs that share the same commit
 
     RETRY=false
   else
-    echo "$JOB_NUM was a retry of a previous job, \
-      part of a rerun workflow, \
-      or else part of the current workflow"
+    echo "$JOB_NUM was a retry of a previous job, part of a rerun workflow, or else part of the current workflow"
     # deincrement job num by 1 & try again
     JOB_NUM=$(( $JOB_NUM - 1 ))
   fi
