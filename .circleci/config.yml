@@ -1,4 +1,8 @@
-version: 2
+version: 2.1
+
+orbs:
+  compare-url: iynere/compare-url@dev:add-bb-functionality-fa5fa6172db2ae10f3c83b8302c26c08f2166d8e
+
 jobs:
   build:
     machine: true
