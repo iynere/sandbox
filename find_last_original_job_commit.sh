@@ -3,10 +3,18 @@
 RETRY=true
 JOB_NUM=$(( $CIRCLE_BUILD_NUM - 1 ))
 
+if [[ $(echo $CIRCLE_REPOSITORY_URL | grep github.com:$CIRCLE_PROJECT_USERNAME) ]]; then
+  VCS=github
+fi
+
+if [[ $(echo $CIRCLE_REPOSITORY_URL | grep bitbucket.org:$CIRCLE_PROJECT_USERNAME) ]]; then
+  VCS=bitbucket
+fi
+
 while [[ $(echo $RETRY) == true ]]
 do
-  curl --user $CIRCLE_TOKEN: \
-    https://circleci.com/api/v1.1/project/github/$CIRCLE_PROJECT_USERNAME/$CIRCLE_PROJECT_REPONAME/$JOB_NUM \
+  curl --user <<parameters.circle-token>>: \
+    https://circleci.com/api/v1.1/project/$VCS/$CIRCLE_PROJECT_USERNAME/$CIRCLE_PROJECT_REPONAME/$JOB_NUM \
     > JOB_OUTPUT
 
   if [[ $(grep '"retry_of" : null' JOB_OUTPUT) && \
@@ -28,11 +36,17 @@ done
 
 rm -f JOB_OUTPUT
 
-LAST_PUSHED_COMMIT=$(curl --user $CIRCLE_TOKEN: \
-  https://circleci.com/api/v1.1/project/github/$CIRCLE_PROJECT_USERNAME/$CIRCLE_PROJECT_REPONAME/$JOB_NUM | \
+LAST_PUSHED_COMMIT=$(curl --user <<parameters.circle-token>>: \
+  https://circleci.com/api/v1.1/project/$VCS/$CIRCLE_PROJECT_USERNAME/$CIRCLE_PROJECT_REPONAME/$JOB_NUM | \
   grep '"commit" : ' | sed -E 's/"commit" ://' | sed -E 's/[[:punct:]]//g' | sed -E 's/ //g')
 
-CIRCLE_COMPARE_URL="https://github.com/$CIRCLE_PROJECT_USERNAME/$CIRCLE_PROJECT_REPONAME/compare/${LAST_PUSHED_COMMIT:0:12}...${CIRCLE_SHA1:0:12}"
+if [[ $(echo $VCS | grep github) ]]; then
+  CIRCLE_COMPARE_URL="https://github.com/$CIRCLE_PROJECT_USERNAME/$CIRCLE_PROJECT_REPONAME/compare/${LAST_PUSHED_COMMIT:0:12}...${CIRCLE_SHA1:0:12}"
+fi
+
+if [[ $(echo $VCS | grep bitbucket) ]]; then
+  CIRCLE_COMPARE_URL="https://bitbucket.org/$CIRCLE_PROJECT_USERNAME/$CIRCLE_PROJECT_REPONAME/branches/compare/${LAST_PUSHED_COMMIT:0:12}...${CIRCLE_SHA1:0:12}"
+fi
 
 echo "last pushed commit hash is:" $LAST_PUSHED_COMMIT
 
@@ -46,6 +60,6 @@ echo "recreated CIRCLE_COMPARE_URL:" $CIRCLE_COMPARE_URL
 
 echo "- - - - - - - - - - - - - - - - - - - - - - - -"
 
-echo "outputting CIRCLE_COMPARE_URL to a file in your working directory, called CIRCLE_COMPARE_URL"
+echo "outputting CIRCLE_COMPARE_URL to a file in your working directory, called CIRCLE_COMPARE_URL.txt"
 
-echo $CIRCLE_COMPARE_URL > CIRCLE_COMPARE_URL
+echo $CIRCLE_COMPARE_URL > CIRCLE_COMPARE_URL.txt
