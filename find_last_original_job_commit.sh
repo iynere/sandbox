@@ -3,10 +3,18 @@
 FOUND_BASE_COMPARE_COMMIT=false
 JOB_NUM=$(( $CIRCLE_BUILD_NUM - 1 ))
 
+# <<parameters.circle-token>> => $CIRCLE_TOKEN
+
+extract_commit_from_job () {
+  curl --user $CIRCLE_TOKEN: \
+  https://circleci.com/api/v1.1/project/$1/$CIRCLE_PROJECT_USERNAME/$CIRCLE_PROJECT_REPONAME/$2 | \
+  grep '"vcs_revision" : ' | sed -E 's/"vcs_revision" ://' | sed -E 's/[[:punct:]]//g' | sed -E 's/ //g'
+}
+
 if [[ $(echo $CIRCLE_REPOSITORY_URL | grep github.com:$CIRCLE_PROJECT_USERNAME) ]]; then
-  VCS=github
+  VCS_TYPE=github
 else
-  VCS=bitbucket
+  VCS_TYPE=bitbucket
 fi
 
 until [[ $(echo $FOUND_BASE_COMPARE_COMMIT) == true ]]
@@ -14,10 +22,9 @@ do
 
   # save circle api output to a temp file
   # avoids additional api calls
-  # <<parameters.circle-token>> => $CIRCLE_TOKEN
 
   curl --user $CIRCLE_TOKEN: \
-    https://circleci.com/api/v1.1/project/$VCS/$CIRCLE_PROJECT_USERNAME/$CIRCLE_PROJECT_REPONAME/$JOB_NUM \
+    https://circleci.com/api/v1.1/project/$VCS_TYPE/$CIRCLE_PROJECT_USERNAME/$CIRCLE_PROJECT_REPONAME/$JOB_NUM \
     > JOB_OUTPUT
 
   # there's a couple of skip conditions to observe here—
@@ -25,6 +32,7 @@ do
 
   # 1. is JOB_NUM part of the current workflow?
   # 2. is JOB_NUM a retry of a job from the same commit?
+    # 2.5 or part of a rerun workflow from the same commit?
   # 3. is JOB_NUM from a different branch?
 
   # edge cases:
@@ -32,42 +40,45 @@ do
     # then, we need the nearest ancestor, branch-agnostic
 
   # skip conditions 1 & 2:
-  if [[ $(grep "\"workflow_id\" : \"$CIRCLE_WORKFLOW_ID\"" JOB_OUTPUT) || ! $(grep '"retry_of" : null' JOB_OUTPUT) ]]; then
+  if [[ $(grep "\"workflow_id\" : \"$CIRCLE_WORKFLOW_ID\"" JOB_OUTPUT) || \
+    ! $(grep '"retry_of" : null' JOB_OUTPUT) || \
+    $(grep "\"vcs_revision\" : \"$CIRCLE_SHA1\"" JOB_OUTPUT) ]]; then
+    echo "$JOB_NUM was a retry of a previous job, part of a rerun workflow, or else part of the current workflow"
     JOB_NUM=$(( $JOB_NUM - 1 ))
     continue
   fi
 
-  # handling condition 3:
-  if [[ ]]; then
-
-
-  fi
-
-
-  if [[ $(grep '"retry_of" : null' JOB_OUTPUT) && \
-    # ignore jobs that were SSH reruns of previous jobs
-    ! $(grep "\"workflow_id\" : \"$CIRCLE_WORKFLOW_ID\"" JOB_OUTPUT) && \
-    # ignore jobs that are part of the same workflow
-    ! $(grep "\"commit\" : \"$CIRCLE_SHA1\"" JOB_OUTPUT) && \
-    # ignore jobs that share the same commit
-    $(grep "\"branch\" : \"$CIRCLE_BRANCH\"" JOB_OUTPUT) ]]; then
-    # make sure we filter out results from other branches
-
-    FOUND_BASE_COMPARE_COMMIT=true
+  # handling condition 3 & edge case 1:
+  # if it's the first commit on its branch
+  if [[ $(grep '"previous" : null' JOB_OUTPUT) ]]; then
+    COMMIT_FROM_JOB_NUM=$(extract_commit_from_job $VCS_TYPE $JOB_NUM)
+    # cd <<parameters.project-path>> uncomment this
+    git merge-base --is-ancestor $COMMIT_FROM_JOB_NUM $CIRCLE_SHA1
+    if [ $? -eq 1 ]; then
+      echo "job $CIRCLE_BUILD_NUM is the first commit on its branch; the commit from $JOB_NUM is not an ancestor of the current commit"
+      JOB_NUM=$(( $JOB_NUM - 1 ))
+      continue
+    elif [ $? -eq 0 ]; then
+      FOUND_BASE_COMPARE_COMMIT=true
+    else
+      echo "$? (unknown return code from git merge-base)"
+    fi
   else
-    echo "$JOB_NUM was a retry of a previous job, part of a rerun workflow, or else part of the current workflow"
-    # deincrement job num by 1 & try again
-    JOB_NUM=$(( $JOB_NUM - 1 ))
+    # find previous commit from this branch
+    if [[ $(grep "\"branch\" : \"$CIRCLE_BRANCH\"" JOB_OUTPUT) ]]; then
+      FOUND_BASE_COMPARE_COMMIT=true
+    else
+      echo "$JOB_NUM was not on branch $CIRCLE_BRANCH"
+      JOB_NUM=$(( $JOB_NUM - 1 ))
+      continue
   fi
 done
 
 rm -f JOB_OUTPUT
 
-LAST_PUSHED_COMMIT=$(curl --user $CIRCLE_TOKEN: \
-  https://circleci.com/api/v1.1/project/$VCS/$CIRCLE_PROJECT_USERNAME/$CIRCLE_PROJECT_REPONAME/$JOB_NUM | \
-  grep '"commit" : ' | sed -E 's/"commit" ://' | sed -E 's/[[:punct:]]//g' | sed -E 's/ //g')
+LAST_PUSHED_COMMIT=$(extract_commit_from_job $VCS_TYPE $JOB_NUM)
 
-if [[ $(echo $VCS | grep github) ]]; then
+if [[ $(echo $VCS_TYPE | grep github) ]]; then
   CIRCLE_COMPARE_URL="https://github.com/$CIRCLE_PROJECT_USERNAME/$CIRCLE_PROJECT_REPONAME/compare/${LAST_PUSHED_COMMIT:0:12}...${CIRCLE_SHA1:0:12}"
 else
   CIRCLE_COMPARE_URL="https://bitbucket.org/$CIRCLE_PROJECT_USERNAME/$CIRCLE_PROJECT_REPONAME/branches/compare/${LAST_PUSHED_COMMIT:0:12}...${CIRCLE_SHA1:0:12}"
