@@ -60,14 +60,14 @@ do
 
     git merge-base --is-ancestor $COMMIT_FROM_JOB_NUM $CIRCLE_SHA1
 
-    if [ $? -eq 1 ]; then
-      echo "the commit from $JOB_NUM is not an ancestor of the current commit"
+    if [[ $? -eq 1 ]]; then
+      echo "commit $COMMIT_FROM_JOB_NUM from $JOB_NUM is not an ancestor of the current commit"
       JOB_NUM=$(( $JOB_NUM - 1 ))
       continue
-    elif [ $? -eq 0 ]; then
+    elif [[ $? -eq 0 ]]; then
       FOUND_BASE_COMPARE_COMMIT=true
     else
-      echo "$? (unknown return code from git merge-base)"
+      echo "$? (unknown return code from git merge-base on commit $COMMIT_FROM_JOB_NUM from job $JOB_NUM)"
     fi
   else
     # find previous commit from this branch
