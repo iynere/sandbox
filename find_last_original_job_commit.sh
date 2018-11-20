@@ -50,7 +50,8 @@ do
 
   # handling condition 3 & edge case 1:
   # if it's the first commit on its branch
-  if [[ $(grep '"previous" : null' JOB_OUTPUT) ]]; then
+  if [[ $(curl --user $CIRCLE_TOKEN: \
+    https://circleci.com/api/v1.1/project/$VCS_TYPE/$CIRCLE_PROJECT_USERNAME/$CIRCLE_PROJECT_REPONAME/$CIRCLE_BUILD_NUM | grep '"previous" : null') ]]; then
     echo "$CIRCLE_SHA1 is the first commit on branch $CIRCLE_BRANCH"
 
     COMMIT_FROM_JOB_NUM=$(extract_commit_from_job $VCS_TYPE $JOB_NUM)
