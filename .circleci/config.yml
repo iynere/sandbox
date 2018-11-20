@@ -1,4 +1,5 @@
 version: 2
+
 jobs:
   build:
     machine: true
@@ -6,4 +7,8 @@ jobs:
 
       - checkout
 
-      - run: echo $CIRCLE_REPOSITORY_URL
+      - run: echo $CIRCLE_COMPARE_URL
+
+      - run: bash find_last_original_job_commit.sh
+
+      - run: cat CIRCLE_COMPARE_URL.txt
