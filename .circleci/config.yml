@@ -1,7 +1,7 @@
-version: 2.1
+version: 2
 
-orbs:
-  compare-url: iynere/compare-url@dev:add-bb-functionality-fa5fa6172db2ae10f3c83b8302c26c08f2166d8e
+# orbs:
+#   compare-url: iynere/compare-url@dev:add-bb-functionality-fa5fa6172db2ae10f3c83b8302c26c08f2166d8e
 
 jobs:
   build:
@@ -12,9 +12,9 @@ jobs:
 
       - run: echo $CIRCLE_COMPARE_URL
 
-      - compare-url/reconstruct
+      # - compare-url/reconstruct
 
-      - run: cat CIRCLE_COMPARE_URL.txt
+      # - run: cat CIRCLE_COMPARE_URL.txt
 
   test:
     machine: true
