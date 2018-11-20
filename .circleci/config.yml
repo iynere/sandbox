@@ -15,17 +15,3 @@ jobs:
       # - compare-url/reconstruct
 
       # - run: cat CIRCLE_COMPARE_URL.txt
-
-  test:
-    machine: true
-    steps:
-      - checkout
-
-workflows:
-  version: 2
-  build-test:
-    jobs:
-      - build:
-          context: token
-
-      - test
