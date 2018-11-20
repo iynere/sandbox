@@ -51,11 +51,16 @@ do
   # handling condition 3 & edge case 1:
   # if it's the first commit on its branch
   if [[ $(grep '"previous" : null' JOB_OUTPUT) ]]; then
+    echo "$CIRCLE_SHA1 is the first commit on branch $CIRCLE_BRANCH"
+
     COMMIT_FROM_JOB_NUM=$(extract_commit_from_job $VCS_TYPE $JOB_NUM)
-    # cd <<parameters.project-path>> uncomment this
+
+    cd ~/project
+
     git merge-base --is-ancestor $COMMIT_FROM_JOB_NUM $CIRCLE_SHA1
+
     if [ $? -eq 1 ]; then
-      echo "job $CIRCLE_BUILD_NUM is the first commit on its branch; the commit from $JOB_NUM is not an ancestor of the current commit"
+      echo "the commit from $JOB_NUM is not an ancestor of the current commit"
       JOB_NUM=$(( $JOB_NUM - 1 ))
       continue
     elif [ $? -eq 0 ]; then
