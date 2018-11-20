@@ -1,7 +1,5 @@
 version: 2
 
-# orbs go here
-
 jobs:
   build:
     machine: true
