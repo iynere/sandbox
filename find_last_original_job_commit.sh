@@ -71,6 +71,7 @@ do
       echo "$JOB_NUM was not on branch $CIRCLE_BRANCH"
       JOB_NUM=$(( $JOB_NUM - 1 ))
       continue
+    fi
   fi
 done
 
