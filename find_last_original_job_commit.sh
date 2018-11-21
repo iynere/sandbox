@@ -66,7 +66,7 @@ echo "checking if $CIRCLE_BRANCH is a new branch..."
 echo "----------------------------------------------------------------------------------------------------"
 if [[ $(check_if_branch_is_new $VCS_TYPE) == true ]]; then
   echo "----------------------------------------------------------------------------------------------------"
-  echo "$CIRCLE_SHA1 is the only commit on branch $CIRCLE_BRANCH"
+  echo "yes, $CIRCLE_BRANCH is new and $CIRCLE_SHA1 is its only commit"
   echo "----------------------------------------------------------------------------------------------------"
   echo "finding most recent ancestor commit from any other branch"
   echo "----------------------------------------------------------------------------------------------------"
@@ -101,7 +101,7 @@ do
 
   # handling condition 3 & edge case 1:
   # check if this is a brand-new branch
-  if [[ BRANCH_IS_NEW == true ]]; then
+  if [[ $BRANCH_IS_NEW == true ]]; then
     COMMIT_FROM_JOB_NUM=$(extract_commit_from_job $VCS_TYPE $JOB_NUM)
 
     # we do a similar check later on, but it needs to be here too
