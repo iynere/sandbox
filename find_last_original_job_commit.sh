@@ -67,8 +67,7 @@ echo "--------------------------------------------------------------------------
 if [[ $(check_if_branch_is_new $VCS_TYPE) == true ]]; then
   echo "----------------------------------------------------------------------------------------------------"
   echo "yes, $CIRCLE_BRANCH is new and $CIRCLE_SHA1 is its only commit"
-  echo "----------------------------------------------------------------------------------------------------"
-  echo "finding most recent ancestor commit from any other branch"
+  echo "finding most recent ancestor commit from any other branch..."
   echo "----------------------------------------------------------------------------------------------------"
   BRANCH_IS_NEW=true
 else
@@ -117,11 +116,13 @@ do
     git merge-base --is-ancestor $COMMIT_FROM_JOB_NUM $CIRCLE_SHA1; RETURN_CODE=$?
 
     if [[ $RETURN_CODE == 1 ]]; then
+      echo "----------------------------------------------------------------------------------------------------"
       echo "commit $COMMIT_FROM_JOB_NUM from $JOB_NUM is not an ancestor of the current commit"
       echo "----------------------------------------------------------------------------------------------------"
       JOB_NUM=$(( $JOB_NUM - 1 ))
       continue
     elif [[ $RETURN_CODE == 0 ]]; then
+      echo "----------------------------------------------------------------------------------------------------"
       echo "commit $COMMIT_FROM_JOB_NUM from $JOB_NUM is an ancestor of the current commit"
       echo "----------------------------------------------------------------------------------------------------"
       FOUND_BASE_COMPARE_COMMIT=true
