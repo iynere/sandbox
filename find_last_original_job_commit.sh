@@ -122,6 +122,7 @@ do
       exit 1
     fi
   else
+    echo "$CIRCLE_BRANCH is not a new branch, searching for its previous commit"
     # if not a new branch, find its most recent previous commit
 
     # by now, if none of conditions 1, 2/2.5, or 3 apply, we're done:
