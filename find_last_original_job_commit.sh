@@ -71,6 +71,9 @@ if [[ $(check_if_branch_is_new $VCS_TYPE) == true ]]; then
   echo "----------------------------------------------------------------------------------------------------"
   BRANCH_IS_NEW=true
 else
+  echo "----------------------------------------------------------------------------------------------------"
+  echo "$CIRCLE_BRANCH is not a new branch, searching for its most recent previous commit"
+  echo "----------------------------------------------------------------------------------------------------"
   BRANCH_IS_NEW=false
 fi
 
@@ -132,9 +135,6 @@ do
       exit 1
     fi
   else
-    echo "----------------------------------------------------------------------------------------------------"
-    echo "$CIRCLE_BRANCH is not a new branch, searching for its most recent previous commit"
-    echo "----------------------------------------------------------------------------------------------------"
     # if not a new branch, find its most recent previous commit
 
     # by now, if none of conditions 1, 2/2.5, or 3 apply, we're done:
