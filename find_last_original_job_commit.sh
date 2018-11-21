@@ -16,15 +16,14 @@ JOB_NUM=$(( $CIRCLE_BUILD_NUM - 1 ))
 extract_commit_from_job () {
   # takes $1 (VCS_TYPE) & $2 (a job number)
 
-  curl --user $CIRCLE_TOKEN: \
+  curl --globoff --user $CIRCLE_TOKEN: \
   https://circleci.com/api/v1.1/project/$1/$CIRCLE_PROJECT_USERNAME/$CIRCLE_PROJECT_REPONAME/$2 | \
   grep '"vcs_revision" : ' | sed -E 's/"vcs_revision" ://' | sed -E 's/[[:punct:]]//g' | sed -E 's/ //g'
 }
 
 check_if_branch_is_new () {
   # takes a single argument for VCS_TYPE
-
-  # functionally, this means: same commit for all jobs on the branch
+  # functionally, 'new' means: same commit for all jobs on the branch
 
   # assume this is true, set to false if proven otherwise
   local BRANCH_IS_NEW=true
@@ -32,12 +31,12 @@ check_if_branch_is_new () {
   # grab URL endpoints for jobs on this branch
   # transform them into single-job API endpoints
   # output them to a file for subsequent iteration
-  curl --user $CIRCLE_TOKEN: https://circleci.com/api/v1.1/project/$1/$CIRCLE_PROJECT_USERNAME/$CIRCLE_PROJECT_REPONAME/tree/$CIRCLE_BRANCH | grep "build_url" | sed -E 's/"build_url" : //' | sed -E 's|/bb/|/api/v1.1/project/bitbucket/|' | sed -E 's|/gh/|/api/v1.1/project/github/|' | sed -E 's/"|,//g' | sed -E 's/ //g' > API_ENDPOINTS_FOR_JOBS_ON_BRANCH
+  curl --globoff --user $CIRCLE_TOKEN: https://circleci.com/api/v1.1/project/$1/$CIRCLE_PROJECT_USERNAME/$CIRCLE_PROJECT_REPONAME/tree/$CIRCLE_BRANCH | grep "build_url" | sed -E 's/"build_url" : //' | sed -E 's|/bb/|/api/v1.1/project/bitbucket/|' | sed -E 's|/gh/|/api/v1.1/project/github/|' | sed -E 's/"|,//g' | sed -E 's/ //g' > API_ENDPOINTS_FOR_JOBS_ON_BRANCH
 
   # loop through each job to compare commit hashes
   while read line
   do
-    if [[ $(curl --user $CIRCLE_TOKEN: $line | grep "\"vcs_revision\" : \"$CIRCLE_SHA1\"") ]]; then
+    if [[ $(curl --globoff --user $CIRCLE_TOKEN: $line | grep "\"vcs_revision\" : \"$CIRCLE_SHA1\"") ]]; then
       continue
     else
       BRANCH_IS_NEW=false
@@ -77,12 +76,14 @@ else
   BRANCH_IS_NEW=false
 fi
 
+## EXECUTION
+
 # manually iterate downard through previous jobs
 until [[ $FOUND_BASE_COMPARE_COMMIT == true ]]
 do
 
   # save circle api output to a temp file for reuse
-  curl --user $CIRCLE_TOKEN: \
+  curl --globoff --user $CIRCLE_TOKEN: \
     https://circleci.com/api/v1.1/project/$VCS_TYPE/$CIRCLE_PROJECT_USERNAME/$CIRCLE_PROJECT_REPONAME/$JOB_NUM \
     > JOB_OUTPUT
 
@@ -157,6 +158,8 @@ do
     fi
   fi
 done
+
+## CONCLUSION
 
 # clean up
 rm -f JOB_OUTPUT
