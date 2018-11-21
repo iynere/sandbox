@@ -120,13 +120,13 @@ do
 
     if [[ $RETURN_CODE == 1 ]]; then
       echo "----------------------------------------------------------------------------------------------------"
-      echo "commit $COMMIT_FROM_JOB_NUM from $JOB_NUM is not an ancestor of the current commit"
+      echo "commit $COMMIT_FROM_JOB_NUM from job $JOB_NUM is not an ancestor of the current commit"
       echo "----------------------------------------------------------------------------------------------------"
       JOB_NUM=$(( $JOB_NUM - 1 ))
       continue
     elif [[ $RETURN_CODE == 0 ]]; then
       echo "----------------------------------------------------------------------------------------------------"
-      echo "commit $COMMIT_FROM_JOB_NUM from $JOB_NUM is an ancestor of the current commit"
+      echo "commit $COMMIT_FROM_JOB_NUM from job $JOB_NUM is an ancestor of the current commit"
       echo "----------------------------------------------------------------------------------------------------"
       FOUND_BASE_COMPARE_COMMIT=true
       break
@@ -172,10 +172,7 @@ fi
 
 echo "----------------------------------------------------------------------------------------------------"
 echo "base compare commit hash is:" $BASE_COMPARE_COMMIT
-echo "----------------------------------------------------------------------------------------------------"
 echo "this job's commit hash is:" $CIRCLE_SHA1
-echo "----------------------------------------------------------------------------------------------------"
 echo "recreated CIRCLE_COMPARE_URL:" $CIRCLE_COMPARE_URL
-echo "----------------------------------------------------------------------------------------------------"
 echo "outputting CIRCLE_COMPARE_URL to a file in your working directory, called CIRCLE_COMPARE_URL.txt"
 echo $CIRCLE_COMPARE_URL > CIRCLE_COMPARE_URL.txt
