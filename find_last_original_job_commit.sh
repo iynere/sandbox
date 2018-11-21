@@ -31,7 +31,7 @@ check_if_branch_is_new () {
   # grab URL endpoints for jobs on this branch
   # transform them into single-job API endpoints
   # output them to a file for subsequent iteration
-  curl --globoff --user $CIRCLE_TOKEN: https://circleci.com/api/v1.1/project/$1/$CIRCLE_PROJECT_USERNAME/$CIRCLE_PROJECT_REPONAME/tree/$CIRCLE_BRANCH | grep "build_url" | sed -E 's/"build_url" : //' | sed -E 's|/bb/|/api/v1.1/project/bitbucket/|' | sed -E 's|/gh/|/api/v1.1/project/github/|' | sed -E 's/"|,//g' | sed -E 's/ //g' > API_ENDPOINTS_FOR_JOBS_ON_BRANCH
+  curl --user $CIRCLE_TOKEN: https://circleci.com/api/v1.1/project/$1/$CIRCLE_PROJECT_USERNAME/$CIRCLE_PROJECT_REPONAME/tree/$CIRCLE_BRANCH | grep "build_url" | sed -E 's/"build_url" : //' | sed -E 's|/bb/|/api/v1.1/project/bitbucket/|' | sed -E 's|/gh/|/api/v1.1/project/github/|' | sed -E 's/"|,//g' | sed -E 's/ //g' > API_ENDPOINTS_FOR_JOBS_ON_BRANCH
 
   # loop through each job to compare commit hashes
   while read line
@@ -45,7 +45,7 @@ check_if_branch_is_new () {
   done < API_ENDPOINTS_FOR_JOBS_ON_BRANCH
 
   # clean up
-  rm -f API_ENDPOINTS_FOR_JOBS_ON_BRANCH
+  # rm -f API_ENDPOINTS_FOR_JOBS_ON_BRANCH
 
   # true or false
   echo $BRANCH_IS_NEW
@@ -114,7 +114,7 @@ do
       continue
     fi
 
-    cd ~/project # <<parameters.project-path>>
+    cd ~/project
 
     # check if commit from JOB_NUM is an ancestor of $CIRCLE_SHA1
     git merge-base --is-ancestor $COMMIT_FROM_JOB_NUM $CIRCLE_SHA1; RETURN_CODE=$?

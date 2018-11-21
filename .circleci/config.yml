@@ -12,3 +12,6 @@ jobs:
       - run: bash find_last_original_job_commit.sh
 
       - run: cat CIRCLE_COMPARE_URL.txt
+
+      - store_artifacts:
+          path: API_ENDPOINTS_FOR_JOBS_ON_BRANCH
