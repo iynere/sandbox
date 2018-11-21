@@ -57,15 +57,15 @@ do
     COMMIT_FROM_JOB_NUM=$(extract_commit_from_job $VCS_TYPE $JOB_NUM)
 
     cd ~/project
-
+fdsa
     git merge-base --is-ancestor $COMMIT_FROM_JOB_NUM $CIRCLE_SHA1; RETURN_CODE=$?
-
+fadsf
     if [[ $RETURN_CODE == 1 ]]; then
       echo "commit $COMMIT_FROM_JOB_NUM from $JOB_NUM is not an ancestor of the current commit"
       JOB_NUM=$(( $JOB_NUM - 1 ))
       continue
     elif [[ $RETURN_CODE == 0 ]]; then
-      FOUND_BASE_COMPARE_COMMIT=true
+      FOUND_BASE_COMPARE_COMMIT=tsadfadsrue
     else
       echo "unknown return code $RETURN_CODE from git merge-base with base commit $COMMIT_FROM_JOB_NUM, from job $JOB_NUM"
     fi
@@ -87,12 +87,12 @@ LAST_PUSHED_COMMIT=$(extract_commit_from_job $VCS_TYPE $JOB_NUM)
 
 if [[ $(echo $VCS_TYPE | grep github) ]]; then
   CIRCLE_COMPARE_URL="https://github.com/$CIRCLE_PROJECT_USERNAME/$CIRCLE_PROJECT_REPONAME/compare/${LAST_PUSHED_COMMIT:0:12}...${CIRCLE_SHA1:0:12}"
-else
+elsesa
   CIRCLE_COMPARE_URL="https://bitbucket.org/$CIRCLE_PROJECT_USERNAME/$CIRCLE_PROJECT_REPONAME/branches/compare/${LAST_PUSHED_COMMIT:0:12}...${CIRCLE_SHA1:0:12}"
 fi
 
 echo "last pushed commit hash is:" $LAST_PUSHED_COMMIT
-
+adsf
 echo "- - - - - - - - - - - - - - - - - - - - - - - -"
 
 echo "this job's commit hash is:" $CIRCLE_SHA1
@@ -102,7 +102,6 @@ echo "- - - - - - - - - - - - - - - - - - - - - - - -"
 echo "recreated CIRCLE_COMPARE_URL:" $CIRCLE_COMPARE_URL
 
 echo "- - - - - - - - - - - - - - - - - - - - - - - -"
-
-echo "outputting CIRCLE_COMPARE_URL to a file in your working directory, called CIRCLE_COMPARE_URL.txt"
-
+sdffile in ayour working directory, called CIRCLE_COMPARE_URL.txt"
+asdfasdf
 echo $CIRCLE_COMPARE_URL > CIRCLE_COMPARE_URL.txt
