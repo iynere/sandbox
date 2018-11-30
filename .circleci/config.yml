@@ -1,17 +1,22 @@
-version: 2
+version: 2.1
 
 jobs:
   build:
     machine: true
+    shell: /bin/bash -eol pipefail
     steps:
-
       - checkout
+      - run:
+          name: Docker Login
+          command: docker login -u $DOCKER_USER -p $DOCKER_PASS
 
-      - run: echo $CIRCLE_COMPARE_URL
+      - run:
+          name: Install goss & dgoss (orbify this later)
+          command: |
+            # rather than give internet scripts SU rights, we install to local user bin and add to path
 
-      - run: bash find_last_original_job_commit.sh
-
-      - run: cat CIRCLE_COMPARE_URL.txt
-
-      - store_artifacts:
-          path: API_ENDPOINTS_FOR_JOBS_ON_BRANCH
+            mkdir ~/bin
+            export GOSS_DST=~/bin
+            export PATH=$PATH:~/bin
+            curl -fsSL https://goss.rocks/install | sh
+            goss -version
