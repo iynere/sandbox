@@ -15,3 +15,4 @@ jobs:
             export GOSS_DST=~/bin
             curl -fsSL https://goss.rocks/install | sh
             goss -version
+            dgoss -version
