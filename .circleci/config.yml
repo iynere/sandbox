@@ -6,9 +6,6 @@ jobs:
     shell: /bin/bash -eol pipefail
     steps:
       - checkout
-      - run:
-          name: Docker Login
-          command: docker login -u $DOCKER_USER -p $DOCKER_PASS
 
       - run:
           name: Install goss & dgoss (orbify this later)
