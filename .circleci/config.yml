@@ -17,3 +17,5 @@ jobs:
       - run: dgoss run iynere/rust:test | tee -a test-results/rust/results.xml
       - store_test_results:
           path: test-results
+      - store_artifacts:
+          path: test-results
