@@ -5,8 +5,10 @@ jobs:
     environment:
       GOSS_DST: /usr/local/bin
       GOSS_FILES_STRATEGY: cp
+      GOSS_FILES_PATH: ~/project
     steps:
       - checkout
       - run: curl -fsSL https://goss.rocks/install | sudo sh
       - run: goss -version
-      - run: dgoss
+      - run: docker build -t iynere/rust:test rust
+      - run: dgoss run iynere/rust:test
