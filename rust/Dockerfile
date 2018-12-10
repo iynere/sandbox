@@ -82,3 +82,9 @@ RUN groupadd --gid 3434 circleci \
 USER circleci
 
 CMD ["/bin/sh"]
+
+COPY goss-entrypoint.sh /
+
+RUN sudo chmod +x /goss-entrypoint.sh || chmod +x /goss-entrypoint.sh
+
+ENTRYPOINT ["/goss-entrypoint.sh"]

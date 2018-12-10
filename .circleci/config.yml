@@ -7,9 +7,10 @@ jobs:
       GOSS_DST: /usr/local/bin
       GOSS_FILES_STRATEGY: cp
       GOSS_FILES_PATH: ~/project
+      GOSS_OPTS: --format junit
     steps:
       - checkout
       - run: curl -fsSL https://goss.rocks/install | sudo sh
       - run: goss -version
       - run: docker build -t iynere/rust:test rust
-      - run: dgoss run --entrypoint=goss-entrypoint.sh iynere/rust:test
+      - run: dgoss run iynere/rust:test
