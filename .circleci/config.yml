@@ -1,7 +1,8 @@
 version: 2
 jobs:
   build:
-    machine: true
+    machine:
+      docker_layer_caching: true
     environment:
       GOSS_DST: /usr/local/bin
       GOSS_FILES_STRATEGY: cp
