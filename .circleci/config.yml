@@ -6,10 +6,9 @@ jobs:
       GOSS_DST: /usr/local/bin
       GOSS_FILES_STRATEGY: cp
       GOSS_FILES_PATH: ~/project
-      GOSS_OPTS: --color --format documentation --retry-timeout 60
     steps:
       - checkout
       - run: curl -fsSL https://goss.rocks/install | sudo sh
       - run: goss -version
       - run: docker build -t iynere/rust:test rust
-      - run: dgoss run iynere/rust:test
+      - run: GOSS_OPTS="--color --format documentation --retry-timeout 60" dgoss run iynere/rust:test
