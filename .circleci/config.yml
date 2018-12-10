@@ -7,7 +7,8 @@ jobs:
       GOSS_DST: /usr/local/bin
       GOSS_FILES_STRATEGY: cp
       GOSS_FILES_PATH: /home/circleci/project
-      GOSS_OPTS: --format junit
+      GOSS_OPTS: --format junit --format documentation
+      GOSS_SLEEP: 5s
     steps:
       - checkout
       - run: curl -fsSL https://goss.rocks/install | sudo sh
