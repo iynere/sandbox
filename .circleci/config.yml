@@ -3,7 +3,11 @@ version: 2.1
 jobs:
   build:
     machine: true
+    environment:
+      GOSS_DST: ~/bin
+      GOSS_FILES_STRATEGY: cp
     steps:
-
       - checkout
-
+      - run: curl -fsSL https://goss.rocks/install | sh
+      - run: goss -version
+      - run: dgoss
