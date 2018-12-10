@@ -3,7 +3,7 @@ jobs:
   build:
     machine: true
     environment:
-      GOSS_DST: ~/bin
+      GOSS_DST: /usr/local/bin
       GOSS_FILES_STRATEGY: cp
     steps:
       - checkout
