@@ -14,4 +14,6 @@ jobs:
       - run: curl -fsSL https://goss.rocks/install | sudo sh
       - run: goss -version
       - run: docker build -t iynere/rust:test rust
-      - run: dgoss run iynere/rust:test | tee -a test-results/rust/results.xml
+      - run: touch test-results/rust/results.xml && dgoss run iynere/rust:test | tee -a test-results/rust/results.xml
+      - store_test_results:
+          path: test-results
