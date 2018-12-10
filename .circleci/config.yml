@@ -6,7 +6,7 @@ jobs:
     environment:
       GOSS_DST: /usr/local/bin
       GOSS_FILES_STRATEGY: cp
-      GOSS_FILES_PATH: ~/project
+      GOSS_FILES_PATH: /home/circleci/project
       GOSS_OPTS: --format junit
     steps:
       - checkout
