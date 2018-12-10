@@ -5,7 +5,7 @@ file:
 
   # ensure basic directory structure created
   /home/circleci:
-    exists: true
+    exists: false
 
 # ensure circleci user exists
 user:
