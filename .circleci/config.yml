@@ -7,6 +7,6 @@ jobs:
       GOSS_FILES_STRATEGY: cp
     steps:
       - checkout
-      - run: curl -fsSL https://goss.rocks/install | sh
+      - run: sudo curl -fsSL https://goss.rocks/install | sh
       - run: goss -version
       - run: dgoss
