@@ -6,6 +6,7 @@ jobs:
       GOSS_DST: /usr/local/bin
       GOSS_FILES_STRATEGY: cp
       GOSS_FILES_PATH: ~/project
+      GOSS_OPTS: --color --format documentation --retry-timeout 60
     steps:
       - checkout
       - run: curl -fsSL https://goss.rocks/install | sudo sh
