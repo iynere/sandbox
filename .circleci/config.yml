@@ -12,4 +12,4 @@ jobs:
       - run: curl -fsSL https://goss.rocks/install | sudo sh
       - run: goss -version
       - run: docker build -t iynere/rust:test rust
-      - run: GOSS_OPTS="--color --format documentation --retry-timeout 60" dgoss run iynere/rust:test
+      - run: dgoss run --entrypoint=goss-entrypoint.sh iynere/rust:test
