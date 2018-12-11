@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<testsuite name="ccitest/redis:5.0.2-alpine" errors="0" tests="1" failures="0" skipped="0" time="0.000" timestamp="2018-12-11T00:47:58Z">
+<testsuite name="ccitest/redis:5.0.2-32bit" errors="0" tests="1" failures="0" skipped="0" time="0.000" timestamp="2018-12-11T00:47:05Z">
 <testcase name="File /bin/sh exists" time="0.000">
 <system-out>File: /bin/sh: exists: matches expectation: [true]</system-out>
 </testcase>
