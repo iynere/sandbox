@@ -27,3 +27,4 @@ workflows:
           filters:
             tags:
               only: test
+              ignore: //
