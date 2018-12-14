@@ -10,4 +10,4 @@ jobs:
     executor: php
     steps:
       - checkout
-      - run: apt install libzip-dev
+      - run: sudo apt install libzip-dev
