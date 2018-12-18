@@ -7,7 +7,7 @@ jobs:
     steps:
       - checkout
       - run: |
-          circleci step halt
+          circleci-agent step halt
           echo "stuff"
 
       - run: echo "test"
