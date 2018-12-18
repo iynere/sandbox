@@ -1,14 +1,9 @@
-version: 2.1
-
-executors:
-  php:
-    docker:
-      - image: circleci/php:7.2.13
+version: 2
 
 jobs:
   build:
-    executor: php
-    parallelism: 2
+    docker:
+      - image: circleci/php:7.2.13
     steps:
       - checkout
       - run: |
