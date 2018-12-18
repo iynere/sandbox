@@ -11,4 +11,7 @@ jobs:
     parallelism: 2
     steps:
       - checkout
-      - run: sudo apt install libzip-dev
+      - run: |
+          circleci step halt
+          echo "stuff"
+      - run: echo "test"
