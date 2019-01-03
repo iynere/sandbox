@@ -20,6 +20,7 @@ jobs:
           extra_build_args: --build-arg FOO=bar
 
 workflows:
-  jobs:
-    - build
-    - build-with-args
+  docker-publish:
+    jobs:
+      - build
+      - build-with-args
