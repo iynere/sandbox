@@ -7,12 +7,14 @@ jobs:
   build:
     machine: true
     steps:
+      - checkout
       - docker-publish/check
       - docker-publish/build
 
   build-with-args:
     machine: true
     steps:
+      - checkout
       - docker-publish/check
       - docker-publish/build:
           extra_build_args: --build-arg FOO=bar
