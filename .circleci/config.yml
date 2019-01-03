@@ -8,13 +8,15 @@ jobs:
     machine: true
     steps:
       - checkout
-      - docker-publish/build
+      - docker-publish/build:
+          image: iynere/sandbox
 
   build-with-args:
     machine: true
     steps:
       - checkout
       - docker-publish/build:
+          image: iynere/sandbox
           extra_build_args: --build-arg FOO=bar
 
 workflows:
