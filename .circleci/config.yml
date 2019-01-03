@@ -24,3 +24,6 @@ workflows:
     jobs:
       - build
       - build-with-args
+      - docker-publish/publish:
+          image: iynere/sandbox
+          deploy: false
