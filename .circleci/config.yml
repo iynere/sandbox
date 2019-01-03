@@ -1,7 +1,7 @@
 version: 2.1
 
 orbs:
-  docker-publish: circleci/docker-publish@dev:staging-538454b
+  docker-publish: circleci/docker-publish@dev:staging-c58e64a
 
 jobs:
   build:
