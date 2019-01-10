@@ -1,29 +1,9 @@
 version: 2.1
 
 orbs:
-  docker-publish: circleci/docker-publish@dev:staging-c58e64a
-
-jobs:
-  build:
-    machine: true
-    steps:
-      - checkout
-      - docker-publish/build:
-          image: iynere/sandbox
-
-  build-with-args:
-    machine: true
-    steps:
-      - checkout
-      - docker-publish/build:
-          image: iynere/sandbox
-          extra_build_args: --build-arg FOO=bar
+  docker-publish: circleci/docker-publish@0.1.3
 
 workflows:
-  docker-publish:
-    jobs:
-      - build
-      - build-with-args
-      - docker-publish/publish:
-          image: iynere/sandbox
-          deploy: false
+  build_image:
+    - docker-publish/publish:
+        context: orb-publishing
