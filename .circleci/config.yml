@@ -5,5 +5,4 @@ orbs:
 
 workflows:
   build_image:
-    - docker-publish/publish:
-        context: orb-publishing
+    - docker-publish/publish
