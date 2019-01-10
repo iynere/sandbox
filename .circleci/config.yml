@@ -5,4 +5,5 @@ orbs:
 
 workflows:
   build_image:
-    - docker-publish/publish
+    jobs:
+      - docker-publish/publish
