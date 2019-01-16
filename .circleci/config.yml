@@ -1,5 +1,8 @@
 version: 2.1
 
+orbs:
+  orb-tools: circleci/orb-tools@volatile
+
 jobs:
   build:
     macos:
