@@ -3,8 +3,11 @@ version: 2.1
 orbs:
   orb-tools: circleci/orb-tools@volatile
 
+
+steps-test: &steps-test
+  [run: "echo hello", run: {when: "always", name: "blah", command: "echo stuff"}]
+
 jobs:
   build:
     machine: true
-    steps:
-      - checkout
+    steps: [checkout, *steps-test]
