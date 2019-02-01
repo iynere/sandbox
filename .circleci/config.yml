@@ -19,8 +19,8 @@ jobs:
       - run:
           name: step 0
           command: |
-            cd $CIRCLE_INTERNAL_SCRATCH & ls
-            cat $CIRCLE_INTERNAL_TASK_DATA
+            cd $CIRCLE_INTERNAL_SCRATCH && ls
+            cd $CIRCLE_INTERNAL_TASK_DATA && ls
             cat $CIRCLE_INTERNAL_CONFIG
             cat $BASH_ENV
             cat $CIRCLE_SHELL_ENV
@@ -28,8 +28,8 @@ jobs:
       - run:
           name: step 1
           command: |
-            cd $CIRCLE_INTERNAL_SCRATCH & ls
-            cat $CIRCLE_INTERNAL_TASK_DATA
+            cd $CIRCLE_INTERNAL_SCRATCH && ls
+            cd $CIRCLE_INTERNAL_TASK_DATA && ls
             cat $CIRCLE_INTERNAL_CONFIG
             cat $BASH_ENV
             cat $CIRCLE_SHELL_ENV
