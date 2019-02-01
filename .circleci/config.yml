@@ -16,7 +16,13 @@ jobs:
   build:
     machine: true
     steps:
-      - checkout
+      - run:
+          name: step 0
+          command: printenv
+      - run:
+          name: step 1
+          command: printenv
+
       - run: |
           printenv
           circleci step halt
