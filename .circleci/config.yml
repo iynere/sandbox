@@ -5,7 +5,12 @@ orbs:
 
 
 steps-test: &steps-test
-  run: "echo hello"
+  run: |
+    echo "hello"
+    echo "another line"
+    echo "line 3"
+    echo "etc"
+
 
 jobs:
   build:
