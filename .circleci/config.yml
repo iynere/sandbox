@@ -19,5 +19,5 @@ jobs:
       - checkout
       - run:
           command: |
-            sleep 30 && circleci step halt
+            sleep 1 && circleci step halt
       - *steps-test
