@@ -20,18 +20,16 @@ jobs:
           name: step 0
           command: |
             cd $CIRCLE_INTERNAL_SCRATCH && ls
-            cd $CIRCLE_INTERNAL_TASK_DATA && ls
             cat $CIRCLE_INTERNAL_CONFIG
-            cat $BASH_ENV
+            cd /tmp && ls
             cat $CIRCLE_SHELL_ENV
             cd $XDG_RUNTIME_DIR && ls
       - run:
           name: step 1
           command: |
             cd $CIRCLE_INTERNAL_SCRATCH && ls
-            cd $CIRCLE_INTERNAL_TASK_DATA && ls
             cat $CIRCLE_INTERNAL_CONFIG
-            cat $BASH_ENV
+            cd /tmp && ls
             cat $CIRCLE_SHELL_ENV
             cd $XDG_RUNTIME_DIR && ls
 
