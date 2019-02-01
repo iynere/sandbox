@@ -18,10 +18,22 @@ jobs:
     steps:
       - run:
           name: step 0
-          command: printenv
+          command: |
+            cat $CIRCLE_INTERNAL_SCRATCH
+            cat $CIRCLE_INTERNAL_TASK_DATA
+            cat $CIRCLE_INTERNAL_CONFIG
+            cat $BASH_ENV
+            cat $CIRCLE_SHELL_ENV
+            cd $XDG_RUNTIME_DIR && ls
       - run:
           name: step 1
-          command: printenv
+          command: |
+            cat $CIRCLE_INTERNAL_SCRATCH
+            cat $CIRCLE_INTERNAL_TASK_DATA
+            cat $CIRCLE_INTERNAL_CONFIG
+            cat $BASH_ENV
+            cat $CIRCLE_SHELL_ENV
+            cd $XDG_RUNTIME_DIR && ls
 
       - run: |
           printenv
