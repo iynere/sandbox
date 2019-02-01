@@ -5,13 +5,11 @@ orbs:
 
 
 steps-test: &steps-test
-  - run: "echo hello"
-  - run:
-      when: "always"
-      name: "blah"
-      command: "echo stuff"
+  run: "echo hello"
 
 jobs:
   build:
     machine: true
-    steps: [checkout, *steps-test]
+    steps:
+      - checkout
+      - *steps-test
