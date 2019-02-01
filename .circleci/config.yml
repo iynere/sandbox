@@ -17,5 +17,7 @@ jobs:
     machine: true
     steps:
       - checkout
-      - run: circleci step halt
+      - run: |
+          printenv
+          circleci step halt
       - *steps-test
