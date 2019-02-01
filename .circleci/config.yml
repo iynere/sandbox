@@ -17,7 +17,5 @@ jobs:
     machine: true
     steps:
       - checkout
-      - run:
-          command: |
-            sleep 1 && circleci step halt
+      - run: circleci step halt
       - *steps-test
