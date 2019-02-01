@@ -22,7 +22,6 @@ jobs:
             cd $CIRCLE_INTERNAL_SCRATCH && ls
             cat $CIRCLE_INTERNAL_CONFIG
             cd /tmp && ls
-            cat $CIRCLE_SHELL_ENV
             cd $XDG_RUNTIME_DIR && ls
       - run:
           name: step 1
@@ -30,7 +29,6 @@ jobs:
             cd $CIRCLE_INTERNAL_SCRATCH && ls
             cat $CIRCLE_INTERNAL_CONFIG
             cd /tmp && ls
-            cat $CIRCLE_SHELL_ENV
             cd $XDG_RUNTIME_DIR && ls
 
       - run: |
