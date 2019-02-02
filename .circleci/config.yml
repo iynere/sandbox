@@ -40,6 +40,25 @@ workflows:
   test:
     jobs:
       - build:
+          name: build-only-all
           filters:
             branches:
               only: /.*/
+
+      - build:
+          name: build-only-none
+          filters:
+            branches:
+              only: //
+
+      - build:
+          name: build-ignore-all
+          filters:
+            branches:
+              ignore: /.*/
+
+      - build:
+          name: build-ignore-none
+          filters:
+            branches:
+              ignore: //
