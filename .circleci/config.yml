@@ -35,3 +35,11 @@ jobs:
           printenv
           circleci step halt
       - *steps-test
+
+workflows:
+  test:
+    jobs:
+      - build:
+          filters:
+            branches:
+              only: //
