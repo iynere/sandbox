@@ -3,16 +3,19 @@ version: 2.1
 executors:
   test:
     parameters:
-      images:
-        type: steps
-        default: []
+      extras:
+        type: boolean
+        default: false
         description: >
-          Other images to load into this executor
+          Load other images into this executor
 
     resource_class: small
     docker:
       - image: cibuilds/base
-      - steps: <<parameters.images>>
+      - when:
+          condition: <<parameters.extras>>
+          steps:
+            - image: circleci/postgres
 
 jobs:
   build:
