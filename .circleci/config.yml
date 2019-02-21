@@ -1,6 +1,6 @@
 version: 2.1
 
-job:
+jobs:
   branch:
     machine: true
     steps:
