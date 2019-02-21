@@ -1,29 +1,26 @@
 version: 2.1
 
-executors:
-  test:
-    parameters:
-      extras:
-        type: boolean
-        default: false
-        description: >
-          Load other images into this executor
-
-    resource_class: small
-    docker:
-      - image: cibuilds/base
-      - when:
-          condition: <<parameters.extras>>
-          steps:
-            - image: circleci/postgres
-
-jobs:
-  build:
-    executor: test
+job:
+  branch:
+    machine: true
     steps:
       - checkout
+      - run: echo "$CIRCLE_TAG"
+
+  tag:
+    machine: true
+    steps:
+      - checkout
+      - run: echo "$CIRCLE_BRANCH"
 
 workflows:
-  test:
+  branch-tag:
     jobs:
-      - build
+      - branch
+
+      - tag:
+          filters:
+            branches:
+              ignore: /.*/
+            tags:
+              only: /.*/
