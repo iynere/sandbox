@@ -6,7 +6,6 @@ jobs:
     steps:
       - checkout
       - run: echo "$CIRCLE_TAG"
-
   tag:
     machine: true
     steps:
