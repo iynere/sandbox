@@ -1,25 +1,8 @@
 version: 2.1
 
 jobs:
-  branch:
-    machine: true
+  build:
+    docker:
+      - image: cibuilds/base
     steps:
       - checkout
-      - run: echo "$CIRCLE_TAG"
-  tag:
-    machine: true
-    steps:
-      - checkout
-      - run: echo "$CIRCLE_BRANCH"
-
-workflows:
-  branch-tag:
-    jobs:
-      - branch
-
-      - tag:
-          filters:
-            branches:
-              ignore: /.*/
-            tags:
-              only: /.*/
