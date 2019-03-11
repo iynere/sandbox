@@ -6,3 +6,5 @@ jobs:
       - image: cibuilds/base
     steps:
       - checkout
+      - run: echo "blah" > /tmp/testing.txt
+      - run: cat /tmp/testing.txt
