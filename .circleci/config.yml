@@ -1,18 +1,11 @@
 version: 2.1
-
 jobs:
   build:
-    docker:
-      - image: cibuilds/base
+    macos:
+      xcode: "9.0"
     steps:
       - checkout
-      - run: |
-          export CHROMEDRIVER_RELEASE=$(2.45) \
-            # && $(curl --location --fail --retry 3 http://chromedriver.storage.googleapis.com/LATEST_RELEASE) \
-            && curl --silent --show-error --location --fail --retry 3 --output /tmp/chromedriver_linux64.zip "http://chromedriver.storage.googleapis.com/$CHROMEDRIVER_RELEASE/chromedriver_linux64.zip" \
-            && cd /tmp \
-            && unzip chromedriver_linux64.zip \
-            && rm -rf chromedriver_linux64.zip \
-            && sudo mv chromedriver /usr/local/bin/chromedriver \
-            && sudo chmod +x /usr/local/bin/chromedriver \
-            && chromedriver --version
+      - run:
+          name: Test
+          commmand: |
+            ls -la
