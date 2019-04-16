@@ -3,7 +3,7 @@ version: 2.1
 jobs:
   build:
     docker:
-      - cibuilds/base
+      - image: cibuilds/base
     resource_class: xlarge
     steps:
       - checkout
