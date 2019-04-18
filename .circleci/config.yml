@@ -7,3 +7,5 @@ jobs:
     steps:
 
       - checkout
+
+      - run: which python
