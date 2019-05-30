@@ -12,3 +12,5 @@ jobs:
     steps:
 
       - checkout
+
+      - cli/install
