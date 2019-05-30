@@ -1,11 +1,14 @@
 version: 2.1
 
+orbs:
+  windows: sandbox/windows-tools@dev:preview
+  cli: circleci/circleci-cli@volatile
+
 jobs:
   build:
-    docker:
-      - image: circleci/python
+    executor:
+      name: windows/preview-default
+      shell: bash.exe
     steps:
 
       - checkout
-
-      - run: which python
