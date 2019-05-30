@@ -13,4 +13,6 @@ jobs:
 
       - checkout
 
+      - run: choco install sudo
+
       - cli/install
