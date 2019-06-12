@@ -1,18 +1,19 @@
 version: 2.1
 
 orbs:
-  windows: sandbox/windows-tools@dev:preview
-  cli: circleci/circleci-cli@volatile
+  build-tools: circleci/build-tools@volatile
 
 jobs:
   build:
-    executor:
-      name: windows/preview-default
-      shell: bash.exe
+    docker:
+      - image: openjdk12:x86_64-ubuntu-jdk-12.0.1_12
     steps:
 
       - checkout
 
-      - run: choco install sudo
+      - build-tools/env-info
 
-      - cli/install
+      - build-tools/install-ci-tools
+
+      - store_artifacts:
+          path: ~/.ccidiag/env-info
