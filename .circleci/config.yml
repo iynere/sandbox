@@ -5,15 +5,9 @@ orbs:
 
 jobs:
   build:
-    docker:
-      - image: openjdk:12-oracle
+    machine: true
     steps:
 
       - checkout
 
-      - build-tools/env-info
-
-      - build-tools/install-ci-tools
-
-      - store_artifacts:
-          path: ~/.ccidiag/env-info
+      - run: docker build -t iynere/node-alpine:test node
