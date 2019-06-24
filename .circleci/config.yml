@@ -7,4 +7,9 @@ jobs:
     steps:
 
       - checkout
-      - run: sudo apt-get update && sudo apt-get -y install lsb-release
+      - run: |
+          sudo apt-get update
+
+          sudo apt-get -y install lsb-release || \
+            sudo apt-get -y install lsb-release || \
+            sudo apt-get -y install lsb-release
