@@ -1,13 +1,10 @@
 version: 2.1
 
-orbs:
-  build-tools: circleci/build-tools@volatile
-
 jobs:
   build:
-    machine: true
+    docker:
+      - image: circleci/openjdk:11-jdk
     steps:
 
       - checkout
-
-      - run: docker build -t iynere/node-alpine:test node
+      - run: sudo apt-get update && sudo apt-get -y install lsb-release
