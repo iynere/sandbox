@@ -10,7 +10,6 @@ jobs:
     steps:
 
       - checkout
-
       - node/install-yarn
 
       - run: yarn config set cache-folder ~/.cache/yarn
