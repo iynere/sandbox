@@ -1,17 +1,16 @@
 version: 2.1
 
+orbs:
+  node: circleci/node@1.1.0
+  orb-tools: circleci/orb-tools@8.27.2
+
 jobs:
   build:
-    docker:
-      - image: circleci/openjdk:11-jdk
+    executor: orb-tools/macos
     steps:
 
       - checkout
 
-      - run: sudo rm -rf /var/lib/apt/lists/*
+      - node/install-yarn
 
-      - run: |
-          sudo apt-get update
-
-      - run: |
-          sudo apt-get -y install lsb-release
+      - run: yarn config set cache-folder ~/.cache/yarn
