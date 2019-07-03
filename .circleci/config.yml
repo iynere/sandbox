@@ -6,10 +6,7 @@ orbs:
 
 jobs:
   build:
-    executor: orb-tools/macos
+    executor: orb-tools/ubuntu
     steps:
 
       - checkout
-      - node/install-yarn
-
-      - run: yarn config set cache-folder ~/.cache/yarn
