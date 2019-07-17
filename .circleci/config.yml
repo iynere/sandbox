@@ -1,12 +1,12 @@
 version: 2.1
 
-orbs:
-  node: circleci/node@1.1.0
-  orb-tools: circleci/orb-tools@8.27.2
-
 jobs:
   build:
-    executor: orb-tools/ubuntu
+    docker:
+      - image: hadolint/hadolint
     steps:
 
       - checkout
+
+      - run: |
+          hadolint node/Dockerfile
