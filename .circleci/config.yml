@@ -3,7 +3,7 @@ version: 2.1
 jobs:
   build:
     docker:
-      - image: hadolint/hadolint
+      - image: hadolint/hadolint:latest-debian
     steps:
 
       - checkout
