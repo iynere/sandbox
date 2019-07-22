@@ -3,7 +3,8 @@ version: 2.1
 jobs:
   build:
     docker:
-      - image: cimg/base:edge-node
+      - image: ccitest/rust:1.34.1
     steps:
 
       - checkout
+      - run: cargo --version
