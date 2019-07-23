@@ -3,8 +3,7 @@ version: 2.1
 jobs:
   build:
     docker:
-      - image: ccitest/rust:1.34.1
+      - image: 2.6.3-add-tests-cicd-afb53a9
     steps:
 
       - checkout
-      - run: cargo --version
