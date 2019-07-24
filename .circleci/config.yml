@@ -3,7 +3,7 @@ version: 2.1
 jobs:
   build:
     docker:
-      - image: ccitest/ruby:2.6.3-add-tests-cicd-afb53a9
+      - image: ccitest/openjdk:9.0.4-add-tests-cicd-6ab03a1
     steps:
 
       - checkout
