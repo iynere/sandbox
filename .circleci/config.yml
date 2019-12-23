@@ -7,17 +7,17 @@ executors:
 
 jobs:
   build:
+    executor: ci-base
+    steps:
+      - checkout
+      - run: docker version
+
+  test:
     docker:
       - image: circleci/node
     steps:
       - checkout
-      - run: docker --version
-
-  test:
-    machine: true
-    steps:
-      - checkout
-      - run: docker --version
+      - run: docker version
 
 workflows:
   build:
