@@ -7,7 +7,8 @@ executors:
 
 jobs:
   build:
-    executor: ci-base
+    docker:
+      - image: circleci/node
     steps:
       - checkout
       - run: docker --version
