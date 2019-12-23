@@ -3,46 +3,23 @@ version: 2.1
 executors:
   ci-base:
     docker:
-      - image: cibuilds/base
+      - image: cimg/base:stable
 
 jobs:
   build:
     executor: ci-base
     steps:
       - checkout
-      - add_ssh_keys:
-          fingerprints:
-            - "41:5f:ac:0b:c0:d4:53:25:e4:b4:34:65:7e:c5:0a:0c"
-
-      - run: |
-          git config --global user.email "$CIRCLE_USERNAME@users.noreply.github.com"
-          git config --global user.name "$CIRCLE_USERNAME"
-
-      - run: |
-          git tag -d test
-          git push origin :refs/tags/test
-          git tag test
-          git push origin test
+      - run: docker version
 
   test:
     machine: true
     steps:
       - checkout
-      - run: echo "test"
+      - run: docker version
 
 workflows:
   build:
     jobs:
-      - build:
-          filters:
-            branches:
-              only: master
-
-  test:
-    jobs:
-      - test:
-          filters:
-            branches:
-              ignore: /.*/
-            tags:
-              only: test
+      - build
+      - test
