@@ -10,13 +10,13 @@ jobs:
     executor: ci-base
     steps:
       - checkout
-      - run: docker version
+      - run: docker --version
 
   test:
     machine: true
     steps:
       - checkout
-      - run: docker version
+      - run: docker --version
 
 workflows:
   build:
